@@ -139,6 +139,7 @@ export default function Contact() {
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/10-PP3b2FIhmDYtGarg7jonW91ebBHnrl.webp"
                 alt="One-on-one counseling session, warm and inviting"
                 fill
+                sizes="100vw"
                 className="object-cover"
               />
             </div>
@@ -258,6 +259,7 @@ export default function Contact() {
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/10-PP3b2FIhmDYtGarg7jonW91ebBHnrl.webp"
                 alt="One-on-one counseling session, warm and inviting"
                 fill
+                sizes="100vw"
                 className="object-cover"
               />
             </div>
@@ -266,23 +268,20 @@ export default function Contact() {
       </section>
 
       {/* Atmospheric Image Break with Image H */}
-      <section className="relative bg-slate-50 px-6 py-0 lg:px-10">
-        <div className="mx-auto max-w-7xl overflow-hidden rounded-[2rem]">
-          <div className="relative h-[350px] w-full md:h-[450px]">
-            <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/14-hskpGkVkXncEE10BoJcxFHbYnDRas7.webp"
-              alt="Hands held together, warmth and connection"
-              fill
-              className="object-cover"
-            />
-            <div className="absolute inset-0 bg-sky-600/30" />
-          </div>
-        </div>
+      <section className="relative h-[350px] overflow-hidden md:h-[450px]">
+        <Image
+          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/14-hskpGkVkXncEE10BoJcxFHbYnDRas7.webp"
+          alt="Hands held together, warmth and connection"
+          fill
+          sizes="100vw"
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-sky-600/30" />
       </section>
 
       {/* Additional Info — Two-Column Grid */}
       <section className="relative bg-white px-6 py-32 lg:px-10 lg:py-40">
-        <div className="mx-auto max-w-5xl">
+        <div className="mx-auto max-w-7xl">
           <h2 className="mb-16 text-5xl font-bold tracking-tight text-slate-900">
             What You Should Know
           </h2>
@@ -395,6 +394,7 @@ export default function Contact() {
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1-nD4TQL7qg2yWE0vOnAjnpQvUwTEpHo.webp"
                 alt="Young woman on sofa, relaxed and accessible"
                 fill
+                sizes="100vw"
                 className="object-cover"
               />
             </div>

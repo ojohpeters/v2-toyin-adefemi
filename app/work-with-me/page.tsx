@@ -1,369 +1,353 @@
 import Image from 'next/image';
 
+const services = [
+  {
+    title: "Teen Counseling",
+    tagline: "A safe place to talk, grow & feel understood",
+    description: "For teens navigating identity, anxiety, peer pressure, family stress, and emotional overwhelm. A judgment-free space rooted in biblical truth.",
+    href: "/services/teens",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/31-N424m4nO0REek7JhpPtoSuCDBhsxZZ.webp",
+    imageAlt: "Teenagers in a supportive group",
+    badge: "Ages 13–17",
+    badgeColor: "bg-sky-500",
+    border: "border-sky-400",
+    dot: "bg-sky-400",
+    accent: "text-sky-500",
+    bg: "bg-sky-50",
+  },
+  {
+    title: "Young Adults",
+    tagline: "Clarity, healing & direction for this season",
+    description: "For young adults feeling stuck, overwhelmed, or disconnected — from life, purpose, or God. Support for the transitions and questions no one prepared you for.",
+    href: "/services/young-adults",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/13-GHa5h7KBMyrB4WH5lCWI0NkTDB14OO.webp",
+    imageAlt: "Young adult in a counseling session",
+    badge: "Ages 18–30",
+    badgeColor: "bg-emerald-500",
+    border: "border-emerald-400",
+    dot: "bg-emerald-400",
+    accent: "text-emerald-600",
+    bg: "bg-emerald-50",
+  },
+  {
+    title: "Family Counseling",
+    tagline: "Healing relationships, restoring peace at home",
+    description: "For families navigating conflict, trauma, communication breakdowns, or spiritual disconnection. A safe space to process and grow together.",
+    href: "/services/family",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/30-n3SiOuqM9SIL7y3DrKZbc4CjNhiy5g.webp",
+    imageAlt: "Family walking together",
+    badge: "For the Whole Family",
+    badgeColor: "bg-amber-500",
+    border: "border-amber-400",
+    dot: "bg-amber-400",
+    accent: "text-amber-600",
+    bg: "bg-amber-50",
+  },
+  {
+    title: "Parenting Counseling",
+    tagline: "Support, clarity & Christ-centered guidance",
+    description: "For parents who feel overwhelmed, unsure, or alone. Practical, faith-rooted tools that bring peace and connection back into your home.",
+    href: "/services/parenting",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/34-u4Vn0j83H1m9lwmFr666hQi5gWdBB8.webp",
+    imageAlt: "Parents in a counseling session",
+    badge: "For Parents",
+    badgeColor: "bg-violet-500",
+    border: "border-violet-400",
+    dot: "bg-violet-400",
+    accent: "text-violet-600",
+    bg: "bg-violet-50",
+  },
+];
+
+const steps = [
+  {
+    num: "01",
+    title: "Book a Free Consultation",
+    description: "Start with a complimentary 30-minute phone call. We'll talk about what you're facing and whether my services are the right fit for you.",
+  },
+  {
+    num: "02",
+    title: "Complete Your Intake Form",
+    description: "Before your first session, you'll complete a brief form so I can understand your story, goals, and what you hope to receive from counseling.",
+  },
+  {
+    num: "03",
+    title: "Attend Your First Session",
+    description: "Each 60-minute Zoom session includes prayer, focused conversation, and Christ-centered homework to help you keep growing throughout the week.",
+  },
+  {
+    num: "04",
+    title: "Grow & Be Restored",
+    description: "With consistent support, you'll gain clarity, heal from what's been heavy, and walk confidently in the identity and purpose God designed for you.",
+  },
+];
+
 export default function WorkWithMe() {
   return (
     <>
-      {/* Bold Editorial Hero with Soft-Blue Background */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-sky-100 to-white px-6 py-36 lg:px-10 lg:py-48">
-        <div className="mx-auto max-w-6xl">
-          <div className="max-w-4xl">
-            <p className="mb-6 text-sm font-semibold uppercase tracking-[0.22em] text-sky-700">
-              Services & Support
-            </p>
-            <h1 className="text-5xl font-bold leading-[1.1] tracking-tight text-slate-900 sm:text-7xl">
-              How I Can <span className="block text-[var(--peach)]">Support You</span>
+
+      {/* ── HERO ── */}
+      <section className="relative overflow-hidden bg-slate-900 px-6 py-40 lg:px-10 lg:py-52">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/9-icvWhFNHuWubzvdIxEbA6weFN6VE1D.webp"
+            alt="Supportive counseling environment"
+            fill
+            sizes="100vw"
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-slate-900/72" />
+        </div>
+        <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:56px_56px]" />
+
+        <div className="relative z-10 mx-auto max-w-7xl">
+          <div className="max-w-3xl">
+            <div className="mb-6 flex items-center gap-3">
+              <span className="h-px w-10 bg-[var(--peach)]" />
+              <p className="text-xs font-bold uppercase tracking-[0.25em] text-[var(--peach)]">Services & Support</p>
+            </div>
+            <h1 className="text-5xl font-bold leading-[1.08] tracking-tight text-white sm:text-6xl lg:text-7xl">
+              Counseling &<br />
+              Support <span className="text-[var(--peach)]">Designed</span><br />
+              for You
             </h1>
-            <p className="mt-8 max-w-2xl text-2xl leading-relaxed text-slate-600">
-              Counseling and coaching designed to help you heal, grow, and step boldly into your identity in Christ.
+            <p className="mt-8 max-w-2xl text-xl leading-8 text-white/80">
+              Faith-based, trauma-informed care to help you heal, grow, and step boldly into your identity in Christ. Find the service that fits your season.
+            </p>
+            <div className="mt-10 flex flex-wrap gap-4">
+              <a
+                href="/contact"
+                className="inline-flex items-center justify-center rounded-2xl bg-[var(--peach)] px-8 py-4 text-base font-semibold text-white shadow-[0_12px_28px_rgba(254,143,104,0.40)] transition-all hover:bg-[var(--peach-deep)] hover:-translate-y-0.5"
+              >
+                Book a Free Consultation
+              </a>
+              <a
+                href="/approach"
+                className="inline-flex items-center justify-center rounded-2xl border border-white/20 bg-white/10 px-8 py-4 text-base font-semibold text-white backdrop-blur-sm transition-all hover:bg-white/20"
+              >
+                How Sessions Work
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── SERVICES GRID ── */}
+      <section className="relative bg-white px-6 py-24 lg:px-10 lg:py-32">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-14">
+            <p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-[var(--peach)]">All Services</p>
+            <h2 className="text-4xl font-bold text-slate-900 sm:text-5xl">Find Your Path to Healing</h2>
+            <div className="mt-5 h-1 w-14 rounded-full bg-[var(--peach)]" />
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
+              Each service is tailored to meet you exactly where you are. Select the one that best fits your season.
             </p>
           </div>
-        </div>
-      </section>
 
-      {/* Large Rich Service Cards with Images */}
-      <section className="relative bg-white px-6 py-32 lg:px-10 lg:py-40">
-        <div className="mx-auto max-w-7xl">
-          <h2 className="mb-4 text-5xl font-bold tracking-tight text-slate-900">
-            Services Offered
-          </h2>
-          <div className="mb-16 h-1 w-20 bg-[var(--peach)]" />
-          
-          <div className="grid gap-8 md:grid-cols-2">
-            {/* Individual Biblical Counseling - Image G */}
-            <article
-              key="individual"
-              className="group border-l-4 border-[var(--peach)] bg-white overflow-hidden rounded-lg shadow-[0_4px_16px_rgba(0,0,0,0.06)] transition-all hover:shadow-[0_16px_32px_rgba(0,0,0,0.12)] hover:-translate-y-1"
-            >
-              <div className="relative h-40 overflow-hidden">
-                <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/13-GHa5h7KBMyrB4WH5lCWI0NkTDB14OO.webp"
-                  alt="Young woman in counseling"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-10">
-                <h3 className="text-2xl font-bold text-slate-900">
-                  Individual Biblical Counseling
-                </h3>
-                <p className="mt-6 text-lg leading-8 text-slate-600">
-                  Christ-centered sessions for emotional healing, identity, and spiritual renewal. A safe space to process your story and experience God&apos;s transformative love.
-                </p>
-                <a
-                  href="/contact"
-                  className="mt-8 inline-flex rounded-xl bg-[var(--peach)] px-6 py-3 text-sm font-semibold text-white shadow-[0_12px_20px_rgba(254,143,104,0.26)] transition-all hover:bg-[var(--peach-deep)] hover:-translate-y-0.5"
-                >
-                  Learn More
-                </a>
-              </div>
-            </article>
-
-            {/* Youth & Young Adult Support - Image L */}
-            <article
-              key="youth"
-              className="group border-l-4 border-[var(--peach)] bg-white overflow-hidden rounded-lg shadow-[0_4px_16px_rgba(0,0,0,0.06)] transition-all hover:shadow-[0_16px_32px_rgba(0,0,0,0.12)] hover:-translate-y-1"
-            >
-              <div className="relative h-40 overflow-hidden">
-                <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/33-ZUgC0siRnCGFgVRsHZclbCP8TnLYvs.webp"
-                  alt="Young man in distress with counselor"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-10">
-                <h3 className="text-2xl font-bold text-slate-900">
-                  Youth & Young Adult Support
-                </h3>
-                <p className="mt-6 text-lg leading-8 text-slate-600">
-                  Safe, trauma-informed guidance for teens and young adults navigating life transitions, identity questions, and emotional overwhelm.
-                </p>
-                <a
-                  href="/contact"
-                  className="mt-8 inline-flex rounded-xl bg-[var(--peach)] px-6 py-3 text-sm font-semibold text-white shadow-[0_12px_20px_rgba(254,143,104,0.26)] transition-all hover:bg-[var(--peach-deep)] hover:-translate-y-0.5"
-                >
-                  Learn More
-                </a>
-              </div>
-            </article>
-
-            {/* Family Counseling & Coaching - Image A */}
-            <article
-              key="family"
-              className="group border-l-4 border-[var(--peach)] bg-white overflow-hidden rounded-lg shadow-[0_4px_16px_rgba(0,0,0,0.06)] transition-all hover:shadow-[0_16px_32px_rgba(0,0,0,0.12)] hover:-translate-y-1"
-            >
-              <div className="relative h-40 overflow-hidden">
-                <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/34-u4Vn0j83H1m9lwmFr666hQi5gWdBB8.webp"
-                  alt="Group therapy session"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-10">
-                <h3 className="text-2xl font-bold text-slate-900">
-                  Family Counseling & Coaching
-                </h3>
-                <p className="mt-6 text-lg leading-8 text-slate-600">
-                  Helping families rebuild connection, communication, and emotional safety. Restore Christ-centered unity and healing relationships.
-                </p>
-                <a
-                  href="/contact"
-                  className="mt-8 inline-flex rounded-xl bg-[var(--peach)] px-6 py-3 text-sm font-semibold text-white shadow-[0_12px_20px_rgba(254,143,104,0.26)] transition-all hover:bg-[var(--peach-deep)] hover:-translate-y-0.5"
-                >
-                  Learn More
-                </a>
-              </div>
-            </article>
-
-            {/* Workshops, Trainings & Speaking - Image I */}
-            <article
-              key="workshops"
-              className="group border-l-4 border-[var(--peach)] bg-white overflow-hidden rounded-lg shadow-[0_4px_16px_rgba(0,0,0,0.06)] transition-all hover:shadow-[0_16px_32px_rgba(0,0,0,0.12)] hover:-translate-y-1"
-            >
-              <div className="relative h-40 overflow-hidden">
-                <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/26-xs9JEM2M8GFjgjCsryzB72sUmkF6l0.webp"
-                  alt="Youth group circle engaged"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-10">
-                <h3 className="text-2xl font-bold text-slate-900">
-                  Workshops, Trainings & Speaking
-                </h3>
-                <p className="mt-6 text-lg leading-8 text-slate-600">
-                  Biblical, trauma-informed teachings for churches, ministries, and youth organizations. Equip your community with healing wisdom.
-                </p>
-                <a
-                  href="/contact"
-                  className="mt-8 inline-flex rounded-xl bg-[var(--peach)] px-6 py-3 text-sm font-semibold text-white shadow-[0_12px_20px_rgba(254,143,104,0.26)] transition-all hover:bg-[var(--peach-deep)] hover:-translate-y-0.5"
-                >
-                  Learn More
-                </a>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      {/* Modern Visual Timeline with Image F */}
-      <section className="relative bg-slate-50 px-6 py-32 lg:px-10 lg:py-40">
-        <div className="mx-auto max-w-7xl">
-          <div className="grid gap-16 lg:grid-cols-[1fr_400px]">
-            <div>
-              <h2 className="text-5xl font-bold tracking-tight text-slate-900">
-                How We Work Together
-              </h2>
-              <div className="mt-6 h-1 w-20 bg-[var(--peach)]" />
-              
-              <div className="mt-20">
-                <div className="relative space-y-8">
-                  {/* Connecting Line */}
-                  <div className="absolute left-6 top-12 bottom-0 w-0.5 bg-gradient-to-b from-[var(--peach)] to-sky-200" />
-                  
-                  {[
-                    {
-                      step: "1",
-                      title: "Schedule Your Session",
-                      description: "Book a time that works for you. Sessions are available in-person or online.",
-                    },
-                    {
-                      step: "2",
-                      title: "Initial Consultation",
-                      description: "We'll discuss your story, concerns, and goals in a confidential, safe environment.",
-                    },
-                    {
-                      step: "3",
-                      title: "Ongoing Counseling",
-                      description: "Work together with consistent support and biblical, trauma-informed tools for healing.",
-                    },
-                    {
-                      step: "4",
-                      title: "Growth & Restoration",
-                      description: "Experience emotional healing, spiritual renewal, and confident steps toward your purpose.",
-                    },
-                  ].map((item) => (
-                    <div key={item.step} className="relative flex gap-8 pl-20">
-                      {/* Step Circle */}
-                      <div className="absolute -left-6 top-0 flex h-12 w-12 items-center justify-center rounded-full bg-white ring-4 ring-slate-50 shadow-md">
-                        <span className="text-sm font-bold text-[var(--peach)]">{item.step}</span>
-                      </div>
-                      
-                      {/* Content */}
-                      <div className="pb-8">
-                        <h3 className="text-2xl font-bold text-slate-900">
-                          {item.title}
-                        </h3>
-                        <p className="mt-2 text-lg text-slate-600">
-                          {item.description}
-                        </p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-
-            {/* Image F - Counselor with tablet */}
-            <div className="relative h-[500px] overflow-hidden rounded-[2rem] lg:h-[600px]">
-              <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/12-shJXO8u6KicfSGHQLUSpphKbFuyUu0.webp"
-                alt="Counselor with tablet, professional and warm"
-                fill
-                className="object-cover"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Approach with Matched Cards from About Page */}
-      <section className="relative bg-white px-6 py-32 lg:px-10 lg:py-40">
-        <div className="mx-auto max-w-5xl">
-          <h2 className="text-5xl font-bold tracking-tight text-slate-900">
-            My Approach to Healing
-          </h2>
-          <div className="mt-6 h-1 w-20 bg-[var(--peach)]" />
-
-          <p className="mt-10 max-w-3xl text-xl leading-8 text-slate-600">
-            My counseling approach integrates biblical truth with evidence-based emotional and behavioral tools. Every session is designed to honor your story, support your healing, and help you walk confidently in your God-given identity.
-          </p>
-
-          <div className="mt-16 grid gap-8 md:grid-cols-3">
-            {[
-              {
-                title: "Biblical Foundation",
-                description: "Rooted in Scripture and the heart of Christ — every conversation anchored in God's truth and redemptive love.",
-              },
-              {
-                title: "Trauma-Informed Care",
-                description: "Safety, compassion, and emotional wisdom — creating brave spaces where healing can take root and flourish.",
-              },
-              {
-                title: "Practical Tools",
-                description: "Emotional regulation, mindset renewal, and resilient next steps — equipping you for lasting transformation.",
-              },
-            ].map((pillar) => (
-              <article
-                key={pillar.title}
-                className="border-l-4 border-[var(--peach)] bg-white p-8 shadow-[0_4px_12px_rgba(0,0,0,0.05)]"
+          <div className="grid gap-6 sm:grid-cols-2">
+            {services.map((svc) => (
+              <a
+                key={svc.title}
+                href={svc.href}
+                className={`group relative flex flex-col overflow-hidden rounded-3xl border-2 ${svc.border} bg-white shadow-[0_4px_20px_rgba(0,0,0,0.06)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_48px_rgba(0,0,0,0.13)]`}
               >
-                <h3 className="text-2xl font-bold text-slate-900">
-                  {pillar.title}
-                </h3>
-                <p className="mt-4 leading-7 text-slate-600">
-                  {pillar.description}
-                </p>
-              </article>
+                {/* Image */}
+                <div className="relative h-52 overflow-hidden">
+                  <Image
+                    src={svc.image}
+                    alt={svc.imageAlt}
+                    fill
+                    sizes="(max-width: 640px) 100vw, 50vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                  <span className={`absolute bottom-4 left-4 rounded-full ${svc.badgeColor} px-3 py-1 text-xs font-bold text-white backdrop-blur-sm`}>
+                    {svc.badge}
+                  </span>
+                </div>
+
+                {/* Content */}
+                <div className="flex flex-1 flex-col p-7">
+                  <p className={`text-xs font-bold uppercase tracking-widest ${svc.accent}`}>{svc.tagline}</p>
+                  <h3 className="mt-2 text-2xl font-bold text-slate-900">{svc.title}</h3>
+                  <p className="mt-3 flex-1 text-base leading-7 text-slate-600">{svc.description}</p>
+                  <div className={`mt-6 inline-flex items-center gap-2 text-sm font-bold ${svc.accent} group-hover:gap-3 transition-all`}>
+                    Explore this service
+                    <svg viewBox="0 0 20 20" fill="currentColor" className="h-4 w-4" aria-hidden="true">
+                      <path fillRule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+
+          {/* Speaking card — full width */}
+          <a
+            href="/speaking"
+            className="group mt-6 flex flex-col overflow-hidden rounded-3xl border-2 border-slate-200 bg-slate-900 shadow-[0_4px_20px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_48px_rgba(0,0,0,0.18)] sm:flex-row"
+          >
+            <div className="relative h-52 flex-shrink-0 overflow-hidden sm:h-auto sm:w-64">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/26-xs9JEM2M8GFjgjCsryzB72sUmkF6l0.webp"
+                alt="Youth group engaged in a workshop"
+                fill
+                sizes="(max-width: 640px) 100vw, 256px"
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-black/30" />
+            </div>
+            <div className="flex flex-1 flex-col justify-center p-8">
+              <p className="text-xs font-bold uppercase tracking-widest text-[var(--peach)]">For Organizations & Churches</p>
+              <h3 className="mt-2 text-2xl font-bold text-white">Workshops, Trainings & Speaking</h3>
+              <p className="mt-3 max-w-xl text-base leading-7 text-slate-400">
+                Biblical, trauma-informed teachings for churches, ministries, and youth organizations. Bring healing wisdom to your community through keynotes, breakouts, and multi-day trainings.
+              </p>
+              <div className="mt-6 inline-flex items-center gap-2 text-sm font-bold text-[var(--peach)] group-hover:gap-3 transition-all">
+                Learn about speaking
+                <svg viewBox="0 0 20 20" fill="currentColor" className="h-4 w-4" aria-hidden="true">
+                  <path fillRule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clipRule="evenodd" />
+                </svg>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      {/* ── QUICK FACTS BANNER ── */}
+      <section className="relative bg-[var(--peach)] px-6 py-14 lg:px-10">
+        <div className="mx-auto max-w-7xl">
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              { stat: "$90", label: "Per individual session" },
+              { stat: "60 min", label: "Session duration" },
+              { stat: "Free", label: "30-min consultation" },
+              { stat: "Virtual", label: "Secure Zoom sessions" },
+            ].map((item) => (
+              <div key={item.label} className="text-center">
+                <p className="text-4xl font-black text-white">{item.stat}</p>
+                <p className="mt-1 text-sm font-semibold uppercase tracking-wider text-white/75">{item.label}</p>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Who I Serve — Three Distinct Warm Cards with Images */}
-      <section className="relative bg-gradient-to-b from-slate-50 to-white px-6 py-32 lg:px-10 lg:py-40">
-        <div className="mx-auto max-w-7xl">
-          <h2 className="text-5xl font-bold tracking-tight text-slate-900">
-            Who I Serve
-          </h2>
-          <div className="mt-6 h-1 w-20 bg-[var(--peach)]" />
+      {/* ── HOW WE WORK TOGETHER ── */}
+      <section className="relative bg-slate-900 px-6 py-24 lg:px-10 lg:py-32">
+        <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:48px_48px]" />
+        <div className="relative mx-auto max-w-7xl">
+          <div className="grid gap-16 lg:grid-cols-[1fr_460px] lg:items-center lg:gap-24">
 
-          <div className="mt-16 grid gap-12 md:grid-cols-3">
-            {/* Youth & Teens - Image K */}
-            <article key="youth" className="rounded-[2rem] overflow-hidden shadow-[0_8px_24px_rgba(0,0,0,0.08)]">
-              <div className="relative h-48 overflow-hidden">
-                <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/31-N424m4nO0REek7JhpPtoSuCDBhsxZZ.webp"
-                  alt="Joyful diverse teenagers"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="bg-gradient-to-br from-sky-100 to-cyan-50 p-10 border-t border-white/80">
-                <h3 className="text-2xl font-bold text-slate-900">
-                  Youth & Teens
-                </h3>
-                <p className="mt-4 leading-7 text-slate-700">
-                  Support for emotional wounds, identity struggles, and life transitions. Creating safe spaces where young people can process pain and discover who they are in Christ.
-                </p>
-              </div>
-            </article>
+            {/* Steps */}
+            <div>
+              <p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-[var(--peach)]">The Process</p>
+              <h2 className="text-4xl font-bold text-white sm:text-5xl">How We Work Together</h2>
+              <div className="mt-5 h-1 w-14 rounded-full bg-[var(--peach)]" />
 
-            {/* Young Adults - Image C */}
-            <article key="young-adults" className="rounded-[2rem] overflow-hidden shadow-[0_8px_24px_rgba(0,0,0,0.08)]">
-              <div className="relative h-48 overflow-hidden">
-                <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/4-dKD35Ht8rkT1J8nSOqv6IdMG0U8UvR.webp"
-                  alt="Young woman on video call, engaged"
-                  fill
-                  className="object-cover"
-                />
+              <div className="mt-14 space-y-0">
+                {steps.map((step, i) => (
+                  <div key={step.num} className="relative flex gap-6">
+                    {/* Connector line */}
+                    {i < steps.length - 1 && (
+                      <div className="absolute left-5 top-12 h-full w-px bg-gradient-to-b from-[var(--peach)]/50 to-transparent" />
+                    )}
+                    {/* Circle */}
+                    <div className="flex-shrink-0">
+                      <div className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-[var(--peach)] bg-slate-900">
+                        <span className="text-xs font-black text-[var(--peach)]">{step.num}</span>
+                      </div>
+                    </div>
+                    {/* Content */}
+                    <div className="pb-10">
+                      <h3 className="text-lg font-bold text-white">{step.title}</h3>
+                      <p className="mt-2 text-base leading-7 text-slate-400">{step.description}</p>
+                    </div>
+                  </div>
+                ))}
               </div>
-              <div className="bg-gradient-to-br from-emerald-100 to-teal-50 p-10 border-t border-white/80">
-                <h3 className="text-2xl font-bold text-slate-900">
-                  Young Adults
-                </h3>
-                <p className="mt-4 leading-7 text-slate-700">
-                  Guidance for purpose, healing, relationships, and spiritual growth. Supporting you as you navigate independence, identity, and your calling.
-                </p>
-              </div>
-            </article>
+            </div>
 
-            {/* Families - Image J */}
-            <article key="families" className="rounded-[2rem] overflow-hidden shadow-[0_8px_24px_rgba(0,0,0,0.08)]">
-              <div className="relative h-48 overflow-hidden">
-                <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/30-n3SiOuqM9SIL7y3DrKZbc4CjNhiy5g.webp"
-                  alt="Group from behind with arms around each other"
-                  fill
-                  className="object-cover"
-                />
+            {/* Image */}
+            <div className="relative h-[480px] overflow-hidden rounded-3xl shadow-[0_20px_52px_rgba(0,0,0,0.3)] lg:h-[560px]">
+              <Image
+                src="/images/about-toyin.jpg"
+                alt="Toyin Adefemi — Biblical Counselor"
+                fill
+                sizes="(max-width: 1024px) 100vw, 460px"
+                className="object-cover object-top"
+              />
+              {/* Floating CTA card */}
+              <div className="absolute bottom-6 left-6 right-6 rounded-2xl bg-white/90 backdrop-blur-sm px-6 py-5 shadow-xl">
+                <p className="text-sm font-bold text-slate-900">Start with a free consultation</p>
+                <p className="mt-1 text-xs text-slate-500">30 minutes · No commitment · Completely confidential</p>
+                <a
+                  href="/contact"
+                  className="mt-4 flex items-center justify-center rounded-xl bg-[var(--peach)] px-5 py-3 text-sm font-bold text-white shadow-[0_6px_16px_rgba(254,143,104,0.35)] transition-all hover:bg-[var(--peach-deep)]"
+                >
+                  Book Now
+                </a>
               </div>
-              <div className="bg-gradient-to-br from-amber-100 to-orange-50 p-10 border-t border-white/80">
-                <h3 className="text-2xl font-bold text-slate-900">
-                  Families
-                </h3>
-                <p className="mt-4 leading-7 text-slate-700">
-                  Restoring communication, connection, and Christ-centered unity. Healing family systems and building stronger, more loving relationships.
-                </p>
-              </div>
-            </article>
+            </div>
+
           </div>
         </div>
       </section>
 
-      {/* Full-Width Warm CTA Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-sky-100 via-sky-50 to-white px-6 py-40 lg:px-10 lg:py-52">
-        <div className="mx-auto max-w-5xl text-center">
-          <h2 className="text-5xl font-bold leading-tight text-slate-900 sm:text-6xl lg:text-7xl">
-            Ready to Begin Your Healing Journey?
-          </h2>
-          <p className="mx-auto mt-8 max-w-3xl text-2xl leading-relaxed text-slate-600">
-            Whether you&apos;re seeking support for yourself, your family, or your organization, I&apos;d love to discuss how we can work together. Your story matters, and healing is possible.
-          </p>
-
-          <div className="mt-14 flex flex-col items-center gap-5 sm:flex-row sm:justify-center">
+      {/* ── FINANCIAL HARDSHIP NOTE ── */}
+      <section className="relative bg-white px-6 py-20 lg:px-10">
+        <div className="mx-auto max-w-4xl text-center">
+          <div className="rounded-3xl border border-slate-100 bg-slate-50 px-8 py-10 shadow-sm">
+            <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-[var(--peach)]/10">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-6 w-6 text-[var(--peach)]" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+              </svg>
+            </div>
+            <h3 className="text-2xl font-bold text-slate-900">No One Should Go Without Support</h3>
+            <p className="mx-auto mt-4 max-w-xl text-base leading-7 text-slate-600">
+              Discounts are available for individuals and families experiencing financial hardship. Please don&apos;t let finances be a barrier — reach out and we&apos;ll find a way to make this work.
+            </p>
             <a
               href="/contact"
-              className="inline-flex items-center justify-center rounded-2xl bg-[var(--peach)] px-10 py-5 text-lg font-semibold text-white shadow-[0_16px_30px_rgba(254,143,104,0.34)] transition-all hover:bg-[var(--peach-deep)] hover:-translate-y-1"
+              className="mt-6 inline-flex items-center justify-center rounded-xl border-2 border-slate-200 bg-white px-7 py-3 text-sm font-semibold text-slate-800 transition-all hover:border-[var(--peach)] hover:text-[var(--peach)]"
+            >
+              Ask About Discounts
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* ── CTA ── */}
+      <section className="relative overflow-hidden bg-gradient-to-br from-stone-50 via-white to-[var(--peach)]/10 px-6 py-24 lg:px-10 lg:py-32">
+        <div className="mx-auto max-w-4xl text-center">
+          <p className="mb-4 text-xs font-bold uppercase tracking-[0.25em] text-[var(--peach)]">Ready to Start?</p>
+          <h2 className="text-5xl font-bold leading-tight text-slate-900 sm:text-6xl">
+            Your Healing<br />Journey Starts Here
+          </h2>
+          <p className="mx-auto mt-7 max-w-2xl text-xl leading-8 text-slate-600">
+            Whether you&apos;re seeking support for yourself, your teen, or your family — I&apos;d be honored to walk alongside you. Your story matters, and healing is possible.
+          </p>
+          <div className="mt-12 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+            <a
+              href="/contact"
+              className="inline-flex items-center justify-center rounded-2xl bg-[var(--peach)] px-10 py-4 text-lg font-semibold text-white shadow-[0_16px_30px_rgba(254,143,104,0.34)] transition-all hover:bg-[var(--peach-deep)] hover:-translate-y-0.5"
             >
               Book a Session
             </a>
             <a
               href="/contact"
-              className="inline-flex items-center justify-center rounded-2xl border-2 border-slate-300 bg-white px-10 py-5 text-lg font-semibold text-slate-900 transition-all hover:border-slate-400 hover:bg-slate-50"
+              className="inline-flex items-center justify-center rounded-2xl border-2 border-slate-200 bg-white px-10 py-4 text-lg font-semibold text-slate-700 transition-all hover:border-slate-300 hover:bg-slate-50"
             >
               Get in Touch
             </a>
           </div>
-
-          <p className="mt-12 text-sm text-slate-500">
-            Questions? Reach out anytime — I&apos;m here to support your journey.
+          <p className="mt-8 text-sm text-slate-400">
+            Free 30-minute consultation · Responds within 24–48 hours · Always confidential
           </p>
         </div>
       </section>
+
     </>
   );
 }

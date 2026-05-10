@@ -64,11 +64,12 @@ export default function Speaking() {
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/31-N424m4nO0REek7JhpPtoSuCDBhsxZZ.webp"
             alt="Joyful youth group circle"
             fill
+            sizes="100vw"
             className="object-cover"
           />
           <div className="absolute inset-0 bg-slate-900/50" />
         </div>
-        <div className="relative z-10 mx-auto max-w-6xl">
+        <div className="relative z-10 mx-auto max-w-7xl">
           <div className="max-w-5xl">
             <p className="mb-6 text-sm font-semibold uppercase tracking-[0.22em] text-white/80">
               Speaking & Workshops
@@ -85,7 +86,7 @@ export default function Speaking() {
 
       {/* Why Invite Me — Horizontal Feature Cards */}
       <section className="relative bg-white px-6 py-32 lg:px-10 lg:py-40">
-        <div className="mx-auto max-w-5xl">
+        <div className="mx-auto max-w-7xl">
           <h2 className="text-5xl font-bold tracking-tight text-slate-900">
             Why Invite Me to Speak?
           </h2>
@@ -131,17 +132,14 @@ export default function Speaking() {
       </section>
 
       {/* Large Immersive Image Break - Image M */}
-      <section className="relative bg-slate-50 px-6 py-0 lg:px-10">
-        <div className="mx-auto max-w-7xl overflow-hidden rounded-[2rem]">
-          <div className="relative h-[400px] w-full md:h-[500px]">
-            <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/28-AHwozixyiwPpwYmHgTtO96klIjYk8N.webp"
-              alt="Hands on Bible together, faith community"
-              fill
-              className="object-cover"
-            />
-          </div>
-        </div>
+      <section className="relative h-[400px] overflow-hidden md:h-[500px]">
+        <Image
+          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/28-AHwozixyiwPpwYmHgTtO96klIjYk8N.webp"
+          alt="Hands on Bible together, faith community"
+          fill
+          sizes="100vw"
+          className="object-cover"
+        />
       </section>
 
       {/* Speaking Topics — Conference Card Style with Image J */}
@@ -179,6 +177,7 @@ export default function Speaking() {
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/30-n3SiOuqM9SIL7y3DrKZbc4CjNhiy5g.webp"
               alt="Group united together, unity and hope"
               fill
+              sizes="100vw"
               className="object-cover"
             />
           </div>
@@ -192,6 +191,7 @@ export default function Speaking() {
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/28-AHwozixyiwPpwYmHgTtO96klIjYk8N.webp"
             alt="Hands on Bible together, faith community"
             fill
+            sizes="100vw"
             className="object-cover"
           />
           <div className="absolute inset-0 bg-slate-900/50" />
@@ -245,6 +245,7 @@ export default function Speaking() {
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/4-dKD35Ht8rkT1J8nSOqv6IdMG0U8UvR.webp"
                 alt="Young woman on video call, engaged"
                 fill
+                sizes="100vw"
                 className="object-cover"
               />
             </div>
@@ -259,6 +260,7 @@ export default function Speaking() {
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/31-N424m4nO0REek7JhpPtoSuCDBhsxZZ.webp"
             alt="Joyful teenagers laughing"
             fill
+            sizes="100vw"
             className="object-cover"
           />
           <div className="absolute inset-0 bg-[var(--peach)]/40" />
