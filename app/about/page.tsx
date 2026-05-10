@@ -1,4 +1,17 @@
+import type { Metadata } from 'next';
 import Image from 'next/image';
+
+export const metadata: Metadata = {
+  title: "About Toyin Adefemi | Biblical Counselor & Youth Advocate",
+  description:
+    "Learn about Toyin Adefemi — Biblical Counselor, Youth Advocate, and Emotional Wellness Practitioner. Over a decade of Christ-centered, trauma-informed soul care for youth, families, and young adults.",
+  openGraph: {
+    title: "About Toyin Adefemi | Biblical Counselor & Youth Advocate",
+    description:
+      "Learn about Toyin Adefemi — Biblical Counselor, Youth Advocate, and Emotional Wellness Practitioner with over a decade of experience serving youth, families, and young adults.",
+    images: [{ url: "/images/about-toyin.jpg", width: 4480, height: 6720, alt: "Toyin Adefemi — Biblical Counselor" }],
+  },
+};
 
 export default function About() {
   return (

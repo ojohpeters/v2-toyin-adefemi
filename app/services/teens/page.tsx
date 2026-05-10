@@ -1,4 +1,17 @@
+import type { Metadata } from 'next';
 import Image from 'next/image';
+
+export const metadata: Metadata = {
+  title: "Teen Counseling | A Safe Place to Talk, Grow & Feel Understood",
+  description:
+    "Safe, judgment-free biblical counseling for teens ages 13–17. Support for anxiety, identity, trauma, peer pressure, and more. Virtual sessions with Toyin Adefemi.",
+  openGraph: {
+    title: "Teen Counseling | A Safe Place to Talk, Grow & Feel Understood",
+    description:
+      "Safe, judgment-free counseling for teens ages 13–17. Clinically informed biblical support for anxiety, identity, trauma, peer pressure, and more.",
+    images: [{ url: "/images/about-toyin.jpg", width: 4480, height: 6720, alt: "Toyin Adefemi — Teen Counselor" }],
+  },
+};
 
 const topics = [
   "Feeling anxious, stressed, or overwhelmed",

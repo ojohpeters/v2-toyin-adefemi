@@ -1,4 +1,17 @@
+import type { Metadata } from 'next';
 import Image from 'next/image';
+
+export const metadata: Metadata = {
+  title: "Services | Teen, Young Adult, Family & Parenting Counseling",
+  description:
+    "Virtual biblical counseling services for teens, young adults, families, and parents. Faith-based, trauma-informed care starting at $90/session. Free 30-min consultation available.",
+  openGraph: {
+    title: "Services | Teen, Young Adult, Family & Parenting Counseling",
+    description:
+      "Virtual biblical counseling for teens, young adults, families, and parents. Faith-based, trauma-informed care starting at $90/session.",
+    images: [{ url: "/images/about-toyin.jpg", width: 4480, height: 6720, alt: "Toyin Adefemi — Biblical Counselor" }],
+  },
+};
 
 const services = [
   {

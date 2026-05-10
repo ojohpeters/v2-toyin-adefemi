@@ -1,4 +1,17 @@
+import type { Metadata } from 'next';
 import Image from 'next/image';
+
+export const metadata: Metadata = {
+  title: "Speaking & Workshops | Biblical Trauma-Informed Messages",
+  description:
+    "Invite Toyin Adefemi to speak at your church, conference, or youth event. Biblical, trauma-informed keynotes, breakouts, and workshops on healing, identity, and emotional wellness.",
+  openGraph: {
+    title: "Speaking & Workshops | Toyin Adefemi",
+    description:
+      "Biblical, trauma-informed speaking for churches, conferences, and youth organizations. Keynotes, breakouts, staff training, and more.",
+    images: [{ url: "/images/about-toyin.jpg", width: 4480, height: 6720, alt: "Toyin Adefemi — Speaker & Biblical Counselor" }],
+  },
+};
 
 export default function Speaking() {
   const topics = [

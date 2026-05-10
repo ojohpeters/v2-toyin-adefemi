@@ -1,4 +1,17 @@
+import type { Metadata } from 'next';
 import Image from 'next/image';
+
+export const metadata: Metadata = {
+  title: "Family Counseling | Healing Relationships & Restoring Peace at Home",
+  description:
+    "Family counseling to heal communication, rebuild trust, and restore Christ-centered unity. Virtual sessions for the whole family with Toyin Adefemi.",
+  openGraph: {
+    title: "Family Counseling | Healing Relationships & Restoring Peace at Home",
+    description:
+      "Heal communication, rebuild trust, and restore peace in your home. Virtual family counseling rooted in Scripture and trauma-informed care.",
+    images: [{ url: "/images/family-counseling.png", width: 1024, height: 1536, alt: "Family Counseling — A Space of Grace" }],
+  },
+};
 
 const topics = [
   "Ongoing conflict or tension",

@@ -1,4 +1,17 @@
+import type { Metadata } from 'next';
 import Image from 'next/image';
+
+export const metadata: Metadata = {
+  title: "Parenting Counseling | Christ-Centered Support for Your Journey",
+  description:
+    "Parenting counseling for emotional needs, behavior challenges, co-parenting, and building a spiritually grounded home. Virtual sessions with Toyin Adefemi.",
+  openGraph: {
+    title: "Parenting Counseling | Christ-Centered Support for Your Journey",
+    description:
+      "Support for parents navigating emotional needs, behavior challenges, and family stress. Build a spiritually grounded home with Christ-centered guidance.",
+    images: [{ url: "/images/about-toyin.jpg", width: 4480, height: 6720, alt: "Toyin Adefemi — Biblical Counselor" }],
+  },
+};
 
 const topics = [
   "Emotional or behavioral struggles in children",

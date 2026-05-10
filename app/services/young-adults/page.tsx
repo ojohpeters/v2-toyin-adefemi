@@ -1,4 +1,17 @@
+import type { Metadata } from 'next';
 import Image from 'next/image';
+
+export const metadata: Metadata = {
+  title: "Young Adult Counseling | Clarity, Healing & Direction",
+  description:
+    "Biblical counseling for young adults navigating anxiety, identity, purpose, relationships, and life transitions. Faith-based, trauma-informed virtual sessions.",
+  openGraph: {
+    title: "Young Adult Counseling | Clarity, Healing & Direction",
+    description:
+      "Counseling for young adults navigating anxiety, identity, purpose, and life transitions. Faith-based, trauma-informed virtual sessions with Toyin Adefemi.",
+    images: [{ url: "/images/young-adult-counseling.png", width: 1024, height: 1536, alt: "Young Adult Counseling — A Space of Grace" }],
+  },
+};
 
 const topics = [
   "Anxiety, stress, and overwhelm",
