@@ -47,7 +47,7 @@ export default function YoungAdultCounseling() {
     <>
 
       {/* ── HERO ── */}
-      <section className="relative overflow-hidden bg-emerald-950 px-6 py-20 lg:px-10 lg:py-52">
+      <section className="relative overflow-hidden bg-emerald-950 px-6 py-14 lg:px-10 lg:py-24">
         <div className="absolute inset-0 z-0">
           <Image
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/13-GHa5h7KBMyrB4WH5lCWI0NkTDB14OO.webp"
@@ -94,7 +94,7 @@ export default function YoungAdultCounseling() {
       </section>
 
       {/* ── SAFE SPACE ── */}
-      <section className="relative bg-[var(--background)] px-6 py-14 lg:px-10 lg:py-32">
+      <section className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-16 lg:grid-cols-2 lg:items-center lg:gap-24">
 
@@ -140,7 +140,7 @@ export default function YoungAdultCounseling() {
       </section>
 
       {/* ── TOPICS ── */}
-      <section className="relative bg-emerald-950 px-6 py-14 lg:px-10 lg:py-32">
+      <section className="relative bg-emerald-950 px-6 py-12 lg:px-10 lg:py-16">
         <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:48px_48px]" />
         <div className="relative mx-auto max-w-7xl">
           <div className="mx-auto max-w-2xl text-center">
@@ -166,7 +166,7 @@ export default function YoungAdultCounseling() {
       </section>
 
       {/* ── SESSIONS + COST ── */}
-      <section className="relative bg-[var(--background)] px-6 py-14 lg:px-10 lg:py-32">
+      <section className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-16 lg:grid-cols-[1fr_380px] lg:items-start lg:gap-20">
 
@@ -231,7 +231,7 @@ export default function YoungAdultCounseling() {
       </section>
 
       {/* ── CTA ── */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-emerald-950 to-slate-900 px-6 py-14 lg:px-10 lg:py-32">
+      <section className="relative overflow-hidden bg-gradient-to-br from-emerald-950 to-slate-900 px-6 py-12 lg:px-10 lg:py-16">
         <div className="pointer-events-none absolute -right-20 top-0 h-80 w-80 rounded-full bg-emerald-500/10 blur-3xl" />
         <div className="relative mx-auto max-w-3xl text-center">
           <h2 className="text-4xl font-bold text-white sm:text-5xl">Ready to Move Forward?</h2>

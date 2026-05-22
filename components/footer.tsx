@@ -73,9 +73,6 @@ export function Footer() {
               Get In Touch
             </p>
             <h2 className="text-3xl font-bold text-white">Let Me Help You</h2>
-            <p className="mt-2 text-sm text-slate-400">
-              Fill out the form and I&apos;ll respond within 24–48 hours.
-            </p>
 
             {submitted ? (
               <div className="mt-8 rounded-2xl border border-emerald-500/30 bg-emerald-500/10 px-6 py-10 text-center">
@@ -242,7 +239,7 @@ export function Footer() {
 
       {/* Copyright Strip */}
       <div className="border-t border-slate-800 bg-black/20 px-6 py-5 text-center text-sm text-slate-500">
-        © 2026 A Space Of Grace Counseling. All rights reserved.
+        © 2026 Toyin Adefemi. All rights reserved.
       </div>
     </footer>
   );

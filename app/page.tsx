@@ -103,7 +103,7 @@ export default function Home() {
       </section>
 
       {/* Welcome — intro under the banner */}
-      <section className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-28">
+      <section className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-4xl text-center">
           <div className="mb-6 flex items-center justify-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-sky-600">
             <span className="h-px w-8 bg-sky-300" />
@@ -136,7 +136,7 @@ export default function Home() {
       </section>
 
       {/* Meet Your Counselor */}
-      <section className="relative overflow-hidden bg-[var(--background)] px-6 py-14 lg:px-10 lg:py-32">
+      <section className="relative overflow-hidden bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
         {/* Decorative background blob */}
         <div className="pointer-events-none absolute -right-32 -top-32 h-[500px] w-[500px] rounded-full bg-[var(--peach)]/5 blur-3xl" />
         <div className="pointer-events-none absolute -bottom-20 left-0 h-[400px] w-[400px] rounded-full bg-sky-100/60 blur-3xl" />
@@ -245,7 +245,7 @@ export default function Home() {
       </section>
 
       {/* Approach Pillars — Horizontal Feature Blocks */}
-      <section className="relative bg-[var(--background)] px-6 py-16 lg:px-10 lg:py-40">
+      <section className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-7xl">
           <p className="mb-6 text-sm font-semibold uppercase tracking-[0.22em] text-sky-700">
             My Approach
@@ -285,7 +285,7 @@ export default function Home() {
       </section>
 
       {/* Who I Serve */}
-      <section className="relative bg-[var(--background)] px-6 py-16 lg:px-10 lg:py-40">
+      <section className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-7xl">
           <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-end sm:justify-between">
             <div>
@@ -426,7 +426,7 @@ export default function Home() {
       </section>
 
       {/* Testimonial — Full-Width Atmospheric Section with Image H */}
-      <section className="relative overflow-hidden px-6 py-20 lg:px-10 lg:py-52">
+      <section className="relative overflow-hidden px-6 py-14 lg:px-10 lg:py-24">
         <div className="absolute inset-0 z-0">
           <Image
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/14-hskpGkVkXncEE10BoJcxFHbYnDRas7.webp"
@@ -452,7 +452,7 @@ export default function Home() {
       </section>
 
       {/* Why Choose Toyin — Six Feature Tiles */}
-      <section className="relative bg-[var(--background)] px-6 py-16 lg:px-10 lg:py-40">
+      <section className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-7xl">
           <h2 className="text-5xl font-bold tracking-tight text-slate-900">
             Why Clients Choose Toyin
@@ -478,7 +478,7 @@ export default function Home() {
       </section>
 
       {/* Free Tools & Guides */}
-      <section className="relative bg-[var(--background)] px-6 py-16 lg:px-10 lg:py-40">
+      <section className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-7xl">
           <h2 className="text-5xl font-bold tracking-tight text-slate-900">
             Free Tools & Guides
@@ -518,7 +518,7 @@ export default function Home() {
       </section>
 
       {/* Scripture Banner — Reverent Pause */}
-      <section className="relative bg-slate-800 px-6 py-16 lg:px-10 lg:py-40">
+      <section className="relative bg-slate-800 px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-3xl text-center">
           <p className="italic text-2xl leading-relaxed text-white sm:text-3xl">
             "He heals the brokenhearted and binds up their wounds."
@@ -530,7 +530,7 @@ export default function Home() {
       </section>
 
       {/* Final CTA — Warm, Emotionally Resonant */}
-      <section className="relative overflow-hidden bg-[var(--background)] px-6 py-20 lg:px-10 lg:py-52">
+      <section className="relative overflow-hidden bg-[var(--background)] px-6 py-14 lg:px-10 lg:py-24">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="text-5xl font-bold leading-tight text-slate-900 sm:text-6xl">
             Ready to Begin Your Healing Journey?
@@ -547,10 +547,6 @@ export default function Home() {
               Book a Session
             </a>
           </div>
-
-          <p className="mt-10 text-sm text-slate-500">
-            I respond to all inquiries within 24-48 hours.
-          </p>
         </div>
       </section>
 

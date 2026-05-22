@@ -149,7 +149,7 @@ export default function Approach() {
     <>
 
       {/* ── HERO ── */}
-      <section className="relative overflow-hidden bg-slate-900 px-6 py-20 lg:px-10 lg:py-52">
+      <section className="relative overflow-hidden bg-slate-900 px-6 py-14 lg:px-10 lg:py-24">
         {/* Background image */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -184,7 +184,7 @@ export default function Approach() {
       </section>
 
       {/* ── WHAT YOU CAN EXPECT ── */}
-      <section className="relative bg-[var(--teal)] px-6 py-14 lg:px-10 lg:py-32">
+      <section className="relative bg-[var(--teal)] px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-16 lg:grid-cols-[1fr_360px] lg:items-start lg:gap-20">
 
@@ -249,7 +249,7 @@ export default function Approach() {
       </section>
 
       {/* ── WHY CLINICALLY INFORMED BIBLICAL COUNSELING ── */}
-      <section className="relative bg-slate-900 px-6 py-14 lg:px-10 lg:py-32">
+      <section className="relative bg-slate-900 px-6 py-12 lg:px-10 lg:py-16">
         <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:48px_48px]" />
         <div className="relative mx-auto max-w-7xl">
           <div className="grid gap-16 lg:grid-cols-2 lg:items-center lg:gap-24">
@@ -306,7 +306,7 @@ export default function Approach() {
       </section>
 
       {/* ── ARE YOU COMMITTED ── */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-[var(--peach)] to-[var(--peach-deep)] px-6 py-14 lg:px-10 lg:py-32">
+      <section className="relative overflow-hidden bg-gradient-to-br from-[var(--peach)] to-[var(--peach-deep)] px-6 py-12 lg:px-10 lg:py-16">
         <div className="pointer-events-none absolute -right-20 -top-20 h-80 w-80 rounded-full bg-white/10 blur-3xl" />
         <div className="pointer-events-none absolute -bottom-20 left-0 h-80 w-80 rounded-full bg-white/10 blur-3xl" />
 
@@ -342,7 +342,7 @@ export default function Approach() {
       </section>
 
       {/* ── HOW SESSIONS WORK — Accordion ── */}
-      <section className="relative bg-[var(--background)] px-6 py-14 lg:px-10 lg:py-32">
+      <section className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-16 lg:grid-cols-[400px_1fr] lg:items-start lg:gap-20">
 
@@ -380,7 +380,7 @@ export default function Approach() {
       </section>
 
       {/* ── FINAL CTA ── */}
-      <section className="relative bg-[var(--background)] px-6 py-14 lg:px-10 lg:py-32">
+      <section className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-4xl font-bold text-slate-900 sm:text-5xl">
             Ready to Take the First Step?

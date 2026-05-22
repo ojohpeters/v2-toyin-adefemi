@@ -100,7 +100,7 @@ export default function WorkWithMe() {
     <>
 
       {/* ── HERO ── */}
-      <section className="relative overflow-hidden bg-slate-900 px-6 py-20 lg:px-10 lg:py-52">
+      <section className="relative overflow-hidden bg-slate-900 px-6 py-14 lg:px-10 lg:py-24">
         <div className="absolute inset-0 z-0">
           <Image
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/9-icvWhFNHuWubzvdIxEbA6weFN6VE1D.webp"
@@ -147,7 +147,7 @@ export default function WorkWithMe() {
       </section>
 
       {/* ── SERVICES GRID ── */}
-      <section className="relative bg-[var(--background)] px-6 py-14 lg:px-10 lg:py-32">
+      <section className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-7xl">
           <div className="mb-14">
             <p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-[var(--peach)]">All Services</p>
@@ -248,7 +248,7 @@ export default function WorkWithMe() {
       </section>
 
       {/* ── HOW WE WORK TOGETHER ── */}
-      <section className="relative bg-slate-900 px-6 py-14 lg:px-10 lg:py-32">
+      <section className="relative bg-slate-900 px-6 py-12 lg:px-10 lg:py-16">
         <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:48px_48px]" />
         <div className="relative mx-auto max-w-7xl">
           <div className="grid gap-16 lg:grid-cols-[1fr_460px] lg:items-center lg:gap-24">
@@ -332,7 +332,7 @@ export default function WorkWithMe() {
       </section>
 
       {/* ── CTA ── */}
-      <section className="relative overflow-hidden bg-[var(--background)] px-6 py-14 lg:px-10 lg:py-32">
+      <section className="relative overflow-hidden bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-4xl text-center">
           <p className="mb-4 text-xs font-bold uppercase tracking-[0.25em] text-[var(--peach)]">Ready to Start?</p>
           <h2 className="text-5xl font-bold leading-tight text-slate-900 sm:text-6xl">

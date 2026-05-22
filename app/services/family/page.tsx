@@ -46,7 +46,7 @@ export default function FamilyCounseling() {
     <>
 
       {/* ── HERO ── */}
-      <section className="relative overflow-hidden bg-amber-950 px-6 py-20 lg:px-10 lg:py-52">
+      <section className="relative overflow-hidden bg-amber-950 px-6 py-14 lg:px-10 lg:py-24">
         <div className="absolute inset-0 z-0">
           <Image
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/30-n3SiOuqM9SIL7y3DrKZbc4CjNhiy5g.webp"
@@ -93,7 +93,7 @@ export default function FamilyCounseling() {
       </section>
 
       {/* ── SAFE SPACE FOR THE WHOLE FAMILY ── */}
-      <section className="relative bg-[var(--background)] px-6 py-14 lg:px-10 lg:py-32">
+      <section className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-16 lg:grid-cols-2 lg:items-center lg:gap-24">
 
@@ -141,7 +141,7 @@ export default function FamilyCounseling() {
       </section>
 
       {/* ── COMMON REASONS ── */}
-      <section className="relative bg-[var(--background)] px-6 py-14 lg:px-10 lg:py-32">
+      <section className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto max-w-2xl text-center">
             <p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-amber-600">Common Challenges</p>
@@ -166,7 +166,7 @@ export default function FamilyCounseling() {
       </section>
 
       {/* ── SESSIONS + COST ── */}
-      <section className="relative bg-[var(--background)] px-6 py-14 lg:px-10 lg:py-32">
+      <section className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-16 lg:grid-cols-[1fr_380px] lg:items-start lg:gap-20">
 
@@ -225,7 +225,7 @@ export default function FamilyCounseling() {
       </section>
 
       {/* ── CTA ── */}
-      <section className="relative overflow-hidden bg-amber-950 px-6 py-14 lg:px-10 lg:py-32">
+      <section className="relative overflow-hidden bg-amber-950 px-6 py-12 lg:px-10 lg:py-16">
         <div className="pointer-events-none absolute -left-20 -bottom-20 h-80 w-80 rounded-full bg-amber-500/10 blur-3xl" />
         <div className="relative mx-auto max-w-3xl text-center">
           <h2 className="text-4xl font-bold text-white sm:text-5xl">Your Family Doesn&apos;t Have to Stay Stuck</h2>

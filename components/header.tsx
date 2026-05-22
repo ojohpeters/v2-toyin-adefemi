@@ -82,8 +82,8 @@ export function Header() {
             <Image
               src="/images/logo.png"
               alt="Toyin Adefemi Counsels"
-              width={1536}
-              height={1024}
+              width={850}
+              height={410}
               priority
               className="h-[68px] w-auto md:h-[84px]"
             />
