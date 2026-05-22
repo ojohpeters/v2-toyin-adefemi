@@ -347,9 +347,6 @@ export default function About() {
               Get in Touch
             </a>
           </div>
-          <p className="mt-8 text-sm text-slate-400">
-            Free 30-minute consultation available · Responds within 24–48 hours
-          </p>
         </div>
       </section>
 
