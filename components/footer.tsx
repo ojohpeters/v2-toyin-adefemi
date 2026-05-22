@@ -43,8 +43,8 @@ export function Footer() {
       {/* Certifications & Affiliations */}
       <div className="bg-[var(--background)] px-6 py-10 lg:py-12">
         <div className="mx-auto max-w-5xl text-center">
-          <p className="mb-7 text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">
-            Certifications &amp; Affiliations
+          <p className="mb-7 whitespace-nowrap text-[9px] font-semibold uppercase tracking-[0.1em] text-slate-500 sm:text-xs sm:tracking-[0.22em]">
+            Degree, Certifications &amp; Affiliations
           </p>
           <Image
             src="/images/certifications.png"
