@@ -60,7 +60,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full scroll-smooth antialiased">
-      <body className="flex min-h-full flex-col bg-white">
+      <body className="flex min-h-full flex-col bg-[var(--background)]">
         <AnimationProvider>
           <Header />
           <main className="flex-1">

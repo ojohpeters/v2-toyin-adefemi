@@ -96,7 +96,7 @@ export default function ParentingCounseling() {
       </section>
 
       {/* ── SAFE SPACE FOR PARENTS ── */}
-      <section className="relative bg-white px-6 py-24 lg:px-10 lg:py-32">
+      <section className="relative bg-[var(--background)] px-6 py-24 lg:px-10 lg:py-32">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-16 lg:grid-cols-2 lg:items-center lg:gap-24">
 
@@ -168,7 +168,7 @@ export default function ParentingCounseling() {
       </section>
 
       {/* ── SESSIONS + COST ── */}
-      <section className="relative bg-white px-6 py-24 lg:px-10 lg:py-32">
+      <section className="relative bg-[var(--background)] px-6 py-24 lg:px-10 lg:py-32">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-16 lg:grid-cols-[1fr_380px] lg:items-start lg:gap-20">
 

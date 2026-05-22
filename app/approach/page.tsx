@@ -184,7 +184,7 @@ export default function Approach() {
       </section>
 
       {/* ── WHAT YOU CAN EXPECT ── */}
-      <section className="relative bg-white px-6 py-24 lg:px-10 lg:py-32">
+      <section className="relative bg-[var(--teal)] px-6 py-24 lg:px-10 lg:py-32">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-16 lg:grid-cols-[1fr_360px] lg:items-start lg:gap-20">
 
@@ -229,7 +229,7 @@ export default function Approach() {
               </div>
 
               {/* Session specs */}
-              <div className="rounded-3xl border border-slate-100 bg-slate-50 p-7 space-y-5">
+              <div className="rounded-3xl border border-slate-100 bg-white p-7 space-y-5">
                 {[
                   { label: "Duration", value: "60 minutes" },
                   { label: "Format", value: "Virtual (secure video)" },
@@ -342,7 +342,7 @@ export default function Approach() {
       </section>
 
       {/* ── HOW SESSIONS WORK — Accordion ── */}
-      <section className="relative bg-white px-6 py-24 lg:px-10 lg:py-32">
+      <section className="relative bg-[var(--background)] px-6 py-24 lg:px-10 lg:py-32">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-16 lg:grid-cols-[400px_1fr] lg:items-start lg:gap-20">
 
@@ -380,7 +380,7 @@ export default function Approach() {
       </section>
 
       {/* ── FINAL CTA ── */}
-      <section className="relative bg-stone-50 px-6 py-24 lg:px-10 lg:py-32">
+      <section className="relative bg-[var(--background)] px-6 py-24 lg:px-10 lg:py-32">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-4xl font-bold text-slate-900 sm:text-5xl">
             Ready to Take the First Step?
@@ -399,7 +399,7 @@ export default function Approach() {
               href="/about"
               className="inline-flex items-center justify-center rounded-2xl border-2 border-slate-200 bg-white px-10 py-4 text-base font-semibold text-slate-700 transition-all hover:border-slate-300"
             >
-              Learn About Toyin
+              Meet the Counselor
             </a>
           </div>
         </div>

@@ -147,7 +147,7 @@ export default function WorkWithMe() {
       </section>
 
       {/* ── SERVICES GRID ── */}
-      <section className="relative bg-white px-6 py-24 lg:px-10 lg:py-32">
+      <section className="relative bg-[var(--background)] px-6 py-24 lg:px-10 lg:py-32">
         <div className="mx-auto max-w-7xl">
           <div className="mb-14">
             <p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-[var(--peach)]">All Services</p>
@@ -309,7 +309,7 @@ export default function WorkWithMe() {
       </section>
 
       {/* ── FINANCIAL HARDSHIP NOTE ── */}
-      <section className="relative bg-white px-6 py-20 lg:px-10">
+      <section className="relative bg-[var(--background)] px-6 py-20 lg:px-10">
         <div className="mx-auto max-w-4xl text-center">
           <div className="rounded-3xl border border-slate-100 bg-slate-50 px-8 py-10 shadow-sm">
             <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-[var(--peach)]/10">
@@ -332,7 +332,7 @@ export default function WorkWithMe() {
       </section>
 
       {/* ── CTA ── */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-stone-50 via-white to-[var(--peach)]/10 px-6 py-24 lg:px-10 lg:py-32">
+      <section className="relative overflow-hidden bg-[var(--background)] px-6 py-24 lg:px-10 lg:py-32">
         <div className="mx-auto max-w-4xl text-center">
           <p className="mb-4 text-xs font-bold uppercase tracking-[0.25em] text-[var(--peach)]">Ready to Start?</p>
           <h2 className="text-5xl font-bold leading-tight text-slate-900 sm:text-6xl">

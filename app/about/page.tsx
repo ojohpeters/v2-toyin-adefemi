@@ -18,7 +18,7 @@ export default function About() {
     <>
 
       {/* ── HERO: Magazine split ── */}
-      <section className="relative min-h-screen overflow-hidden bg-stone-50">
+      <section className="relative min-h-screen overflow-hidden bg-[var(--background)]">
         {/* Soft warm panel behind portrait */}
         <div className="absolute inset-y-0 right-0 w-full bg-[var(--peach)]/8 lg:w-[48%]" />
 
@@ -132,7 +132,7 @@ export default function About() {
       </section>
 
       {/* ── MY HEART FOR HEALING ── */}
-      <section className="relative bg-white px-6 py-28 lg:px-10 lg:py-40">
+      <section className="relative bg-[var(--background)] px-6 py-28 lg:px-10 lg:py-40">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-16 lg:grid-cols-2 lg:items-center lg:gap-24">
 
@@ -175,14 +175,14 @@ export default function About() {
       </section>
 
       {/* ── MY CALLING: Journey Timeline ── */}
-      <section className="relative bg-slate-900 px-6 py-28 lg:px-10 lg:py-40">
+      <section className="relative bg-[var(--background)] px-6 py-28 lg:px-10 lg:py-40">
         {/* Subtle grid pattern */}
-        <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:64px_64px]" />
+        <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.04)_1px,transparent_1px)] bg-[size:64px_64px]" />
 
         <div className="relative mx-auto max-w-7xl">
           <div className="text-center">
             <p className="mb-3 text-xs font-bold uppercase tracking-[0.25em] text-[var(--peach)]">A God-Directed Journey</p>
-            <h2 className="text-4xl font-bold text-white sm:text-5xl lg:text-6xl">My Calling</h2>
+            <h2 className="text-4xl font-bold text-slate-900 sm:text-5xl lg:text-6xl">My Calling</h2>
             <div className="mx-auto mt-5 h-1 w-14 rounded-full bg-[var(--peach)]" />
           </div>
 
@@ -198,7 +198,7 @@ export default function About() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0" />
                   </svg>
                 ),
-                accent: "bg-slate-700 ring-slate-600",
+                accent: "bg-white ring-slate-200 shadow-sm",
               },
               {
                 phase: "The Shift",
@@ -221,7 +221,7 @@ export default function About() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
                   </svg>
                 ),
-                accent: "bg-slate-700 ring-slate-600",
+                accent: "bg-white ring-slate-200 shadow-sm",
               },
             ].map((step) => (
               <div
@@ -233,29 +233,29 @@ export default function About() {
                     God&apos;s Turn
                   </div>
                 )}
-                <div className={`flex h-12 w-12 items-center justify-center rounded-2xl ${step.highlight ? 'bg-[var(--peach)] text-white' : 'bg-white/10 text-slate-300'}`}>
+                <div className={`flex h-12 w-12 items-center justify-center rounded-2xl ${step.highlight ? 'bg-[var(--peach)] text-white' : 'bg-slate-100 text-slate-600'}`}>
                   {step.icon}
                 </div>
                 <div>
                   <p className={`text-xs font-bold uppercase tracking-widest ${step.highlight ? 'text-[var(--peach)]' : 'text-slate-500'}`}>
                     {step.phase}
                   </p>
-                  <h3 className="mt-1 text-xl font-bold text-white">{step.title}</h3>
+                  <h3 className="mt-1 text-xl font-bold text-slate-900">{step.title}</h3>
                 </div>
-                <p className="text-base leading-7 text-slate-400">{step.body}</p>
+                <p className="text-base leading-7 text-slate-600">{step.body}</p>
               </div>
             ))}
           </div>
 
           {/* Closing line */}
-          <p className="mx-auto mt-16 max-w-2xl text-center text-lg italic leading-8 text-slate-400">
+          <p className="mx-auto mt-16 max-w-2xl text-center text-lg italic leading-8 text-slate-600">
             My journey from corporate leadership to soul care wasn&apos;t accidental. It was preparation. Every step equipped me to walk with young people, parents, and families as they find clarity, identity, and healing in Christ.
           </p>
         </div>
       </section>
 
       {/* ── THE EQUIPPING ── */}
-      <section className="relative bg-white px-6 py-28 lg:px-10 lg:py-40">
+      <section className="relative bg-[var(--background)] px-6 py-28 lg:px-10 lg:py-40">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-16 lg:grid-cols-[1fr_480px] lg:items-start lg:gap-24">
 
@@ -341,7 +341,7 @@ export default function About() {
       </section>
 
       {/* ── CTA ── */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-stone-50 via-white to-[var(--peach)]/10 px-6 py-28 lg:px-10 lg:py-40">
+      <section className="relative overflow-hidden bg-[var(--background)] px-6 py-28 lg:px-10 lg:py-40">
         <div className="mx-auto max-w-4xl text-center">
           <p className="mb-4 text-xs font-bold uppercase tracking-[0.25em] text-[var(--peach)]">Ready to Start?</p>
           <h2 className="text-5xl font-bold leading-tight text-slate-900 sm:text-6xl">

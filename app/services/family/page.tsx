@@ -93,7 +93,7 @@ export default function FamilyCounseling() {
       </section>
 
       {/* ── SAFE SPACE FOR THE WHOLE FAMILY ── */}
-      <section className="relative bg-white px-6 py-24 lg:px-10 lg:py-32">
+      <section className="relative bg-[var(--background)] px-6 py-24 lg:px-10 lg:py-32">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-16 lg:grid-cols-2 lg:items-center lg:gap-24">
 
@@ -141,7 +141,7 @@ export default function FamilyCounseling() {
       </section>
 
       {/* ── COMMON REASONS ── */}
-      <section className="relative bg-stone-50 px-6 py-24 lg:px-10 lg:py-32">
+      <section className="relative bg-[var(--background)] px-6 py-24 lg:px-10 lg:py-32">
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto max-w-2xl text-center">
             <p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-amber-600">Common Challenges</p>
@@ -166,7 +166,7 @@ export default function FamilyCounseling() {
       </section>
 
       {/* ── SESSIONS + COST ── */}
-      <section className="relative bg-white px-6 py-24 lg:px-10 lg:py-32">
+      <section className="relative bg-[var(--background)] px-6 py-24 lg:px-10 lg:py-32">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-16 lg:grid-cols-[1fr_380px] lg:items-start lg:gap-20">
 

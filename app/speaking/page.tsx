@@ -98,7 +98,7 @@ export default function Speaking() {
       </section>
 
       {/* Why Invite Me — Horizontal Feature Cards */}
-      <section className="relative bg-white px-6 py-32 lg:px-10 lg:py-40">
+      <section className="relative bg-[var(--background)] px-6 py-32 lg:px-10 lg:py-40">
         <div className="mx-auto max-w-7xl">
           <h2 className="text-5xl font-bold tracking-tight text-slate-900">
             Why Invite Me to Speak?
@@ -156,7 +156,7 @@ export default function Speaking() {
       </section>
 
       {/* Speaking Topics — Conference Card Style with Image J */}
-      <section className="relative bg-white px-6 py-32 lg:px-10 lg:py-40">
+      <section className="relative bg-[var(--background)] px-6 py-32 lg:px-10 lg:py-40">
         <div className="mx-auto max-w-7xl">
           <h2 className="text-5xl font-bold tracking-tight text-slate-900">
             Speaking Topics
@@ -220,7 +220,7 @@ export default function Speaking() {
       </section>
 
       {/* Speaking Formats — Two-Column List Layout with Image C */}
-      <section className="relative bg-slate-50 px-6 py-32 lg:px-10 lg:py-40">
+      <section className="relative bg-[var(--background)] px-6 py-32 lg:px-10 lg:py-40">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-16 lg:grid-cols-[1fr_380px]">
             <div>

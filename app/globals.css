@@ -1,13 +1,21 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fdfcf8;
+  /* Toyin Adefemi Counseling — brand palette */
+  --brand-teal: #badbdf;
+  --brand-peach: #fe9e6f;
+  --brand-ice: #edf4f6;
+  --brand-white: #ffffff;
+  --brand-black: #000000;
+
+  --background: var(--brand-ice);
   --foreground: #243342;
   --muted: #5b6d7a;
   --soft-blue: #e6f6fb;
-  --soft-blue-strong: #cfeff7;
-  --peach: #fe8f68;
-  --peach-deep: #f77753;
+  --soft-blue-strong: var(--brand-teal);
+  --teal: var(--brand-teal);
+  --peach: var(--brand-peach);
+  --peach-deep: #f5824a;
   --line: rgba(36, 51, 66, 0.12);
   --shadow: 0 24px 60px rgba(76, 112, 132, 0.12);
   --font-solomon: "Solomon Sans", "Avenir Next", "Segoe UI", sans-serif;
@@ -57,14 +65,14 @@ textarea {
   background:
     radial-gradient(circle at top left, rgba(207, 239, 247, 0.95), transparent 26%),
     radial-gradient(circle at top right, rgba(254, 143, 104, 0.14), transparent 26%),
-    linear-gradient(180deg, #fcfdfa 0%, #f7fcfd 100%);
+    var(--background);
 }
 
 .section-ribbon {
   background:
     radial-gradient(circle at 15% 20%, rgba(207, 239, 247, 0.9), transparent 22%),
     radial-gradient(circle at 80% 50%, rgba(254, 143, 104, 0.1), transparent 20%),
-    linear-gradient(180deg, #f8fdff 0%, #edf9fd 100%);
+    var(--background);
 }
 
 .soft-card {
@@ -170,15 +178,15 @@ textarea {
   inset: 0;
   background: linear-gradient(
     90deg,
-    rgba(253, 252, 248, 1) 0%,
-    rgba(253, 252, 248, 1) 10%,
-    rgba(253, 252, 248, 0.98) 20%,
-    rgba(253, 252, 248, 0.95) 30%,
-    rgba(253, 252, 248, 0.88) 40%,
-    rgba(253, 252, 248, 0.75) 50%,
-    rgba(253, 252, 248, 0.55) 60%,
-    rgba(253, 252, 248, 0.3) 70%,
-    rgba(253, 252, 248, 0.08) 80%,
+    rgba(237, 244, 246, 1) 0%,
+    rgba(237, 244, 246, 1) 10%,
+    rgba(237, 244, 246, 0.98) 20%,
+    rgba(237, 244, 246, 0.95) 30%,
+    rgba(237, 244, 246, 0.88) 40%,
+    rgba(237, 244, 246, 0.75) 50%,
+    rgba(237, 244, 246, 0.55) 60%,
+    rgba(237, 244, 246, 0.3) 70%,
+    rgba(237, 244, 246, 0.08) 80%,
     transparent 90%
   );
   pointer-events: none;

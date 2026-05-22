@@ -118,7 +118,7 @@ export default function Contact() {
   return (
     <>
       {/* Warm Editorial Hero with Image E */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-sky-100 to-white px-6 py-36 lg:px-10 lg:py-48">
+      <section className="relative overflow-hidden bg-[var(--background)] px-6 py-36 lg:px-10 lg:py-48">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-16 lg:grid-cols-[1fr_420px] lg:items-center">
             <div>
@@ -148,7 +148,7 @@ export default function Contact() {
       </section>
 
       {/* Contact Form — Two-Column Layout with Image */}
-      <section className="relative bg-white px-6 py-32 lg:px-10 lg:py-40">
+      <section className="relative bg-[var(--background)] px-6 py-32 lg:px-10 lg:py-40">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-16 lg:grid-cols-[1.5fr_1fr] lg:items-center">
             <form
@@ -280,7 +280,7 @@ export default function Contact() {
       </section>
 
       {/* Additional Info — Two-Column Grid */}
-      <section className="relative bg-white px-6 py-32 lg:px-10 lg:py-40">
+      <section className="relative bg-[var(--background)] px-6 py-32 lg:px-10 lg:py-40">
         <div className="mx-auto max-w-7xl">
           <h2 className="mb-16 text-5xl font-bold tracking-tight text-slate-900">
             What You Should Know
@@ -336,7 +336,7 @@ export default function Contact() {
       </section>
 
       {/* Other Ways to Connect with Image B */}
-      <section className="relative bg-slate-50 px-6 py-32 lg:px-10 lg:py-40">
+      <section className="relative bg-[var(--background)] px-6 py-32 lg:px-10 lg:py-40">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-16 lg:grid-cols-[1fr_380px]">
             <div>

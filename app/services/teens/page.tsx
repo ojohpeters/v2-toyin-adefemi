@@ -86,7 +86,7 @@ export default function TeenCounseling() {
       </section>
 
       {/* ── A SPACE JUST FOR YOU ── */}
-      <section className="relative bg-white px-6 py-24 lg:px-10 lg:py-32">
+      <section className="relative bg-[var(--background)] px-6 py-24 lg:px-10 lg:py-32">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-16 lg:grid-cols-2 lg:items-center lg:gap-24">
 
@@ -133,7 +133,7 @@ export default function TeenCounseling() {
       </section>
 
       {/* ── WHAT WE CAN TALK ABOUT ── */}
-      <section className="relative bg-slate-50 px-6 py-24 lg:px-10 lg:py-32">
+      <section className="relative bg-[var(--background)] px-6 py-24 lg:px-10 lg:py-32">
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto max-w-2xl text-center">
             <p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-sky-500">No Topic Too Big or Small</p>
@@ -158,7 +158,7 @@ export default function TeenCounseling() {
       </section>
 
       {/* ── WHAT SESSIONS ARE LIKE ── */}
-      <section className="relative bg-white px-6 py-24 lg:px-10 lg:py-32">
+      <section className="relative bg-[var(--background)] px-6 py-24 lg:px-10 lg:py-32">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-16 lg:grid-cols-[1fr_420px] lg:items-center lg:gap-24">
 

@@ -16,29 +16,6 @@ export const metadata: Metadata = {
   },
 };
 
-const services = [
-  {
-    title: "Individual Biblical Counseling",
-    description:
-      "Christ-centered sessions for emotional healing, identity, and spiritual renewal.",
-  },
-  {
-    title: "Youth & Young Adult Support",
-    description:
-      "Safe, trauma-informed guidance for teens and young adults navigating life transitions.",
-  },
-  {
-    title: "Family Counseling & Coaching",
-    description:
-      "Helping families rebuild connection, communication, and emotional safety.",
-  },
-  {
-    title: "Workshops, Trainings & Speaking",
-    description:
-      "Biblical, trauma-informed teachings for churches, ministries, and youth organizations.",
-  },
-];
-
 const pillars = [
   {
     icon: "1",
@@ -112,13 +89,23 @@ function ResourceIcon({ type }: { type: string }) {
 export default function Home() {
   return (
     <>
-      {/* Hero Section */}
-      <section className="relative overflow-hidden bg-white">
-        {/* Soft teal background panel — right side on desktop, full on mobile */}
-        <div className="absolute inset-y-0 right-0 w-full bg-gradient-to-br from-sky-50 via-cyan-50 to-teal-100 lg:w-[52%]" />
+      {/* Hero Banner */}
+      <section className="w-full">
+        <Image
+          src="/images/home-banner.png"
+          alt="Virtual Counseling From Anywhere — professional, faith-based, clinically informed biblical counseling with Toyin Adefemi"
+          width={2560}
+          height={1440}
+          priority
+          sizes="100vw"
+          className="h-auto w-full"
+        />
+      </section>
 
-        <div className="relative mx-auto flex min-h-screen max-w-7xl items-center px-6 lg:px-10">
-          <div className="grid w-full gap-12 pb-24 pt-32 lg:grid-cols-2 lg:gap-16 lg:pb-28 lg:pt-36">
+      {/* Welcome — intro under the banner */}
+      <section className="relative bg-[var(--background)] px-6 py-20 lg:px-10 lg:py-28">
+        <div className="mx-auto max-w-7xl">
+          <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
 
             {/* Left: Content */}
             <div className="flex flex-col justify-center">
@@ -126,7 +113,7 @@ export default function Home() {
                 <span className="h-px w-8 bg-sky-300" />
                 Online · Faith-Based · Trauma-Informed
               </div>
-              <h1 className="text-5xl font-bold leading-[1.1] tracking-tight sm:text-6xl lg:text-[58px]">
+              <h1 className="text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl lg:text-[54px]">
                 <span className="block text-slate-900">Christ-rooted support</span>
                 <span className="block font-normal text-slate-500">for the seasons you were</span>
                 <span className="block text-slate-900">never meant to carry <span className="text-[var(--peach)]">alone.</span></span>
@@ -138,20 +125,20 @@ export default function Home() {
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                 <a
                   href="/contact"
-                  className="inline-flex items-center justify-center rounded-2xl bg-[var(--peach)] px-8 py-4 text-base font-semibold text-white shadow-[0_12px_28px_rgba(254,143,104,0.38)] hover:bg-[var(--peach-deep)] hover:-translate-y-0.5"
+                  className="inline-flex items-center justify-center rounded-2xl bg-[var(--peach)] px-8 py-4 text-base font-semibold text-white shadow-[0_12px_28px_rgba(254,143,104,0.38)] transition-all hover:bg-[var(--peach-deep)] hover:-translate-y-0.5"
                 >
                   Book a Session
                 </a>
                 <a
                   href="/about"
-                  className="inline-flex items-center justify-center rounded-2xl border-2 border-slate-200 bg-white px-8 py-4 text-base font-semibold text-slate-700 hover:border-slate-300 hover:bg-slate-50"
+                  className="inline-flex items-center justify-center rounded-2xl border-2 border-slate-200 bg-white px-8 py-4 text-base font-semibold text-slate-700 transition-all hover:border-slate-300 hover:bg-slate-50"
                 >
-                  Learn About Toyin
+                  Meet the Counselor
                 </a>
               </div>
             </div>
 
-            {/* Right: Image card */}
+            {/* Right: Image */}
             <div className="flex items-center justify-center lg:justify-end">
               <div className="relative w-full max-w-[480px] overflow-hidden rounded-[2.5rem] shadow-[0_32px_64px_rgba(0,0,0,0.18)] ring-1 ring-black/5 lg:max-w-none">
                 <Image
@@ -160,7 +147,6 @@ export default function Home() {
                   width={800}
                   height={600}
                   className="h-auto w-full object-cover"
-                  priority
                 />
               </div>
             </div>
@@ -170,7 +156,7 @@ export default function Home() {
       </section>
 
       {/* Meet Your Counselor */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-slate-50 via-white to-sky-50/50 px-6 py-24 lg:px-10 lg:py-32">
+      <section className="relative overflow-hidden bg-[var(--background)] px-6 py-24 lg:px-10 lg:py-32">
         {/* Decorative background blob */}
         <div className="pointer-events-none absolute -right-32 -top-32 h-[500px] w-[500px] rounded-full bg-[var(--peach)]/5 blur-3xl" />
         <div className="pointer-events-none absolute -bottom-20 left-0 h-[400px] w-[400px] rounded-full bg-sky-100/60 blur-3xl" />
@@ -253,11 +239,11 @@ export default function Home() {
               {/* Portrait image */}
               <div className="relative h-[520px] overflow-hidden rounded-[2.5rem] shadow-[0_24px_60px_rgba(0,0,0,0.14)] lg:h-[620px]">
                 <Image
-                  src="/images/about-toyin.jpg"
+                  src="/images/meet-counselor.jpg"
                   alt="Toyin Adefemi — Biblical Counselor"
                   fill
                   sizes="(max-width: 1024px) 100vw, 440px"
-                  className="object-cover object-top"
+                  className="object-cover object-center"
                 />
               </div>
 
@@ -285,38 +271,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services — 2x2 Grid with Rich Cards */}
-      <section className="relative bg-slate-50 px-6 py-32 lg:px-10 lg:py-40">
-        <div className="mx-auto max-w-7xl">
-          <h2 className="mb-8 text-5xl font-bold tracking-tight text-slate-900">
-            Counseling & Support Services
-          </h2>
-          <div className="mb-16 h-1 w-20 bg-[var(--peach)]" />
-
-          <div className="grid gap-8 md:grid-cols-2">
-            {services.map((service) => (
-              <article
-                key={service.title}
-                className="group border-l-4 border-[var(--peach)] bg-white p-10 shadow-[0_4px_16px_rgba(0,0,0,0.06)] transition-all hover:shadow-[0_16px_32px_rgba(0,0,0,0.12)] hover:-translate-y-1"
-              >
-                <h3 className="text-2xl font-bold text-slate-900">
-                  {service.title}
-                </h3>
-                <p className="mt-6 text-lg leading-8 text-slate-600">
-                  {service.description}
-                </p>
-                <a
-                  href="/work-with-me"
-                  className="mt-8 inline-flex rounded-xl bg-[var(--peach)] px-6 py-3 text-sm font-semibold text-white shadow-[0_12px_20px_rgba(254,143,104,0.26)] transition-all hover:bg-[var(--peach-deep)] hover:-translate-y-0.5"
-                >
-                  Learn More
-                </a>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Emotional Connection Image - Image N */}
       <section className="relative h-64 overflow-hidden md:h-80">
         <Image
@@ -330,7 +284,7 @@ export default function Home() {
       </section>
 
       {/* Approach Pillars — Horizontal Feature Blocks */}
-      <section className="relative bg-white px-6 py-32 lg:px-10 lg:py-40">
+      <section className="relative bg-[var(--background)] px-6 py-32 lg:px-10 lg:py-40">
         <div className="mx-auto max-w-7xl">
           <p className="mb-6 text-sm font-semibold uppercase tracking-[0.22em] text-sky-700">
             My Approach
@@ -370,7 +324,7 @@ export default function Home() {
       </section>
 
       {/* Who I Serve */}
-      <section className="relative bg-slate-50 px-6 py-32 lg:px-10 lg:py-40">
+      <section className="relative bg-[var(--background)] px-6 py-32 lg:px-10 lg:py-40">
         <div className="mx-auto max-w-7xl">
           <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-end sm:justify-between">
             <div>
@@ -537,7 +491,7 @@ export default function Home() {
       </section>
 
       {/* Why Choose Toyin — Six Feature Tiles */}
-      <section className="relative bg-white px-6 py-32 lg:px-10 lg:py-40">
+      <section className="relative bg-[var(--background)] px-6 py-32 lg:px-10 lg:py-40">
         <div className="mx-auto max-w-7xl">
           <h2 className="text-5xl font-bold tracking-tight text-slate-900">
             Why Clients Choose Toyin
@@ -562,20 +516,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Professional Moment Image - Image O */}
-      <section className="relative h-64 overflow-hidden md:h-80">
-        <Image
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/11-qxYYmROGfvWPzGZ6H45uFvz0OW9ybx.webp"
-          alt="Professional counseling moment, caring and attentive"
-          fill
-          sizes="100vw"
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-emerald-500/20" />
-      </section>
-
       {/* Free Tools & Guides */}
-      <section className="relative bg-gradient-to-b from-slate-50 to-white px-6 py-32 lg:px-10 lg:py-40">
+      <section className="relative bg-[var(--background)] px-6 py-32 lg:px-10 lg:py-40">
         <div className="mx-auto max-w-7xl">
           <h2 className="text-5xl font-bold tracking-tight text-slate-900">
             Free Tools & Guides
@@ -627,7 +569,7 @@ export default function Home() {
       </section>
 
       {/* Final CTA — Warm, Emotionally Resonant */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-sky-100 via-sky-50 to-white px-6 py-40 lg:px-10 lg:py-52">
+      <section className="relative overflow-hidden bg-[var(--background)] px-6 py-40 lg:px-10 lg:py-52">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="text-5xl font-bold leading-tight text-slate-900 sm:text-6xl">
             Ready to Begin Your Healing Journey?
