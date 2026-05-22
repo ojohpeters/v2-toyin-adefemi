@@ -83,30 +83,13 @@ export default function About() {
                 <div className="absolute -inset-3 rounded-[3rem] bg-gradient-to-br from-[var(--peach)]/20 to-sky-200/30" />
                 <div className="relative h-full overflow-hidden rounded-[2.5rem] shadow-[0_32px_64px_rgba(0,0,0,0.15)]">
                   <Image
-                    src="/images/about-toyin.jpg"
+                    src="/images/meet-counselor.jpg"
                     alt="Portrait of Toyin Adefemi"
                     fill
                     sizes="(max-width: 1024px) 100vw, 480px"
                     className="object-cover object-top"
                     priority
                   />
-                </div>
-                {/* Floating badge — bottom left */}
-                <div className="absolute -bottom-4 -left-4 flex items-center gap-3 rounded-2xl bg-white px-5 py-4 shadow-[0_8px_28px_rgba(0,0,0,0.12)] ring-1 ring-slate-100">
-                  <div className="flex h-9 w-9 items-center justify-center rounded-full bg-[var(--peach)]/15">
-                    <svg viewBox="0 0 24 24" className="h-5 w-5 fill-[var(--peach)]" aria-hidden="true">
-                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/>
-                    </svg>
-                  </div>
-                  <div>
-                    <p className="text-sm font-bold text-slate-900">10+ Years</p>
-                    <p className="text-xs text-slate-500">Serving youth &amp; families</p>
-                  </div>
-                </div>
-                {/* Floating badge — top right */}
-                <div className="absolute -right-4 top-8 rounded-2xl bg-white px-4 py-3 shadow-[0_8px_28px_rgba(0,0,0,0.12)] ring-1 ring-slate-100">
-                  <p className="text-[10px] font-semibold uppercase tracking-wide text-slate-400">Certified</p>
-                  <p className="mt-0.5 text-sm font-bold text-slate-900">Biblical Counselor</p>
                 </div>
               </div>
             </div>
@@ -310,7 +293,7 @@ export default function About() {
             {/* Right: image */}
             <div className="relative h-[500px] overflow-hidden rounded-[2.5rem] shadow-[0_20px_52px_rgba(0,0,0,0.10)] lg:sticky lg:top-32 lg:h-[600px]">
               <Image
-                src="/images/about-toyin.jpg"
+                src="/images/meet-counselor.jpg"
                 alt="Toyin Adefemi — Biblical Counselor"
                 fill
                 sizes="(max-width: 1024px) 100vw, 480px"
