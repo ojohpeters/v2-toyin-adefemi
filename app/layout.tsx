@@ -61,6 +61,14 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full scroll-smooth antialiased">
       <body className="flex min-h-full flex-col bg-[var(--background)]">
+        {/* Remove any stale service worker left by a previous app on this origin
+            (it can intercept requests and serve outdated JS, causing hydration errors) */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "(function(){if('serviceWorker' in navigator){navigator.serviceWorker.getRegistrations().then(function(rs){if(!rs.length)return;Promise.all(rs.map(function(r){return r.unregister();})).then(function(){if(window.caches&&caches.keys){caches.keys().then(function(ks){return Promise.all(ks.map(function(k){return caches.delete(k);}));}).then(function(){if(navigator.serviceWorker.controller&&!sessionStorage.getItem('__sw_cleared')){sessionStorage.setItem('__sw_cleared','1');location.reload();}});}});});});}})();",
+          }}
+        />
         <AnimationProvider>
           <Header />
           <main className="flex-1">

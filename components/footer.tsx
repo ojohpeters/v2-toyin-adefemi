@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
 
 export function Footer() {
@@ -38,6 +39,29 @@ export function Footer() {
 
   return (
     <footer className="bg-slate-900">
+
+      {/* Certifications & Affiliations */}
+      <div className="bg-[var(--background)] px-6 py-10 lg:py-12">
+        <div className="mx-auto max-w-5xl text-center">
+          <p className="mb-7 text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">
+            Certifications &amp; Affiliations
+          </p>
+          <Image
+            src="/images/certifications.png"
+            alt="Toyin Adefemi's professional certifications and credentials"
+            width={1756}
+            height={334}
+            className="mx-auto h-auto w-full max-w-3xl"
+          />
+          <Image
+            src="/images/affiliations.png"
+            alt="Member of the International Christian Coaching Association and the American Association of Christian Counselors"
+            width={2560}
+            height={197}
+            className="mx-auto mt-8 h-auto w-full max-w-2xl"
+          />
+        </div>
+      </div>
 
       {/* Main footer body */}
       <div className="mx-auto max-w-7xl px-6 py-20 lg:px-10">
