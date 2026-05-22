@@ -116,7 +116,7 @@ export default function About() {
       </section>
 
       {/* ── PULL QUOTE ── */}
-      <section className="relative overflow-hidden bg-[var(--peach)] px-6 py-20 lg:px-10 lg:py-24">
+      <section className="relative overflow-hidden bg-[var(--peach)] px-6 py-12 lg:px-10 lg:py-24">
         {/* Large decorative quote mark */}
         <div className="pointer-events-none absolute -left-4 -top-6 select-none text-[18rem] font-serif leading-none text-white/10" aria-hidden="true">&ldquo;</div>
         <div className="relative mx-auto max-w-4xl text-center">
@@ -132,7 +132,7 @@ export default function About() {
       </section>
 
       {/* ── MY HEART FOR HEALING ── */}
-      <section className="relative bg-[var(--background)] px-6 py-28 lg:px-10 lg:py-40">
+      <section className="relative bg-[var(--background)] px-6 py-14 lg:px-10 lg:py-40">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-16 lg:grid-cols-2 lg:items-center lg:gap-24">
 
@@ -175,7 +175,7 @@ export default function About() {
       </section>
 
       {/* ── MY CALLING: Journey Timeline ── */}
-      <section className="relative bg-[var(--background)] px-6 py-28 lg:px-10 lg:py-40">
+      <section className="relative bg-[var(--background)] px-6 py-14 lg:px-10 lg:py-40">
         {/* Subtle grid pattern */}
         <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.04)_1px,transparent_1px)] bg-[size:64px_64px]" />
 
@@ -255,7 +255,7 @@ export default function About() {
       </section>
 
       {/* ── THE EQUIPPING ── */}
-      <section className="relative bg-[var(--background)] px-6 py-28 lg:px-10 lg:py-40">
+      <section className="relative bg-[var(--background)] px-6 py-14 lg:px-10 lg:py-40">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-16 lg:grid-cols-[1fr_480px] lg:items-start lg:gap-24">
 
@@ -341,7 +341,7 @@ export default function About() {
       </section>
 
       {/* ── CTA ── */}
-      <section className="relative overflow-hidden bg-[var(--background)] px-6 py-28 lg:px-10 lg:py-40">
+      <section className="relative overflow-hidden bg-[var(--background)] px-6 py-14 lg:px-10 lg:py-40">
         <div className="mx-auto max-w-4xl text-center">
           <p className="mb-4 text-xs font-bold uppercase tracking-[0.25em] text-[var(--peach)]">Ready to Start?</p>
           <h2 className="text-5xl font-bold leading-tight text-slate-900 sm:text-6xl">

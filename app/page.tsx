@@ -103,60 +103,40 @@ export default function Home() {
       </section>
 
       {/* Welcome — intro under the banner */}
-      <section className="relative bg-[var(--background)] px-6 py-20 lg:px-10 lg:py-28">
-        <div className="mx-auto max-w-7xl">
-          <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
-
-            {/* Left: Content */}
-            <div className="flex flex-col justify-center">
-              <div className="mb-6 flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-sky-600">
-                <span className="h-px w-8 bg-sky-300" />
-                Online · Faith-Based · Trauma-Informed
-              </div>
-              <h1 className="text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl lg:text-[54px]">
-                <span className="block text-slate-900">Christ-rooted support</span>
-                <span className="block font-normal text-slate-500">for the seasons you were</span>
-                <span className="block text-slate-900">never meant to carry <span className="text-[var(--peach)]">alone.</span></span>
-              </h1>
-              <p className="mt-7 text-lg leading-relaxed text-slate-600">
-                I provide faith-based, trauma-informed care and clinically informed biblical counseling to support adolescents, individuals, families, and parents as they walk through difficult seasons. My mission is to offer a safe, Christ-centered space where you can process your story with honesty and experience true emotional and spiritual renewal.
-              </p>
-
-              <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-                <a
-                  href="/contact"
-                  className="inline-flex items-center justify-center rounded-2xl bg-[var(--peach)] px-8 py-4 text-base font-semibold text-white shadow-[0_12px_28px_rgba(254,143,104,0.38)] transition-all hover:bg-[var(--peach-deep)] hover:-translate-y-0.5"
-                >
-                  Book a Session
-                </a>
-                <a
-                  href="/about"
-                  className="inline-flex items-center justify-center rounded-2xl border-2 border-slate-200 bg-white px-8 py-4 text-base font-semibold text-slate-700 transition-all hover:border-slate-300 hover:bg-slate-50"
-                >
-                  Meet the Counselor
-                </a>
-              </div>
-            </div>
-
-            {/* Right: Image */}
-            <div className="flex items-center justify-center lg:justify-end">
-              <div className="relative w-full max-w-[480px] overflow-hidden rounded-[2.5rem] shadow-[0_32px_64px_rgba(0,0,0,0.18)] ring-1 ring-black/5 lg:max-w-none">
-                <Image
-                  src="/images/hero-bg.png"
-                  alt="Toyin Adefemi counseling services"
-                  width={800}
-                  height={600}
-                  className="h-auto w-full object-cover"
-                />
-              </div>
-            </div>
-
+      <section className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-28">
+        <div className="mx-auto max-w-4xl text-center">
+          <div className="mb-6 flex items-center justify-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-sky-600">
+            <span className="h-px w-8 bg-sky-300" />
+            Online · Faith-Based · Trauma-Informed
+            <span className="h-px w-8 bg-sky-300" />
+          </div>
+          <h1 className="text-4xl font-bold leading-[1.12] tracking-tight sm:text-5xl lg:text-[54px]">
+            <span className="block text-slate-900">Christ-rooted support</span>
+            <span className="block font-normal text-slate-500">for the seasons you were</span>
+            <span className="block text-slate-900">never meant to carry <span className="text-[var(--peach)]">alone.</span></span>
+          </h1>
+          <p className="mx-auto mt-7 max-w-2xl text-lg leading-relaxed text-slate-600">
+            I provide faith-based, trauma-informed care and clinically informed biblical counseling to support adolescents, individuals, families, and parents as they walk through difficult seasons. My mission is to offer a safe, Christ-centered space where you can process your story with honesty and experience true emotional and spiritual renewal.
+          </p>
+          <div className="mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <a
+              href="/contact"
+              className="inline-flex items-center justify-center rounded-2xl bg-[var(--peach)] px-8 py-4 text-base font-semibold text-white shadow-[0_12px_28px_rgba(254,143,104,0.38)] transition-all hover:bg-[var(--peach-deep)] hover:-translate-y-0.5"
+            >
+              Book a Session
+            </a>
+            <a
+              href="/about"
+              className="inline-flex items-center justify-center rounded-2xl border-2 border-slate-200 bg-white px-8 py-4 text-base font-semibold text-slate-700 transition-all hover:border-slate-300 hover:bg-slate-50"
+            >
+              Meet the Counselor
+            </a>
           </div>
         </div>
       </section>
 
       {/* Meet Your Counselor */}
-      <section className="relative overflow-hidden bg-[var(--background)] px-6 py-24 lg:px-10 lg:py-32">
+      <section className="relative overflow-hidden bg-[var(--background)] px-6 py-14 lg:px-10 lg:py-32">
         {/* Decorative background blob */}
         <div className="pointer-events-none absolute -right-32 -top-32 h-[500px] w-[500px] rounded-full bg-[var(--peach)]/5 blur-3xl" />
         <div className="pointer-events-none absolute -bottom-20 left-0 h-[400px] w-[400px] rounded-full bg-sky-100/60 blur-3xl" />
@@ -246,25 +226,6 @@ export default function Home() {
                   className="object-cover object-center"
                 />
               </div>
-
-              {/* Floating stat badge */}
-              <div className="absolute -bottom-5 -left-5 flex items-center gap-3 rounded-2xl bg-white px-5 py-4 shadow-[0_8px_24px_rgba(0,0,0,0.12)] ring-1 ring-slate-100">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[var(--peach)]/15">
-                  <svg viewBox="0 0 24 24" className="h-5 w-5 fill-[var(--peach)]" aria-hidden="true">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/>
-                  </svg>
-                </div>
-                <div>
-                  <p className="text-sm font-bold text-slate-900">10+ Years</p>
-                  <p className="text-xs text-slate-500">Serving families & youth</p>
-                </div>
-              </div>
-
-              {/* Floating credential badge */}
-              <div className="absolute -right-5 top-10 rounded-2xl bg-white px-4 py-3 shadow-[0_8px_24px_rgba(0,0,0,0.12)] ring-1 ring-slate-100">
-                <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide">Certified</p>
-                <p className="mt-0.5 text-sm font-bold text-slate-900">Biblical Counselor</p>
-              </div>
             </div>
 
           </div>
@@ -284,7 +245,7 @@ export default function Home() {
       </section>
 
       {/* Approach Pillars — Horizontal Feature Blocks */}
-      <section className="relative bg-[var(--background)] px-6 py-32 lg:px-10 lg:py-40">
+      <section className="relative bg-[var(--background)] px-6 py-16 lg:px-10 lg:py-40">
         <div className="mx-auto max-w-7xl">
           <p className="mb-6 text-sm font-semibold uppercase tracking-[0.22em] text-sky-700">
             My Approach
@@ -324,7 +285,7 @@ export default function Home() {
       </section>
 
       {/* Who I Serve */}
-      <section className="relative bg-[var(--background)] px-6 py-32 lg:px-10 lg:py-40">
+      <section className="relative bg-[var(--background)] px-6 py-16 lg:px-10 lg:py-40">
         <div className="mx-auto max-w-7xl">
           <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-end sm:justify-between">
             <div>
@@ -465,7 +426,7 @@ export default function Home() {
       </section>
 
       {/* Testimonial — Full-Width Atmospheric Section with Image H */}
-      <section className="relative overflow-hidden px-6 py-40 lg:px-10 lg:py-52">
+      <section className="relative overflow-hidden px-6 py-20 lg:px-10 lg:py-52">
         <div className="absolute inset-0 z-0">
           <Image
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/14-hskpGkVkXncEE10BoJcxFHbYnDRas7.webp"
@@ -491,7 +452,7 @@ export default function Home() {
       </section>
 
       {/* Why Choose Toyin — Six Feature Tiles */}
-      <section className="relative bg-[var(--background)] px-6 py-32 lg:px-10 lg:py-40">
+      <section className="relative bg-[var(--background)] px-6 py-16 lg:px-10 lg:py-40">
         <div className="mx-auto max-w-7xl">
           <h2 className="text-5xl font-bold tracking-tight text-slate-900">
             Why Clients Choose Toyin
@@ -517,7 +478,7 @@ export default function Home() {
       </section>
 
       {/* Free Tools & Guides */}
-      <section className="relative bg-[var(--background)] px-6 py-32 lg:px-10 lg:py-40">
+      <section className="relative bg-[var(--background)] px-6 py-16 lg:px-10 lg:py-40">
         <div className="mx-auto max-w-7xl">
           <h2 className="text-5xl font-bold tracking-tight text-slate-900">
             Free Tools & Guides
@@ -557,7 +518,7 @@ export default function Home() {
       </section>
 
       {/* Scripture Banner — Reverent Pause */}
-      <section className="relative bg-slate-800 px-6 py-32 lg:px-10 lg:py-40">
+      <section className="relative bg-slate-800 px-6 py-16 lg:px-10 lg:py-40">
         <div className="mx-auto max-w-3xl text-center">
           <p className="italic text-2xl leading-relaxed text-white sm:text-3xl">
             "He heals the brokenhearted and binds up their wounds."
@@ -569,7 +530,7 @@ export default function Home() {
       </section>
 
       {/* Final CTA — Warm, Emotionally Resonant */}
-      <section className="relative overflow-hidden bg-[var(--background)] px-6 py-40 lg:px-10 lg:py-52">
+      <section className="relative overflow-hidden bg-[var(--background)] px-6 py-20 lg:px-10 lg:py-52">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="text-5xl font-bold leading-tight text-slate-900 sm:text-6xl">
             Ready to Begin Your Healing Journey?

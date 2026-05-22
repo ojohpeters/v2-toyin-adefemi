@@ -71,7 +71,7 @@ export default function Speaking() {
   return (
     <>
       {/* Bold Stage-Like Hero with Youth Group Image Background */}
-      <section className="relative overflow-hidden px-6 py-36 lg:px-10 lg:py-48">
+      <section className="relative overflow-hidden px-6 py-16 lg:px-10 lg:py-48">
         <div className="absolute inset-0 z-0">
           <Image
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/31-N424m4nO0REek7JhpPtoSuCDBhsxZZ.webp"
@@ -98,7 +98,7 @@ export default function Speaking() {
       </section>
 
       {/* Why Invite Me — Horizontal Feature Cards */}
-      <section className="relative bg-[var(--background)] px-6 py-32 lg:px-10 lg:py-40">
+      <section className="relative bg-[var(--background)] px-6 py-16 lg:px-10 lg:py-40">
         <div className="mx-auto max-w-7xl">
           <h2 className="text-5xl font-bold tracking-tight text-slate-900">
             Why Invite Me to Speak?
@@ -156,7 +156,7 @@ export default function Speaking() {
       </section>
 
       {/* Speaking Topics — Conference Card Style with Image J */}
-      <section className="relative bg-[var(--background)] px-6 py-32 lg:px-10 lg:py-40">
+      <section className="relative bg-[var(--background)] px-6 py-16 lg:px-10 lg:py-40">
         <div className="mx-auto max-w-7xl">
           <h2 className="text-5xl font-bold tracking-tight text-slate-900">
             Speaking Topics
@@ -198,7 +198,7 @@ export default function Speaking() {
       </section>
 
       {/* Bible Hands Atmospheric Image with Scripture - Image M */}
-      <section className="relative overflow-hidden px-6 py-40 lg:px-10 lg:py-52">
+      <section className="relative overflow-hidden px-6 py-20 lg:px-10 lg:py-52">
         <div className="absolute inset-0 z-0">
           <Image
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/28-AHwozixyiwPpwYmHgTtO96klIjYk8N.webp"
@@ -220,7 +220,7 @@ export default function Speaking() {
       </section>
 
       {/* Speaking Formats — Two-Column List Layout with Image C */}
-      <section className="relative bg-[var(--background)] px-6 py-32 lg:px-10 lg:py-40">
+      <section className="relative bg-[var(--background)] px-6 py-16 lg:px-10 lg:py-40">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-16 lg:grid-cols-[1fr_380px]">
             <div>
@@ -267,7 +267,7 @@ export default function Speaking() {
       </section>
 
       {/* Warm Genuine Invitation CTA with Image K - Joyful Teens */}
-      <section className="relative overflow-hidden px-6 py-40 lg:px-10 lg:py-52">
+      <section className="relative overflow-hidden px-6 py-20 lg:px-10 lg:py-52">
         <div className="absolute inset-0 z-0">
           <Image
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/31-N424m4nO0REek7JhpPtoSuCDBhsxZZ.webp"

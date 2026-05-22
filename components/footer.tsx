@@ -172,8 +172,8 @@ export function Footer() {
               </div>
               <div>
                 <p className="text-[10px] font-bold uppercase tracking-widest text-slate-500">Just One Phone Call Away</p>
-                <a href="tel:+15122569236" className="mt-1 block text-base font-semibold text-white hover:text-[var(--peach)] transition-colors">
-                  (512) 256-9236
+                <a href="tel:+13026599399" className="mt-1 block text-base font-semibold text-white hover:text-[var(--peach)] transition-colors">
+                  302 659 9399
                 </a>
               </div>
             </div>
@@ -187,8 +187,8 @@ export function Footer() {
               </div>
               <div>
                 <p className="text-[10px] font-bold uppercase tracking-widest text-slate-500">General Inquiries</p>
-                <a href="mailto:toyin@spaceofgracecounseling.com" className="mt-1 block text-base font-semibold text-white hover:text-[var(--peach)] transition-colors break-all">
-                  toyin@spaceofgracecounseling.com
+                <a href="mailto:toyin.biblicalcounselor@gmail.com" className="mt-1 block text-base font-semibold text-white hover:text-[var(--peach)] transition-colors break-all">
+                  toyin.biblicalcounselor@gmail.com
                 </a>
               </div>
             </div>
