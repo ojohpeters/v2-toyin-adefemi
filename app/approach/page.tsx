@@ -252,19 +252,15 @@ export default function Approach() {
           <div className="grid gap-16 lg:grid-cols-2 lg:items-center lg:gap-24">
 
             {/* Left: image */}
-            <div className="relative h-[420px] overflow-hidden rounded-3xl lg:h-[520px]">
+            <div className="relative w-full overflow-hidden rounded-3xl">
               <Image
-                src="/images/about-toyin.jpg"
-                alt="Toyin Adefemi — Biblical Counselor"
-                fill
+                src="/images/why-clinically-informed.png"
+                alt="Why Clinically Informed Biblical Counseling"
+                width={1561}
+                height={665}
                 sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover object-top"
+                className="h-auto w-full"
               />
-              {/* Scripture overlay */}
-              <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/90 to-transparent p-8">
-                <p className="text-base italic text-white/90">&ldquo;Your word is a lamp to my feet and a light to my path.&rdquo;</p>
-                <p className="mt-2 text-xs font-bold uppercase tracking-widest text-[var(--peach)]">Psalm 119:105</p>
-              </div>
             </div>
 
             {/* Right: text */}
