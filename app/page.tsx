@@ -105,29 +105,29 @@ export default function Home() {
       {/* Welcome — intro under the banner */}
       <section className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-4xl text-center">
-          <div className="mb-6 flex items-center justify-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-sky-600">
-            <span className="h-px w-8 bg-sky-300" />
+          <div className="mb-6 flex items-center justify-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-[var(--peach)]">
+            <span className="h-px w-8 bg-[var(--peach)]" />
             Online · Faith-Based · Trauma-Informed
-            <span className="h-px w-8 bg-sky-300" />
+            <span className="h-px w-8 bg-[var(--peach)]" />
           </div>
           <h1 className="text-4xl font-bold leading-[1.12] tracking-tight sm:text-5xl lg:text-[54px]">
-            <span className="block text-slate-900">Christ-rooted support</span>
-            <span className="block font-normal text-slate-500">for the seasons you were</span>
-            <span className="block text-slate-900">never meant to carry <span className="text-[var(--peach)]">alone.</span></span>
+            <span className="block text-black">Christ-rooted support</span>
+            <span className="block font-normal text-black/55">for the seasons you were</span>
+            <span className="block text-black">never meant to carry <span className="text-[var(--peach)]">alone.</span></span>
           </h1>
-          <p className="mx-auto mt-7 max-w-2xl text-lg leading-relaxed text-slate-600">
+          <p className="mx-auto mt-7 max-w-2xl text-lg leading-relaxed text-black/65">
             I provide faith-based, trauma-informed care and clinically informed biblical counseling to support adolescents, individuals, families, and parents as they walk through difficult seasons. My mission is to offer a safe, Christ-centered space where you can process your story with honesty and experience true emotional and spiritual renewal.
           </p>
           <div className="mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
-              href="/contact"
+              href="/book-a-session"
               className="inline-flex items-center justify-center rounded-2xl bg-[var(--peach)] px-8 py-4 text-base font-semibold text-white shadow-[0_12px_28px_rgba(254,143,104,0.38)] transition-all hover:bg-[var(--peach-deep)] hover:-translate-y-0.5"
             >
               Book a Session
             </a>
             <a
               href="/about"
-              className="inline-flex items-center justify-center rounded-2xl border-2 border-slate-200 bg-white px-8 py-4 text-base font-semibold text-slate-700 transition-all hover:border-slate-300 hover:bg-slate-50"
+              className="inline-flex items-center justify-center rounded-2xl border-2 border-black/15 bg-white px-8 py-4 text-base font-semibold text-black/75 transition-all hover:border-black/25 hover:bg-[var(--background)]"
             >
               Meet the Counselor
             </a>
@@ -139,32 +139,32 @@ export default function Home() {
       <section className="relative overflow-hidden bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
         {/* Decorative background blob */}
         <div className="pointer-events-none absolute -right-32 -top-32 h-[500px] w-[500px] rounded-full bg-[var(--peach)]/5 blur-3xl" />
-        <div className="pointer-events-none absolute -bottom-20 left-0 h-[400px] w-[400px] rounded-full bg-sky-100/60 blur-3xl" />
+        <div className="pointer-events-none absolute -bottom-20 left-0 h-[400px] w-[400px] rounded-full bg-[var(--teal)]/25 blur-3xl" />
 
         <div className="relative mx-auto max-w-7xl">
           <div className="grid gap-16 lg:grid-cols-[1fr_440px] lg:items-start lg:gap-20">
 
             {/* Left: Content */}
             <div className="flex flex-col">
-              <p className="mb-4 text-sm font-semibold uppercase tracking-[0.22em] text-sky-600">
+              <p className="mb-4 text-sm font-semibold uppercase tracking-[0.22em] text-[var(--peach)]">
                 Meet Your Counselor
               </p>
-              <h2 className="text-4xl font-bold leading-tight text-slate-900 sm:text-5xl lg:text-[52px]">
+              <h2 className="text-4xl font-bold leading-tight text-black sm:text-5xl lg:text-[52px]">
                 Hi, I&apos;m{" "}
                 <span className="text-[var(--peach)]">Toyin Adefemi.</span>
               </h2>
               <div className="mt-5 h-1 w-16 rounded-full bg-[var(--peach)]" />
 
-              <p className="mt-7 text-lg leading-relaxed text-slate-600">
+              <p className="mt-7 text-lg leading-relaxed text-black/65">
                 God has given me a deep heart for those who are suffering. With His Word as the foundation and primary tool for healing, I walk alongside teens, young adults, parents, and families as they navigate challenging seasons.
               </p>
-              <p className="mt-4 text-lg leading-relaxed text-slate-600">
+              <p className="mt-4 text-lg leading-relaxed text-black/65">
                 My virtual counseling room is a safe and confidential space, shaped by compassion and guided by the Holy Spirit — where I blend clinical insight with biblical truth to support meaningful, Christ-centered healing.
               </p>
 
               {/* Quote card */}
               <blockquote className="mt-8 rounded-2xl bg-[var(--peach)]/8 p-6 border-l-4 border-[var(--peach)]">
-                <p className="text-lg italic leading-relaxed text-slate-800">
+                <p className="text-lg italic leading-relaxed text-black/90">
                   &ldquo;My calling is simple: to help young people and families experience healing, identity, and transformation through Christ-centered, trauma-informed care.&rdquo;
                 </p>
               </blockquote>
@@ -180,7 +180,7 @@ export default function Home() {
                 ].map((cred) => (
                   <span
                     key={cred}
-                    className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-medium text-slate-700 shadow-sm ring-1 ring-slate-200/80"
+                    className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-medium text-black/75 shadow-sm ring-1 ring-black/15"
                   >
                     <span className="h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--peach)]" />
                     {cred}
@@ -189,11 +189,11 @@ export default function Home() {
               </div>
 
               {/* Consultation callout */}
-              <div className="mt-6 flex items-start gap-3 rounded-xl bg-sky-50 px-5 py-4 ring-1 ring-sky-100">
-                <svg viewBox="0 0 24 24" className="mt-0.5 h-5 w-5 flex-shrink-0 fill-sky-500" aria-hidden="true">
+              <div className="mt-6 flex items-start gap-3 rounded-xl bg-[var(--background)] px-5 py-4 ring-1 ring-[var(--teal)]/40">
+                <svg viewBox="0 0 24 24" className="mt-0.5 h-5 w-5 flex-shrink-0 fill-[var(--peach)]" aria-hidden="true">
                   <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2zM9 14H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2zm-8 4H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2z"/>
                 </svg>
-                <p className="text-sm leading-relaxed text-sky-800">
+                <p className="text-sm leading-relaxed text-[var(--peach)]">
                   I offer a <strong>complimentary 30-minute phone consultation</strong> to help us discern whether my services are the right fit. And if I&apos;m not the best match, I&apos;ll gladly help you find someone who is.
                 </p>
               </div>
@@ -214,7 +214,7 @@ export default function Home() {
             {/* Right: Portrait */}
             <div className="relative mt-8 lg:mt-0">
               {/* Decorative backing */}
-              <div className="absolute -inset-3 rounded-[3rem] bg-gradient-to-br from-[var(--peach)]/15 to-sky-200/30" />
+              <div className="absolute -inset-3 rounded-[3rem] bg-gradient-to-br from-[var(--peach)]/15 to-[var(--teal)]/30" />
 
               {/* Portrait image */}
               <div className="relative h-[520px] overflow-hidden rounded-[2.5rem] shadow-[0_24px_60px_rgba(0,0,0,0.14)] lg:h-[620px]">
@@ -241,21 +241,21 @@ export default function Home() {
           sizes="100vw"
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-sky-500/20" />
+        <div className="absolute inset-0 bg-[var(--teal)]/30" />
       </section>
 
       {/* Approach Pillars — Horizontal Feature Blocks */}
       <section className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-7xl">
-          <p className="mb-6 text-sm font-semibold uppercase tracking-[0.22em] text-sky-700">
+          <p className="mb-6 text-sm font-semibold uppercase tracking-[0.22em] text-[var(--peach)]">
             My Approach
           </p>
-          <h2 className="text-5xl font-bold tracking-tight text-slate-900">
+          <h2 className="text-5xl font-bold tracking-tight text-black">
             Trauma-Informed. Scripture-Centered. Spirit-Led.
           </h2>
           <div className="mt-6 h-1 w-20 bg-[var(--peach)]" />
 
-          <p className="mt-10 max-w-3xl text-xl leading-8 text-slate-600">
+          <p className="mt-10 max-w-3xl text-xl leading-8 text-black/65">
             My counseling approach integrates biblical truth with evidence-based emotional and behavioral tools. Every session honors your story and helps you walk confidently in your God-given identity.
           </p>
 
@@ -263,7 +263,7 @@ export default function Home() {
             {pillars.map((pillar) => (
               <article
                 key={pillar.title}
-                className="flex gap-8 rounded-[1.5rem] bg-gradient-to-r from-sky-50 to-cyan-50 p-10 border border-sky-100"
+                className="flex gap-8 rounded-[1.5rem] bg-gradient-to-r from-[var(--background)] to-[var(--background)] p-10 border border-black/10"
               >
                 <div className="flex-shrink-0">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[var(--peach)] text-lg font-bold text-white">
@@ -271,10 +271,10 @@ export default function Home() {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-slate-900">
+                  <h3 className="text-2xl font-bold text-black">
                     {pillar.title}
                   </h3>
-                  <p className="mt-3 text-lg leading-7 text-slate-600">
+                  <p className="mt-3 text-lg leading-7 text-black/65">
                     {pillar.description}
                   </p>
                 </div>
@@ -289,7 +289,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl">
           <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-end sm:justify-between">
             <div>
-              <h2 className="text-5xl font-bold tracking-tight text-slate-900">Who I Serve</h2>
+              <h2 className="text-5xl font-bold tracking-tight text-black">Who I Serve</h2>
               <div className="mt-4 h-1 w-16 rounded-full bg-[var(--peach)]" />
             </div>
             <a
@@ -315,14 +315,14 @@ export default function Home() {
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-emerald-900/40 to-transparent" />
-                <span className="absolute bottom-4 left-4 rounded-full bg-emerald-500/90 px-3 py-1 text-xs font-semibold text-white backdrop-blur-sm">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                <span className="absolute bottom-4 left-4 rounded-full bg-[var(--peach)] px-3 py-1 text-xs font-semibold text-white backdrop-blur-sm">
                   Young Adults
                 </span>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-slate-900">Young Adults Counseling</h3>
-                <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                <h3 className="text-xl font-bold text-black">Young Adults Counseling</h3>
+                <p className="mt-2 text-sm leading-relaxed text-black/65">
                   Navigating purpose, identity, relationships, and spiritual growth with compassion and biblical truth.
                 </p>
                 <a href="/work-with-me" className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-[var(--peach)] hover:gap-2">
@@ -344,14 +344,14 @@ export default function Home() {
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-sky-900/40 to-transparent" />
-                <span className="absolute bottom-4 left-4 rounded-full bg-sky-500/90 px-3 py-1 text-xs font-semibold text-white backdrop-blur-sm">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                <span className="absolute bottom-4 left-4 rounded-full bg-[var(--peach)] px-3 py-1 text-xs font-semibold text-white backdrop-blur-sm">
                   Teens
                 </span>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-slate-900">Teen Counseling</h3>
-                <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                <h3 className="text-xl font-bold text-black">Teen Counseling</h3>
+                <p className="mt-2 text-sm leading-relaxed text-black/65">
                   Safe, trauma-informed support for teens navigating emotional wounds, identity, and life transitions.
                 </p>
                 <a href="/work-with-me" className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-[var(--peach)] hover:gap-2">
@@ -373,14 +373,14 @@ export default function Home() {
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-amber-900/40 to-transparent" />
-                <span className="absolute bottom-4 left-4 rounded-full bg-amber-500/90 px-3 py-1 text-xs font-semibold text-white backdrop-blur-sm">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                <span className="absolute bottom-4 left-4 rounded-full bg-[var(--peach)] px-3 py-1 text-xs font-semibold text-white backdrop-blur-sm">
                   Families
                 </span>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-slate-900">Family Counseling</h3>
-                <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                <h3 className="text-xl font-bold text-black">Family Counseling</h3>
+                <p className="mt-2 text-sm leading-relaxed text-black/65">
                   Rebuilding connection, communication, and Christ-centered unity within your family system.
                 </p>
                 <a href="/work-with-me" className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-[var(--peach)] hover:gap-2">
@@ -402,14 +402,14 @@ export default function Home() {
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-violet-900/40 to-transparent" />
-                <span className="absolute bottom-4 left-4 rounded-full bg-violet-500/90 px-3 py-1 text-xs font-semibold text-white backdrop-blur-sm">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                <span className="absolute bottom-4 left-4 rounded-full bg-[var(--peach)] px-3 py-1 text-xs font-semibold text-white backdrop-blur-sm">
                   Parents
                 </span>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-slate-900">Parental Counseling</h3>
-                <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                <h3 className="text-xl font-bold text-black">Parental Counseling</h3>
+                <p className="mt-2 text-sm leading-relaxed text-black/65">
                   Equipping parents with biblical wisdom, emotional tools, and practical strategies for raising thriving children.
                 </p>
                 <a href="/work-with-me" className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-[var(--peach)] hover:gap-2">
@@ -445,7 +445,7 @@ export default function Home() {
           <p className="mt-8 text-sm font-semibold uppercase tracking-wider text-[var(--peach)]">
             — Client Experience, 2024
           </p>
-          <p className="mt-4 text-sm font-semibold uppercase tracking-wider text-slate-200">
+          <p className="mt-4 text-sm font-semibold uppercase tracking-wider text-white/85">
             Stories of Healing
           </p>
         </div>
@@ -454,7 +454,7 @@ export default function Home() {
       {/* Why Choose Toyin — Six Feature Tiles */}
       <section className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-7xl">
-          <h2 className="text-5xl font-bold tracking-tight text-slate-900">
+          <h2 className="text-5xl font-bold tracking-tight text-black">
             Why Clients Choose Toyin
           </h2>
           <div className="mt-6 h-1 w-20 bg-[var(--peach)]" />
@@ -463,12 +463,12 @@ export default function Home() {
             {features.map((feature, idx) => (
               <article
                 key={feature.title}
-                className={`rounded-[1.5rem] border border-white/80 p-8 ${idx % 2 === 0 ? 'bg-sky-50' : 'bg-emerald-50'}`}
+                className={`rounded-[1.5rem] border border-white/80 p-8 ${idx % 2 === 0 ? 'bg-[var(--background)]' : 'bg-[var(--background)]'}`}
               >
-                <h3 className="text-xl font-bold text-slate-900">
+                <h3 className="text-xl font-bold text-black">
                   {feature.title}
                 </h3>
-                <p className="mt-4 leading-7 text-slate-600">
+                <p className="mt-4 leading-7 text-black/65">
                   {feature.description}
                 </p>
               </article>
@@ -480,12 +480,12 @@ export default function Home() {
       {/* Free Tools & Guides */}
       <section className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-7xl">
-          <h2 className="text-5xl font-bold tracking-tight text-slate-900">
+          <h2 className="text-5xl font-bold tracking-tight text-black">
             Free Tools & Guides
           </h2>
           <div className="mt-6 h-1 w-20 bg-[var(--peach)]" />
 
-          <p className="mt-10 max-w-2xl text-xl text-slate-600">
+          <p className="mt-10 max-w-2xl text-xl text-black/65">
             Encouraging resources designed to support your healing journey between sessions.
           </p>
 
@@ -499,10 +499,10 @@ export default function Home() {
                 <div className="mb-4">
                   <ResourceIcon type={resource.iconType} />
                 </div>
-                <h3 className="text-2xl font-bold text-slate-900">
+                <h3 className="text-2xl font-bold text-black">
                   {resource.title}
                 </h3>
-                <p className="mt-4 text-slate-600">
+                <p className="mt-4 text-black/65">
                   {resource.description}
                 </p>
                 <a
@@ -518,7 +518,7 @@ export default function Home() {
       </section>
 
       {/* Scripture Banner — Reverent Pause */}
-      <section className="relative bg-slate-800 px-6 py-12 lg:px-10 lg:py-16">
+      <section className="relative bg-black px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-3xl text-center">
           <p className="italic text-2xl leading-relaxed text-white sm:text-3xl">
             "He heals the brokenhearted and binds up their wounds."
@@ -532,16 +532,16 @@ export default function Home() {
       {/* Final CTA — Warm, Emotionally Resonant */}
       <section className="relative overflow-hidden bg-[var(--background)] px-6 py-14 lg:px-10 lg:py-24">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-5xl font-bold leading-tight text-slate-900 sm:text-6xl">
+          <h2 className="text-5xl font-bold leading-tight text-black sm:text-6xl">
             Ready to Begin Your Healing Journey?
           </h2>
-          <p className="mx-auto mt-8 max-w-2xl text-2xl leading-relaxed text-slate-600">
+          <p className="mx-auto mt-8 max-w-2xl text-2xl leading-relaxed text-black/65">
             Whether you&apos;re seeking emotional clarity, spiritual renewal, or support for your family, I&apos;d be honored to walk with you through this transformative season.
           </p>
 
           <div className="mt-12 flex justify-center">
             <a
-              href="/contact"
+              href="/book-a-session"
               className="inline-flex items-center justify-center rounded-2xl bg-[var(--peach)] px-12 py-6 text-lg font-semibold text-white shadow-[0_16px_30px_rgba(254,143,104,0.34)] transition-all hover:bg-[var(--peach-deep)] hover:-translate-y-1"
             >
               Book a Session

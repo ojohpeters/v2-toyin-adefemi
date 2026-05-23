@@ -80,7 +80,7 @@ export default function Speaking() {
             sizes="100vw"
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-slate-900/50" />
+          <div className="absolute inset-0 bg-black/50" />
         </div>
         <div className="relative z-10 mx-auto max-w-7xl">
           <div className="max-w-5xl">
@@ -100,12 +100,12 @@ export default function Speaking() {
       {/* Why Invite Me — Horizontal Feature Cards */}
       <section className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-7xl">
-          <h2 className="text-5xl font-bold tracking-tight text-slate-900">
+          <h2 className="text-5xl font-bold tracking-tight text-black">
             Why Invite Me to Speak?
           </h2>
           <div className="mt-6 h-1 w-20 bg-[var(--peach)]" />
 
-          <p className="mt-10 max-w-3xl text-xl leading-8 text-slate-600">
+          <p className="mt-10 max-w-3xl text-xl leading-8 text-black/65">
             I&apos;m a sought-after speaker and trainer who equips youth, young adults, families, churches, and leaders with biblical truth, emotional wisdom, and practical tools for healing and spiritual growth.
           </p>
 
@@ -132,10 +132,10 @@ export default function Speaking() {
                 className="border-l-4 border-[var(--peach)] bg-white p-8 shadow-[0_4px_12px_rgba(0,0,0,0.05)]"
               >
                 <div className="mb-4 text-3xl text-[var(--peach)]">{feature.icon}</div>
-                <h3 className="text-2xl font-bold text-slate-900">
+                <h3 className="text-2xl font-bold text-black">
                   {feature.title}
                 </h3>
-                <p className="mt-4 leading-7 text-slate-600">
+                <p className="mt-4 leading-7 text-black/65">
                   {feature.description}
                 </p>
               </article>
@@ -158,12 +158,12 @@ export default function Speaking() {
       {/* Speaking Topics — Conference Card Style with Image J */}
       <section className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-7xl">
-          <h2 className="text-5xl font-bold tracking-tight text-slate-900">
+          <h2 className="text-5xl font-bold tracking-tight text-black">
             Speaking Topics
           </h2>
           <div className="mt-6 h-1 w-20 bg-[var(--peach)]" />
 
-          <p className="mt-10 max-w-3xl text-xl leading-8 text-slate-600">
+          <p className="mt-10 max-w-3xl text-xl leading-8 text-black/65">
             I customize presentations for your specific audience and needs. Here are some of my popular topics:
           </p>
 
@@ -174,10 +174,10 @@ export default function Speaking() {
                 className="scroll-animate rounded-xl border-t-4 border-[var(--peach)] bg-white p-8 shadow-[0_4px_12px_rgba(0,0,0,0.05)] hover:shadow-[0_12px_24px_rgba(0,0,0,0.12)] transition-all hover:-translate-y-1"
                 style={{ animationDelay: `${index * 80}ms` }}
               >
-                <h3 className="text-2xl font-bold text-slate-900">
+                <h3 className="text-2xl font-bold text-black">
                   {topic.title}
                 </h3>
-                <p className="mt-4 leading-7 text-slate-600">
+                <p className="mt-4 leading-7 text-black/65">
                   {topic.description}
                 </p>
               </article>
@@ -207,7 +207,7 @@ export default function Speaking() {
             sizes="100vw"
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-slate-900/50" />
+          <div className="absolute inset-0 bg-black/50" />
         </div>
         <div className="relative z-10 mx-auto max-w-4xl text-center">
           <p className="italic text-3xl leading-relaxed text-white sm:text-4xl">
@@ -224,12 +224,12 @@ export default function Speaking() {
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-16 lg:grid-cols-[1fr_380px]">
             <div>
-              <h2 className="text-5xl font-bold tracking-tight text-slate-900">
+              <h2 className="text-5xl font-bold tracking-tight text-black">
                 Speaking Formats
               </h2>
               <div className="mt-6 h-1 w-20 bg-[var(--peach)]" />
 
-              <p className="mt-10 max-w-3xl text-xl leading-8 text-slate-600">
+              <p className="mt-10 max-w-3xl text-xl leading-8 text-black/65">
                 Flexible options designed to fit your organization's needs and audience:
               </p>
 
@@ -240,10 +240,10 @@ export default function Speaking() {
                       <div className="flex h-3 w-3 items-center justify-center rounded-full bg-[var(--peach)]" />
                     </div>
                     <div>
-                      <h3 className="text-2xl font-bold text-slate-900">
+                      <h3 className="text-2xl font-bold text-black">
                         {format.title}
                       </h3>
-                      <p className="mt-3 leading-7 text-slate-600">
+                      <p className="mt-3 leading-7 text-black/65">
                         {format.description}
                       </p>
                     </div>
@@ -289,7 +289,7 @@ export default function Speaking() {
           <div className="mt-14 flex justify-center">
             <a
               href="/contact"
-              className="inline-flex items-center justify-center rounded-2xl bg-white px-10 py-5 text-lg font-semibold text-[var(--peach)] shadow-[0_16px_30px_rgba(0,0,0,0.2)] transition-all hover:bg-slate-50 hover:-translate-y-1"
+              className="inline-flex items-center justify-center rounded-2xl bg-white px-10 py-5 text-lg font-semibold text-[var(--peach)] shadow-[0_16px_30px_rgba(0,0,0,0.2)] transition-all hover:bg-[var(--background)] hover:-translate-y-1"
             >
               Inquire About Speaking
             </a>

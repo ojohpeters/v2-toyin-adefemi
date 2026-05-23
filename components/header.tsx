@@ -10,29 +10,29 @@ const services = [
     label: "Teen Counseling",
     href: "/services/teens",
     desc: "Ages 13–17 · Safe & judgment-free",
-    color: "bg-sky-50 text-sky-700",
-    dot: "bg-sky-400",
+    color: "bg-[var(--background)] text-[var(--peach)]",
+    dot: "bg-[var(--peach)]",
   },
   {
     label: "Young Adults",
     href: "/services/young-adults",
     desc: "Clarity, healing & direction",
-    color: "bg-emerald-50 text-emerald-700",
-    dot: "bg-emerald-400",
+    color: "bg-[var(--background)] text-[var(--peach)]",
+    dot: "bg-[var(--peach)]",
   },
   {
     label: "Family Counseling",
     href: "/services/family",
     desc: "Restoring peace at home",
-    color: "bg-amber-50 text-amber-700",
-    dot: "bg-amber-400",
+    color: "bg-[var(--background)] text-[var(--peach)]",
+    dot: "bg-[var(--peach)]",
   },
   {
     label: "Parenting Counseling",
     href: "/services/parenting",
     desc: "Support for your journey",
-    color: "bg-violet-50 text-violet-700",
-    dot: "bg-violet-400",
+    color: "bg-[var(--background)] text-[var(--peach)]",
+    dot: "bg-[var(--peach)]",
   },
 ];
 
@@ -76,7 +76,7 @@ export function Header() {
 
   return (
     <>
-      <header className={`sticky top-0 z-50 border-b border-slate-100/80 bg-white/90 shadow-sm backdrop-blur-xl transition-opacity duration-300 ${isMenuOpen ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
+      <header className={`sticky top-0 z-50 border-b border-black/10 bg-white/90 shadow-sm backdrop-blur-xl transition-opacity duration-300 ${isMenuOpen ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-2 lg:px-10">
           <Link href="/" className="flex items-center">
             <Image
@@ -90,7 +90,7 @@ export function Header() {
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden items-center gap-8 text-sm font-medium text-slate-600 md:flex">
+          <nav className="hidden items-center gap-8 text-sm font-medium text-black/65 md:flex">
             {navigation.map((item) => {
               const isActive = item.hasDropdown ? isServicesActive : pathname === item.href;
 
@@ -105,7 +105,7 @@ export function Header() {
                   >
                     <button
                       onClick={() => setServicesOpen(!servicesOpen)}
-                      className={`flex items-center gap-1.5 py-1 transition-colors ${isActive ? 'text-slate-900 font-semibold' : 'hover:text-slate-900'}`}
+                      className={`flex items-center gap-1.5 py-1 transition-colors ${isActive ? 'text-black font-semibold' : 'hover:text-black'}`}
                     >
                       {item.label}
                       <svg
@@ -123,24 +123,24 @@ export function Header() {
 
                     {/* Dropdown panel */}
                     <div className={`absolute left-1/2 top-full -translate-x-1/2 pt-3 transition-all duration-200 ${servicesOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-1 pointer-events-none'}`}>
-                      <div className="w-64 overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-[0_16px_48px_rgba(0,0,0,0.12)]">
+                      <div className="w-64 overflow-hidden rounded-2xl border border-black/10 bg-white shadow-[0_16px_48px_rgba(0,0,0,0.12)]">
                         <div className="p-2">
                           {services.map((svc) => (
                             <Link
                               key={svc.href}
                               href={svc.href}
                               onClick={() => setServicesOpen(false)}
-                              className="group flex items-start gap-3 rounded-xl px-3 py-3 transition-colors hover:bg-slate-50"
+                              className="group flex items-start gap-3 rounded-xl px-3 py-3 transition-colors hover:bg-[var(--background)]"
                             >
                               <span className={`mt-1.5 h-2 w-2 flex-shrink-0 rounded-full ${svc.dot}`} />
                               <div>
-                                <p className="text-sm font-semibold text-slate-900 group-hover:text-[var(--peach)] transition-colors">{svc.label}</p>
-                                <p className="mt-0.5 text-xs text-slate-500">{svc.desc}</p>
+                                <p className="text-sm font-semibold text-black group-hover:text-[var(--peach)] transition-colors">{svc.label}</p>
+                                <p className="mt-0.5 text-xs text-black/55">{svc.desc}</p>
                               </div>
                             </Link>
                           ))}
                         </div>
-                        <div className="border-t border-slate-100 px-4 py-3">
+                        <div className="border-t border-black/10 px-4 py-3">
                           <Link
                             href="/work-with-me"
                             onClick={() => setServicesOpen(false)}
@@ -162,7 +162,7 @@ export function Header() {
                 <Link
                   key={item.label}
                   href={item.href}
-                  className={`relative py-1 transition-colors ${isActive ? 'text-slate-900 font-semibold' : 'hover:text-slate-900'}`}
+                  className={`relative py-1 transition-colors ${isActive ? 'text-black font-semibold' : 'hover:text-black'}`}
                 >
                   {item.label}
                   {isActive && (
@@ -175,7 +175,7 @@ export function Header() {
 
           <div className="flex items-center gap-4">
             <a
-              href="/contact"
+              href="/book-a-session"
               className="hidden rounded-xl bg-[var(--peach)] px-5 py-2.5 text-sm font-semibold text-white shadow-[0_8px_16px_rgba(254,143,104,0.3)] transition-all hover:bg-[var(--peach-deep)] hover:-translate-y-0.5 sm:inline-flex"
             >
               Book a Session
@@ -184,7 +184,7 @@ export function Header() {
             {/* Mobile hamburger */}
             <button
               onClick={() => setIsMenuOpen(true)}
-              className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-800 shadow-sm hover:bg-slate-50 md:hidden"
+              className="flex h-10 w-10 items-center justify-center rounded-full border border-black/15 bg-white text-black/90 shadow-sm hover:bg-[var(--background)] md:hidden"
               aria-label="Open navigation menu"
             >
               <svg viewBox="0 0 24 24" className="h-5 w-5" aria-hidden="true">
@@ -198,7 +198,7 @@ export function Header() {
       {/* Mobile menu overlay */}
       {isMenuOpen && (
         <div
-          className="fixed inset-0 z-[60] flex flex-col bg-[#3A4A52] md:hidden overflow-hidden"
+          className="fixed inset-0 z-[60] flex flex-col bg-black md:hidden overflow-hidden"
           style={{ animation: 'slideInFromRight 300ms ease-in-out forwards' }}
         >
           <button
@@ -260,7 +260,7 @@ export function Header() {
           </div>
 
           <a
-            href="/contact"
+            href="/book-a-session"
             onClick={() => setIsMenuOpen(false)}
             className="m-6 block rounded-xl bg-[var(--peach)] px-6 py-4 text-center text-xl font-semibold text-white shadow-[0_8px_16px_rgba(254,143,104,0.3)] hover:bg-[var(--peach-deep)] transition-all"
             style={{ animation: `fadeInUp 400ms ease-out ${50 * (navigation.length + 1)}ms forwards`, opacity: 0 }}

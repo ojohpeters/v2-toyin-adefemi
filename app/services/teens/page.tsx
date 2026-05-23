@@ -39,7 +39,7 @@ export default function TeenCounseling() {
     <>
 
       {/* ── HERO ── */}
-      <section className="relative overflow-hidden bg-sky-950 px-6 py-14 lg:px-10 lg:py-24">
+      <section className="relative overflow-hidden bg-black px-6 py-14 lg:px-10 lg:py-24">
         <div className="absolute inset-0 z-0">
           <Image
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/31-N424m4nO0REek7JhpPtoSuCDBhsxZZ.webp"
@@ -49,19 +49,19 @@ export default function TeenCounseling() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-sky-950/75" />
+          <div className="absolute inset-0 bg-black/75" />
         </div>
         <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:48px_48px]" />
 
         <div className="relative z-10 mx-auto max-w-7xl">
           <div className="max-w-3xl">
-            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-sky-400/30 bg-sky-400/10 px-4 py-2 backdrop-blur-sm">
-              <span className="h-2 w-2 rounded-full bg-sky-400" />
-              <span className="text-xs font-bold uppercase tracking-widest text-sky-300">Teen Counseling · Ages 13–17</span>
+            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[var(--peach)]/40 bg-[var(--peach)]/15 px-4 py-2 backdrop-blur-sm">
+              <span className="h-2 w-2 rounded-full bg-[var(--peach)]" />
+              <span className="text-xs font-bold uppercase tracking-widest text-white/75">Teen Counseling · Ages 13–17</span>
             </div>
             <h1 className="mt-4 text-5xl font-bold leading-[1.08] tracking-tight text-white sm:text-6xl lg:text-7xl">
               A Safe Place to<br />
-              <span className="text-sky-300">Talk, Grow &</span><br />
+              <span className="text-white/75">Talk, Grow &</span><br />
               Feel Understood
             </h1>
             <p className="mt-7 max-w-xl text-xl leading-8 text-white/80">
@@ -69,7 +69,7 @@ export default function TeenCounseling() {
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <a
-                href="/contact"
+                href="/book-a-session"
                 className="inline-flex items-center justify-center rounded-2xl bg-[var(--peach)] px-8 py-4 text-base font-semibold text-white shadow-[0_12px_28px_rgba(254,143,104,0.40)] transition-all hover:bg-[var(--peach-deep)] hover:-translate-y-0.5"
               >
                 Book a Session
@@ -91,15 +91,15 @@ export default function TeenCounseling() {
           <div className="grid gap-16 lg:grid-cols-2 lg:items-center lg:gap-24">
 
             <div>
-              <p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-sky-500">Your Space</p>
-              <h2 className="text-4xl font-bold leading-tight text-slate-900 sm:text-5xl">
+              <p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-[var(--peach)]">Your Space</p>
+              <h2 className="text-4xl font-bold leading-tight text-black sm:text-5xl">
                 A Space Just<br />for You
               </h2>
-              <div className="mt-5 h-1 w-14 rounded-full bg-sky-400" />
-              <p className="mt-8 text-lg leading-8 text-slate-600">
+              <div className="mt-5 h-1 w-14 rounded-full bg-[var(--peach)]" />
+              <p className="mt-8 text-lg leading-8 text-black/65">
                 You might be dealing with pressure at school, changes in your friendships, family stress, or emotions that feel hard to explain. This is a space created just for you — where you can talk openly, feel heard, and get support that actually helps.
               </p>
-              <p className="mt-5 text-lg leading-8 text-slate-600">
+              <p className="mt-5 text-lg leading-8 text-black/65">
                 In our sessions, you can talk freely without judgment. I use clinically informed biblical counseling, which means we combine real-life tools for your emotions, practical mental-health support, and what God says about who you are.
               </p>
 
@@ -110,9 +110,9 @@ export default function TeenCounseling() {
                   { label: "Mental Health", icon: "🧠" },
                   { label: "God's Truth", icon: "📖" },
                 ].map((p) => (
-                  <div key={p.label} className="rounded-2xl border border-sky-100 bg-sky-50 px-4 py-4 text-center">
+                  <div key={p.label} className="rounded-2xl border border-black/10 bg-[var(--background)] px-4 py-4 text-center">
                     <p className="text-2xl">{p.icon}</p>
-                    <p className="mt-2 text-sm font-bold text-slate-800">{p.label}</p>
+                    <p className="mt-2 text-sm font-bold text-black/90">{p.label}</p>
                   </div>
                 ))}
               </div>
@@ -136,10 +136,10 @@ export default function TeenCounseling() {
       <section className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto max-w-2xl text-center">
-            <p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-sky-500">No Topic Too Big or Small</p>
-            <h2 className="text-4xl font-bold text-slate-900 sm:text-5xl">What We Can Talk About</h2>
-            <div className="mx-auto mt-5 h-1 w-14 rounded-full bg-sky-400" />
-            <p className="mt-6 text-lg text-slate-600">
+            <p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-[var(--peach)]">No Topic Too Big or Small</p>
+            <h2 className="text-4xl font-bold text-black sm:text-5xl">What We Can Talk About</h2>
+            <div className="mx-auto mt-5 h-1 w-14 rounded-full bg-[var(--peach)]" />
+            <p className="mt-6 text-lg text-black/65">
               You can come to counseling for anything that&apos;s been heavy or confusing. Nothing is &ldquo;too small&rdquo; or &ldquo;too big.&rdquo; If it matters to you, it matters here.
             </p>
           </div>
@@ -148,7 +148,7 @@ export default function TeenCounseling() {
             {topics.map((topic) => (
               <span
                 key={topic}
-                className="rounded-full border border-sky-200 bg-white px-5 py-3 text-sm font-medium text-slate-700 shadow-sm transition-all hover:border-sky-400 hover:bg-sky-50 hover:text-sky-700"
+                className="rounded-full border border-[var(--teal)]/40 bg-white px-5 py-3 text-sm font-medium text-black/75 shadow-sm transition-all hover:border-[var(--peach)] hover:bg-[var(--background)] hover:text-[var(--peach)]"
               >
                 {topic}
               </span>
@@ -163,24 +163,24 @@ export default function TeenCounseling() {
           <div className="grid gap-16 lg:grid-cols-[1fr_420px] lg:items-center lg:gap-24">
 
             <div>
-              <p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-sky-500">Every Session</p>
-              <h2 className="text-4xl font-bold leading-tight text-slate-900 sm:text-5xl">
+              <p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-[var(--peach)]">Every Session</p>
+              <h2 className="text-4xl font-bold leading-tight text-black sm:text-5xl">
                 What Sessions<br />Are Like
               </h2>
-              <div className="mt-5 h-1 w-14 rounded-full bg-sky-400" />
-              <p className="mt-7 text-lg leading-8 text-slate-600">
+              <div className="mt-5 h-1 w-14 rounded-full bg-[var(--peach)]" />
+              <p className="mt-7 text-lg leading-8 text-black/65">
                 Each 60-minute Zoom session is designed to be a calm place to breathe, process, and grow. My goal is to help you feel stronger, supported, and more confident in who God made you to be.
               </p>
 
               <ul className="mt-8 space-y-4">
                 {sessionIncludes.map((item) => (
                   <li key={item} className="flex items-start gap-4">
-                    <span className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-sky-100 mt-0.5">
-                      <svg viewBox="0 0 20 20" fill="currentColor" className="h-3.5 w-3.5 text-sky-600" aria-hidden="true">
+                    <span className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-[var(--teal)]/25 mt-0.5">
+                      <svg viewBox="0 0 20 20" fill="currentColor" className="h-3.5 w-3.5 text-[var(--peach)]" aria-hidden="true">
                         <path fillRule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clipRule="evenodd" />
                       </svg>
                     </span>
-                    <span className="text-base text-slate-700">{item}</span>
+                    <span className="text-base text-black/75">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -188,11 +188,11 @@ export default function TeenCounseling() {
 
             {/* Cost card */}
             <div className="space-y-5">
-              <div className="overflow-hidden rounded-3xl bg-sky-950 p-8 text-white shadow-[0_20px_52px_rgba(14,165,233,0.20)]">
-                <p className="text-xs font-bold uppercase tracking-widest text-sky-300">Investment</p>
+              <div className="overflow-hidden rounded-3xl bg-black p-8 text-white shadow-[0_20px_52px_rgba(14,165,233,0.20)]">
+                <p className="text-xs font-bold uppercase tracking-widest text-white/75">Investment</p>
                 <div className="mt-4 flex items-end gap-2">
                   <span className="text-6xl font-black">$90</span>
-                  <span className="mb-2 text-lg text-sky-300">/ session</span>
+                  <span className="mb-2 text-lg text-white/75">/ session</span>
                 </div>
                 <div className="my-6 h-px bg-white/10" />
                 <p className="text-sm leading-6 text-white/75">
@@ -206,9 +206,9 @@ export default function TeenCounseling() {
                 </a>
               </div>
 
-              <div className="rounded-2xl border border-slate-100 bg-slate-50 p-6 text-center">
-                <p className="text-sm font-bold text-slate-900">You&apos;re Not Alone</p>
-                <p className="mt-2 text-sm leading-6 text-slate-600">Whatever you&apos;re facing, this is a place to talk, heal, and grow. I&apos;m here to walk with you every step of the way.</p>
+              <div className="rounded-2xl border border-black/10 bg-[var(--background)] p-6 text-center">
+                <p className="text-sm font-bold text-black">You&apos;re Not Alone</p>
+                <p className="mt-2 text-sm leading-6 text-black/65">Whatever you&apos;re facing, this is a place to talk, heal, and grow. I&apos;m here to walk with you every step of the way.</p>
               </div>
             </div>
 
@@ -217,8 +217,8 @@ export default function TeenCounseling() {
       </section>
 
       {/* ── CTA ── */}
-      <section className="relative overflow-hidden bg-sky-950 px-6 py-12 lg:px-10 lg:py-16">
-        <div className="pointer-events-none absolute -left-20 top-0 h-80 w-80 rounded-full bg-sky-500/10 blur-3xl" />
+      <section className="relative overflow-hidden bg-black px-6 py-12 lg:px-10 lg:py-16">
+        <div className="pointer-events-none absolute -left-20 top-0 h-80 w-80 rounded-full bg-[var(--peach)]/15 blur-3xl" />
         <div className="relative mx-auto max-w-3xl text-center">
           <h2 className="text-4xl font-bold text-white sm:text-5xl">Ready to Talk?</h2>
           <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-white/75">

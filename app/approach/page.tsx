@@ -93,30 +93,30 @@ function AccordionItem({ step, index }: { step: typeof steps[0]; index: number }
   const [open, setOpen] = useState(false);
 
   return (
-    <div className={`overflow-hidden rounded-2xl border transition-all duration-300 ${open ? 'border-[var(--peach)]/40 shadow-[0_8px_32px_rgba(254,143,104,0.12)]' : 'border-slate-200 bg-white shadow-sm'}`}>
+    <div className={`overflow-hidden rounded-2xl border transition-all duration-300 ${open ? 'border-[var(--peach)]/40 shadow-[0_8px_32px_rgba(254,143,104,0.12)]' : 'border-black/15 bg-white shadow-sm'}`}>
       <button
         onClick={() => setOpen(!open)}
         className="flex w-full items-center gap-5 px-7 py-6 text-left"
         aria-expanded={open}
       >
         {/* Step number */}
-        <span className={`flex-shrink-0 text-3xl font-black leading-none transition-colors ${open ? 'text-[var(--peach)]' : 'text-slate-200'}`}>
+        <span className={`flex-shrink-0 text-3xl font-black leading-none transition-colors ${open ? 'text-[var(--peach)]' : 'text-white/85'}`}>
           {step.num}
         </span>
 
         {/* Icon */}
-        <span className={`flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl transition-all ${open ? 'bg-[var(--peach)] text-white' : 'bg-slate-100 text-slate-500'}`}>
+        <span className={`flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl transition-all ${open ? 'bg-[var(--peach)] text-white' : 'bg-white text-black/55'}`}>
           {step.icon}
         </span>
 
         {/* Title + summary */}
         <div className="flex-1 min-w-0">
-          <p className="text-lg font-bold text-slate-900">{step.title}</p>
-          <p className={`text-sm transition-opacity ${open ? 'opacity-0 h-0' : 'text-slate-500'}`}>{step.summary}</p>
+          <p className="text-lg font-bold text-black">{step.title}</p>
+          <p className={`text-sm transition-opacity ${open ? 'opacity-0 h-0' : 'text-black/55'}`}>{step.summary}</p>
         </div>
 
         {/* Chevron */}
-        <span className={`flex-shrink-0 transition-transform duration-300 ${open ? 'rotate-45 text-[var(--peach)]' : 'text-slate-400'}`}>
+        <span className={`flex-shrink-0 transition-transform duration-300 ${open ? 'rotate-45 text-[var(--peach)]' : 'text-white/65'}`}>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-5 w-5" aria-hidden="true">
             <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
           </svg>
@@ -125,18 +125,18 @@ function AccordionItem({ step, index }: { step: typeof steps[0]; index: number }
 
       {/* Expanded content */}
       <div className={`transition-all duration-300 ease-in-out ${open ? 'max-h-[600px] opacity-100' : 'max-h-0 opacity-0'} overflow-hidden`}>
-        <div className="border-t border-slate-100 px-7 pb-7 pt-5">
-          <p className="text-base leading-7 text-slate-600">{step.content[0]}</p>
+        <div className="border-t border-black/10 px-7 pb-7 pt-5">
+          <p className="text-base leading-7 text-black/65">{step.content[0]}</p>
           <ul className="mt-4 space-y-2">
             {step.bullets.map((b) => (
               <li key={b} className="flex items-start gap-3">
                 <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--peach)]" />
-                <span className="text-base text-slate-600">{b}</span>
+                <span className="text-base text-black/65">{b}</span>
               </li>
             ))}
           </ul>
           {step.footer && (
-            <p className="mt-5 text-sm font-medium italic text-slate-500">{step.footer}</p>
+            <p className="mt-5 text-sm font-medium italic text-black/55">{step.footer}</p>
           )}
         </div>
       </div>
@@ -148,38 +148,35 @@ export default function Approach() {
   return (
     <>
 
-      {/* ── HERO ── */}
-      <section className="relative overflow-hidden bg-slate-900 px-6 py-14 lg:px-10 lg:py-24">
-        {/* Background image */}
-        <div className="absolute inset-0 z-0">
+      {/* ── HERO BANNER ── */}
+      <section className="relative w-full overflow-hidden">
+        <div className="relative h-[200px] sm:h-[280px] lg:h-[380px]">
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/14-hskpGkVkXncEE10BoJcxFHbYnDRas7.webp"
-            alt="Supportive hands together"
+            src="/images/approach-banner.png"
+            alt="My Approach — Toyin Adefemi Counseling"
             fill
-            sizes="100vw"
-            className="object-cover"
             priority
+            sizes="100vw"
+            className="object-cover object-center"
           />
-          <div className="absolute inset-0 bg-slate-900/70" />
         </div>
+      </section>
 
-        {/* Decorative grid */}
-        <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:64px_64px]" />
-
-        <div className="relative z-10 mx-auto max-w-7xl">
-          <div className="max-w-3xl">
-            <div className="mb-6 flex items-center gap-3">
-              <span className="h-px w-10 bg-[var(--peach)]" />
-              <p className="text-xs font-bold uppercase tracking-[0.25em] text-[var(--peach)]">My Approach</p>
-            </div>
-            <h1 className="text-5xl font-bold leading-[1.1] tracking-tight text-white sm:text-7xl">
-              A Safe, Supportive,<br />
-              <span className="text-[var(--peach)]">Spirit-Led</span> Experience
-            </h1>
-            <p className="mt-8 max-w-2xl text-xl leading-8 text-white/80">
-              Every session is designed to help you feel seen, heard, and supported — emotionally, spiritually, and practically.
-            </p>
+      {/* ── HERO INTRO (under the banner) ── */}
+      <section className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
+        <div className="mx-auto max-w-4xl text-center">
+          <div className="mb-6 flex items-center justify-center gap-3">
+            <span className="h-px w-10 bg-[var(--peach)]" />
+            <p className="text-xs font-bold uppercase tracking-[0.25em] text-[var(--peach)]">My Approach</p>
+            <span className="h-px w-10 bg-[var(--peach)]" />
           </div>
+          <h1 className="text-4xl font-bold leading-[1.12] tracking-tight text-black sm:text-5xl">
+            A Safe, Supportive,<br />
+            <span className="text-[var(--peach)]">Spirit-Led</span> Experience
+          </h1>
+          <p className="mx-auto mt-7 max-w-2xl text-lg leading-relaxed text-black/70">
+            Every session is designed to help you feel seen, heard, and supported — emotionally, spiritually, and practically.
+          </p>
         </div>
       </section>
 
@@ -191,19 +188,19 @@ export default function Approach() {
             {/* Left: text */}
             <div>
               <p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-[var(--peach)]">Sessions</p>
-              <h2 className="text-4xl font-bold leading-tight text-slate-900 sm:text-5xl">
+              <h2 className="text-4xl font-bold leading-tight text-black sm:text-5xl">
                 What You Can Expect
               </h2>
               <div className="mt-5 h-1 w-14 rounded-full bg-[var(--peach)]" />
 
               <div className="mt-8 space-y-5">
-                <p className="text-lg leading-8 text-slate-600">
+                <p className="text-lg leading-8 text-black/65">
                   In our dedicated hour-long virtual sessions, I offer personalized biblical counseling tailored to your specific needs. Each session includes prayer, focused conversation around the challenges you&apos;re facing, and practical, Christ-centered homework to help you continue growing throughout the week.
                 </p>
-                <p className="text-lg leading-8 text-slate-600">
+                <p className="text-lg leading-8 text-black/65">
                   The Word of God is our foundation — guiding, comforting, and transforming us as we walk through this journey together. Through clinically informed biblical counseling, my heart is to come alongside you with support, encouragement, and truth every step of the way.
                 </p>
-                <p className="text-lg leading-8 text-slate-600">
+                <p className="text-lg leading-8 text-black/65">
                   I provide support for adolescents, teens, pre-teens, young adults, parents, and families navigating trauma, anxiety, depression, spiritual disconnection, family issues, abuse, discipleship, relationships, temptation, lust, and more. No matter the struggle, you will be met with compassion, confidentiality, and Christ-centered care.
                 </p>
               </div>
@@ -222,14 +219,14 @@ export default function Approach() {
                 </p>
                 <a
                   href="/contact"
-                  className="mt-6 flex items-center justify-center rounded-2xl bg-white px-6 py-4 text-sm font-bold text-[var(--peach)] transition-all hover:bg-slate-50 hover:-translate-y-0.5"
+                  className="mt-6 flex items-center justify-center rounded-2xl bg-white px-6 py-4 text-sm font-bold text-[var(--peach)] transition-all hover:bg-[var(--background)] hover:-translate-y-0.5"
                 >
                   Book a Free Consultation
                 </a>
               </div>
 
               {/* Session specs */}
-              <div className="rounded-3xl border border-slate-100 bg-white p-7 space-y-5">
+              <div className="rounded-3xl border border-black/10 bg-white p-7 space-y-5">
                 {[
                   { label: "Duration", value: "60 minutes" },
                   { label: "Format", value: "Virtual (secure video)" },
@@ -237,8 +234,8 @@ export default function Approach() {
                   { label: "Free intro", value: "30-min consultation" },
                 ].map((item) => (
                   <div key={item.label} className="flex items-center justify-between">
-                    <span className="text-sm font-medium text-slate-500">{item.label}</span>
-                    <span className="text-sm font-bold text-slate-900">{item.value}</span>
+                    <span className="text-sm font-medium text-black/55">{item.label}</span>
+                    <span className="text-sm font-bold text-[var(--peach)]">{item.value}</span>
                   </div>
                 ))}
               </div>
@@ -249,7 +246,7 @@ export default function Approach() {
       </section>
 
       {/* ── WHY CLINICALLY INFORMED BIBLICAL COUNSELING ── */}
-      <section className="relative bg-slate-900 px-6 py-12 lg:px-10 lg:py-16">
+      <section className="relative bg-black px-6 py-12 lg:px-10 lg:py-16">
         <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:48px_48px]" />
         <div className="relative mx-auto max-w-7xl">
           <div className="grid gap-16 lg:grid-cols-2 lg:items-center lg:gap-24">
@@ -264,7 +261,7 @@ export default function Approach() {
                 className="object-cover object-top"
               />
               {/* Scripture overlay */}
-              <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-900/90 to-transparent p-8">
+              <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/90 to-transparent p-8">
                 <p className="text-base italic text-white/90">&ldquo;Your word is a lamp to my feet and a light to my path.&rdquo;</p>
                 <p className="mt-2 text-xs font-bold uppercase tracking-widest text-[var(--peach)]">Psalm 119:105</p>
               </div>
@@ -279,10 +276,10 @@ export default function Approach() {
               <div className="mt-5 h-1 w-14 rounded-full bg-[var(--peach)]" />
 
               <div className="mt-8 space-y-5">
-                <p className="text-lg leading-8 text-slate-400">
+                <p className="text-lg leading-8 text-white/65">
                   Clinically informed biblical counseling starts with Scripture as the foundation. Though modern psychology offers helpful insights, God&apos;s Word provides the ultimate framework for healing and transformation.
                 </p>
-                <p className="text-lg leading-8 text-slate-400">
+                <p className="text-lg leading-8 text-white/65">
                   By combining biblical truth with practical mental health understanding, this approach supports whole-person restoration — addressing spirit, soul, and body — helping you experience a deeper, fuller expression of who God created you to be.
                 </p>
               </div>
@@ -294,7 +291,7 @@ export default function Approach() {
                   { label: "Soul", icon: "✦" },
                   { label: "Body", icon: "✦" },
                 ].map((p) => (
-                  <div key={p.label} className="rounded-2xl border border-slate-700 bg-slate-800 px-5 py-5 text-center">
+                  <div key={p.label} className="rounded-2xl border border-white/15 bg-black px-5 py-5 text-center">
                     <p className="text-lg text-[var(--peach)]">{p.icon}</p>
                     <p className="mt-2 text-sm font-bold text-white">{p.label}</p>
                   </div>
@@ -334,7 +331,7 @@ export default function Approach() {
 
           <a
             href="/contact"
-            className="mt-12 inline-flex items-center justify-center rounded-2xl bg-white px-10 py-5 text-base font-bold text-[var(--peach)] shadow-[0_16px_40px_rgba(0,0,0,0.15)] transition-all hover:bg-slate-50 hover:-translate-y-0.5"
+            className="mt-12 inline-flex items-center justify-center rounded-2xl bg-white px-10 py-5 text-base font-bold text-[var(--peach)] shadow-[0_16px_40px_rgba(0,0,0,0.15)] transition-all hover:bg-[var(--background)] hover:-translate-y-0.5"
           >
             Book a Complimentary 30-Min Consultation
           </a>
@@ -349,11 +346,11 @@ export default function Approach() {
             {/* Left: sticky heading */}
             <div className="lg:sticky lg:top-28">
               <p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-[var(--peach)]">Step by Step</p>
-              <h2 className="text-4xl font-bold leading-tight text-slate-900 sm:text-5xl">
+              <h2 className="text-4xl font-bold leading-tight text-black sm:text-5xl">
                 How Sessions Work
               </h2>
               <div className="mt-5 h-1 w-14 rounded-full bg-[var(--peach)]" />
-              <p className="mt-6 text-lg leading-8 text-slate-600">
+              <p className="mt-6 text-lg leading-8 text-black/65">
                 Every step is intentional and rooted in biblical truth and trauma-informed care. Tap each step to learn more.
               </p>
 
@@ -361,8 +358,8 @@ export default function Approach() {
               <div className="mt-10 space-y-2">
                 {steps.map((s) => (
                   <div key={s.num} className="flex items-center gap-3">
-                    <span className="text-xs font-black text-slate-300">{s.num}</span>
-                    <span className="text-sm font-medium text-slate-500">{s.title}</span>
+                    <span className="text-xs font-black text-white/75">{s.num}</span>
+                    <span className="text-sm font-medium text-black/55">{s.title}</span>
                   </div>
                 ))}
               </div>
@@ -382,22 +379,22 @@ export default function Approach() {
       {/* ── FINAL CTA ── */}
       <section className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-4xl font-bold text-slate-900 sm:text-5xl">
+          <h2 className="text-4xl font-bold text-black sm:text-5xl">
             Ready to Take the First Step?
           </h2>
-          <p className="mx-auto mt-6 text-lg leading-8 text-slate-600">
+          <p className="mx-auto mt-6 text-lg leading-8 text-black/65">
             Your journey toward healing, identity, and wholeness begins with one conversation. I&apos;d be honored to be your companion along the way.
           </p>
           <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <a
-              href="/contact"
+              href="/book-a-session"
               className="inline-flex items-center justify-center rounded-2xl bg-[var(--peach)] px-10 py-4 text-base font-semibold text-white shadow-[0_12px_28px_rgba(254,143,104,0.35)] transition-all hover:bg-[var(--peach-deep)] hover:-translate-y-0.5"
             >
               Book a Session
             </a>
             <a
               href="/about"
-              className="inline-flex items-center justify-center rounded-2xl border-2 border-slate-200 bg-white px-10 py-4 text-base font-semibold text-slate-700 transition-all hover:border-slate-300"
+              className="inline-flex items-center justify-center rounded-2xl border-2 border-black/15 bg-white px-10 py-4 text-base font-semibold text-black/75 transition-all hover:border-black/25"
             >
               Meet the Counselor
             </a>

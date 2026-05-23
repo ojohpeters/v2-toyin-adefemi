@@ -32,17 +32,17 @@ export default function About() {
                 <p className="text-xs font-bold uppercase tracking-[0.25em] text-[var(--peach)]">Welcome</p>
               </div>
 
-              <h1 className="text-5xl font-bold leading-[1.05] tracking-tight text-slate-900 sm:text-6xl lg:text-7xl">
+              <h1 className="text-5xl font-bold leading-[1.05] tracking-tight text-black sm:text-6xl lg:text-7xl">
                 Hi, I&apos;m<br />
                 <span className="text-[var(--peach)]">Toyin</span>{' '}
-                <span className="text-slate-900">Adefemi.</span>
+                <span className="text-black">Adefemi.</span>
               </h1>
 
-              <p className="mt-5 text-lg font-medium text-slate-500">
+              <p className="mt-5 text-lg font-medium text-black/55">
                 Biblical Counselor · Youth Advocate · Emotional Wellness Practitioner
               </p>
 
-              <p className="mt-7 max-w-lg text-lg leading-8 text-slate-600">
+              <p className="mt-7 max-w-lg text-lg leading-8 text-black/65">
                 I&apos;m grateful for the opportunity to walk alongside you as you begin your soul-care journey. For more than a decade I have had the privilege of walking alongside hundreds of youth, parents, and families through some of life&apos;s most challenging seasons.
               </p>
 
@@ -55,21 +55,21 @@ export default function About() {
                 ].map((item) => (
                   <div key={item.label} className="flex flex-col">
                     <span className="text-3xl font-bold text-[var(--peach)]">{item.stat}</span>
-                    <span className="mt-0.5 text-xs font-semibold uppercase tracking-wider text-slate-500">{item.label}</span>
+                    <span className="mt-0.5 text-xs font-semibold uppercase tracking-wider text-black/55">{item.label}</span>
                   </div>
                 ))}
               </div>
 
               <div className="mt-10 flex flex-wrap gap-4">
                 <a
-                  href="/contact"
+                  href="/book-a-session"
                   className="inline-flex items-center justify-center rounded-2xl bg-[var(--peach)] px-8 py-4 text-base font-semibold text-white shadow-[0_12px_28px_rgba(254,143,104,0.35)] transition-all hover:bg-[var(--peach-deep)] hover:-translate-y-0.5"
                 >
                   Book a Session
                 </a>
                 <a
                   href="/work-with-me"
-                  className="inline-flex items-center justify-center rounded-2xl border-2 border-slate-200 bg-white px-8 py-4 text-base font-semibold text-slate-700 transition-all hover:border-slate-300"
+                  className="inline-flex items-center justify-center rounded-2xl border-2 border-black/15 bg-white px-8 py-4 text-base font-semibold text-black/75 transition-all hover:border-black/25"
                 >
                   View Services
                 </a>
@@ -80,7 +80,7 @@ export default function About() {
             <div className="relative flex items-center justify-center lg:justify-end">
               <div className="relative h-[480px] w-full max-w-[400px] lg:h-[580px] lg:max-w-none">
                 {/* Decorative ring */}
-                <div className="absolute -inset-3 rounded-[3rem] bg-gradient-to-br from-[var(--peach)]/20 to-sky-200/30" />
+                <div className="absolute -inset-3 rounded-[3rem] bg-gradient-to-br from-[var(--peach)]/20 to-[var(--teal)]/30" />
                 <div className="relative h-full overflow-hidden rounded-[2.5rem] shadow-[0_32px_64px_rgba(0,0,0,0.15)]">
                   <Image
                     src="/images/meet-counselor.jpg"
@@ -131,23 +131,23 @@ export default function About() {
               {/* Overlay label */}
               <div className="absolute bottom-6 left-6 right-6 rounded-xl bg-white/90 backdrop-blur-sm px-5 py-4 shadow-lg">
                 <p className="text-xs font-bold uppercase tracking-widest text-[var(--peach)]">Safe Space</p>
-                <p className="mt-1 text-sm font-semibold text-slate-800">A confidential virtual counseling room created with your healing in mind.</p>
+                <p className="mt-1 text-sm font-semibold text-black/90">A confidential virtual counseling room created with your healing in mind.</p>
               </div>
             </div>
 
             {/* Text right */}
             <div>
               <p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-[var(--peach)]">My Story</p>
-              <h2 className="text-4xl font-bold leading-tight text-slate-900 sm:text-5xl">
+              <h2 className="text-4xl font-bold leading-tight text-black sm:text-5xl">
                 My Heart<br />for Healing
               </h2>
               <div className="mt-5 h-1 w-14 rounded-full bg-[var(--peach)]" />
 
               <div className="mt-8 space-y-6">
-                <p className="text-lg leading-8 text-slate-600">
+                <p className="text-lg leading-8 text-black/65">
                   My virtual counseling room is a safe and confidential space, created with your healing in mind. My work flows from compassion, Scripture, and a deep conviction that emotional and spiritual restoration is possible for every person.
                 </p>
-                <p className="text-lg leading-8 text-slate-600">
+                <p className="text-lg leading-8 text-black/65">
                   For more than a decade, I&apos;ve supported youth, young adults, and families walking through trauma, confusion, and some of life&apos;s most difficult transitions. What guides me is not only my training but also a God-given burden to see people restored. In every session, I blend clinical insight with biblical truth and Spirit-led wisdom, creating a space where you feel seen, supported, and strengthened.
                 </p>
               </div>
@@ -165,7 +165,7 @@ export default function About() {
         <div className="relative mx-auto max-w-7xl">
           <div className="text-center">
             <p className="mb-3 text-xs font-bold uppercase tracking-[0.25em] text-[var(--peach)]">A God-Directed Journey</p>
-            <h2 className="text-4xl font-bold text-slate-900 sm:text-5xl lg:text-6xl">My Calling</h2>
+            <h2 className="text-4xl font-bold text-black sm:text-5xl lg:text-6xl">My Calling</h2>
             <div className="mx-auto mt-5 h-1 w-14 rounded-full bg-[var(--peach)]" />
           </div>
 
@@ -181,7 +181,7 @@ export default function About() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0" />
                   </svg>
                 ),
-                accent: "bg-white ring-slate-200 shadow-sm",
+                accent: "bg-white ring-black/15 shadow-sm",
               },
               {
                 phase: "The Shift",
@@ -204,7 +204,7 @@ export default function About() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
                   </svg>
                 ),
-                accent: "bg-white ring-slate-200 shadow-sm",
+                accent: "bg-white ring-black/15 shadow-sm",
               },
             ].map((step) => (
               <div
@@ -216,22 +216,22 @@ export default function About() {
                     God&apos;s Turn
                   </div>
                 )}
-                <div className={`flex h-12 w-12 items-center justify-center rounded-2xl ${step.highlight ? 'bg-[var(--peach)] text-white' : 'bg-slate-100 text-slate-600'}`}>
+                <div className={`flex h-12 w-12 items-center justify-center rounded-2xl ${step.highlight ? 'bg-[var(--peach)] text-white' : 'bg-white text-black/65'}`}>
                   {step.icon}
                 </div>
                 <div>
-                  <p className={`text-xs font-bold uppercase tracking-widest ${step.highlight ? 'text-[var(--peach)]' : 'text-slate-500'}`}>
+                  <p className={`text-xs font-bold uppercase tracking-widest ${step.highlight ? 'text-[var(--peach)]' : 'text-black/55'}`}>
                     {step.phase}
                   </p>
-                  <h3 className="mt-1 text-xl font-bold text-slate-900">{step.title}</h3>
+                  <h3 className="mt-1 text-xl font-bold text-black">{step.title}</h3>
                 </div>
-                <p className="text-base leading-7 text-slate-600">{step.body}</p>
+                <p className="text-base leading-7 text-black/65">{step.body}</p>
               </div>
             ))}
           </div>
 
           {/* Closing line */}
-          <p className="mx-auto mt-16 max-w-2xl text-center text-lg italic leading-8 text-slate-600">
+          <p className="mx-auto mt-16 max-w-2xl text-center text-lg italic leading-8 text-black/65">
             My journey from corporate leadership to soul care wasn&apos;t accidental. It was preparation. Every step equipped me to walk with young people, parents, and families as they find clarity, identity, and healing in Christ.
           </p>
         </div>
@@ -245,15 +245,15 @@ export default function About() {
             {/* Left: text + credentials */}
             <div>
               <p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-[var(--peach)]">Training &amp; Formation</p>
-              <h2 className="text-4xl font-bold leading-tight text-slate-900 sm:text-5xl">
+              <h2 className="text-4xl font-bold leading-tight text-black sm:text-5xl">
                 The Equipping
               </h2>
               <div className="mt-5 h-1 w-14 rounded-full bg-[var(--peach)]" />
 
-              <p className="mt-8 text-lg leading-8 text-slate-600">
+              <p className="mt-8 text-lg leading-8 text-black/65">
                 Over time, God made it clear that my greatest credential wasn&apos;t just my training, but the foundation I stand on: the Word of God.
               </p>
-              <p className="mt-4 text-lg leading-8 text-slate-600">
+              <p className="mt-4 text-lg leading-8 text-black/65">
                 Today, I bring a unique blend of biblical counseling, mental health coaching, emotional intelligence training, and a deep commitment to Scripture into every session.
               </p>
 
@@ -268,10 +268,10 @@ export default function About() {
                   </div>
                   <div>
                     <div className="flex items-center gap-2">
-                      <p className="font-bold text-slate-900">The Bible</p>
+                      <p className="font-bold text-black">The Bible</p>
                       <span className="rounded-full bg-[var(--peach)] px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white">Primary Authority</span>
                     </div>
-                    <p className="mt-0.5 text-sm text-slate-500">My primary authority and guide for soul care</p>
+                    <p className="mt-0.5 text-sm text-black/55">My primary authority and guide for soul care</p>
                   </div>
                 </div>
 
@@ -282,9 +282,9 @@ export default function About() {
                   "Certified Christian Trauma Care Provider",
                   "Certified Emotional Intelligence Life Coach",
                 ].map((cred) => (
-                  <div key={cred} className="flex items-center gap-4 rounded-xl border border-slate-100 bg-slate-50 px-5 py-4">
+                  <div key={cred} className="flex items-center gap-4 rounded-xl border border-black/10 bg-[var(--background)] px-5 py-4">
                     <div className="h-2 w-2 flex-shrink-0 rounded-full bg-[var(--peach)]" />
-                    <p className="text-sm font-medium text-slate-700">{cred}</p>
+                    <p className="text-sm font-medium text-black/75">{cred}</p>
                   </div>
                 ))}
               </div>
@@ -299,7 +299,7 @@ export default function About() {
                 sizes="(max-width: 1024px) 100vw, 480px"
                 className="object-cover object-top"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
             </div>
 
           </div>
@@ -315,7 +315,7 @@ export default function About() {
           sizes="100vw"
           className="object-cover object-center"
         />
-        <div className="absolute inset-0 bg-slate-900/40" />
+        <div className="absolute inset-0 bg-black/40" />
         <div className="absolute inset-0 flex items-center justify-center">
           <p className="max-w-2xl px-6 text-center text-2xl font-light italic leading-relaxed text-white sm:text-3xl">
             &ldquo;He heals the brokenhearted and binds up their wounds.&rdquo;
@@ -327,22 +327,22 @@ export default function About() {
       <section className="relative overflow-hidden bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-4xl text-center">
           <p className="mb-4 text-xs font-bold uppercase tracking-[0.25em] text-[var(--peach)]">Ready to Start?</p>
-          <h2 className="text-5xl font-bold leading-tight text-slate-900 sm:text-6xl">
+          <h2 className="text-5xl font-bold leading-tight text-black sm:text-6xl">
             Let&apos;s Begin<br />Your Journey
           </h2>
-          <p className="mx-auto mt-8 max-w-2xl text-xl leading-relaxed text-slate-600">
+          <p className="mx-auto mt-8 max-w-2xl text-xl leading-relaxed text-black/65">
             If you&apos;re ready to experience healing, discover your identity, and step boldly into your purpose, I&apos;d be honored to walk alongside you.
           </p>
           <div className="mt-12 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <a
-              href="/contact"
+              href="/book-a-session"
               className="inline-flex items-center justify-center rounded-2xl bg-[var(--peach)] px-10 py-4 text-lg font-semibold text-white shadow-[0_16px_30px_rgba(254,143,104,0.34)] transition-all hover:bg-[var(--peach-deep)] hover:-translate-y-0.5"
             >
               Book a Session
             </a>
             <a
               href="/contact"
-              className="inline-flex items-center justify-center rounded-2xl border-2 border-slate-200 bg-white px-10 py-4 text-lg font-semibold text-slate-700 transition-all hover:border-slate-300 hover:bg-slate-50"
+              className="inline-flex items-center justify-center rounded-2xl border-2 border-black/15 bg-white px-10 py-4 text-lg font-semibold text-black/75 transition-all hover:border-black/25 hover:bg-[var(--background)]"
             >
               Get in Touch
             </a>

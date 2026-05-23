@@ -35,15 +35,15 @@ export function Footer() {
   }
 
   const inputClass =
-    'w-full rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm text-slate-800 placeholder-slate-400 transition focus:border-[var(--peach)] focus:outline-none focus:ring-2 focus:ring-[var(--peach)]/20';
+    'w-full rounded-lg border border-black/15 bg-white px-4 py-3 text-sm text-black/90 placeholder-black/40 transition focus:border-[var(--peach)] focus:outline-none focus:ring-2 focus:ring-[var(--peach)]/20';
 
   return (
-    <footer className="bg-slate-900">
+    <footer className="bg-black">
 
       {/* Certifications & Affiliations */}
       <div className="bg-[var(--background)] px-6 py-10 lg:py-12">
         <div className="mx-auto max-w-5xl text-center">
-          <p className="mb-7 whitespace-nowrap text-[9px] font-semibold uppercase tracking-[0.1em] text-slate-500 sm:text-xs sm:tracking-[0.22em]">
+          <p className="mb-7 whitespace-nowrap text-[9px] font-semibold uppercase tracking-[0.1em] text-black/55 sm:text-xs sm:tracking-[0.22em]">
             Degree, Certifications &amp; Affiliations
           </p>
           <Image
@@ -75,14 +75,14 @@ export function Footer() {
             <h2 className="text-3xl font-bold text-white">Let Me Help You</h2>
 
             {submitted ? (
-              <div className="mt-8 rounded-2xl border border-emerald-500/30 bg-emerald-500/10 px-6 py-10 text-center">
-                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-emerald-500/20">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-6 w-6 text-emerald-400" aria-hidden="true">
+              <div className="mt-8 rounded-2xl border border-[var(--peach)]/40 bg-[var(--teal)]/20 px-6 py-10 text-center">
+                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-[var(--teal)]/25">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-6 w-6 text-[var(--peach)]" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                   </svg>
                 </div>
                 <p className="text-lg font-semibold text-white">Message sent!</p>
-                <p className="mt-1 text-sm text-slate-400">Thank you for reaching out — I&apos;ll be in touch soon.</p>
+                <p className="mt-1 text-sm text-white/65">Thank you for reaching out — I&apos;ll be in touch soon.</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="mt-8 space-y-4">
@@ -120,8 +120,8 @@ export function Footer() {
                 />
 
                 {/* Dynamic CAPTCHA */}
-                <div className="flex flex-wrap items-center gap-3 rounded-lg border border-slate-700 bg-slate-800/60 px-4 py-3">
-                  <span className="text-sm text-slate-300">
+                <div className="flex flex-wrap items-center gap-3 rounded-lg border border-white/15 bg-white/10 px-4 py-3">
+                  <span className="text-sm text-white/75">
                     Prove You Are Human:&nbsp;
                     <span className="font-semibold text-white">{captchaNums[0]} + {captchaNums[1]} =</span>
                   </span>
@@ -134,10 +134,10 @@ export function Footer() {
                       setCaptchaError(false);
                     }}
                     required
-                    className="w-20 rounded-md border border-slate-600 bg-slate-700 px-3 py-1.5 text-center text-sm text-white placeholder-slate-500 focus:border-[var(--peach)] focus:outline-none"
+                    className="w-20 rounded-md border border-white/20 bg-black px-3 py-1.5 text-center text-sm text-white placeholder-black/55 focus:border-[var(--peach)] focus:outline-none"
                   />
                   {captchaError && (
-                    <span className="text-xs font-medium text-red-400">Incorrect — try again</span>
+                    <span className="text-xs font-medium text-[var(--peach)]">Incorrect — try again</span>
                   )}
                 </div>
 
@@ -152,7 +152,7 @@ export function Footer() {
           </div>
 
           {/* Vertical divider */}
-          <div className="hidden w-px self-stretch bg-slate-700/60 lg:block" />
+          <div className="hidden w-px self-stretch bg-white/10 lg:block" />
 
           {/* ── Right: Contact Info ── */}
           <div className="flex flex-col justify-center gap-9">
@@ -168,7 +168,7 @@ export function Footer() {
                 </svg>
               </div>
               <div>
-                <p className="text-[10px] font-bold uppercase tracking-widest text-slate-500">Just One Phone Call Away</p>
+                <p className="text-[10px] font-bold uppercase tracking-widest text-black/55">Just One Phone Call Away</p>
                 <a href="tel:+13026599399" className="mt-1 block text-base font-semibold text-white hover:text-[var(--peach)] transition-colors">
                   302 659 9399
                 </a>
@@ -183,7 +183,7 @@ export function Footer() {
                 </svg>
               </div>
               <div>
-                <p className="text-[10px] font-bold uppercase tracking-widest text-slate-500">General Inquiries</p>
+                <p className="text-[10px] font-bold uppercase tracking-widest text-black/55">General Inquiries</p>
                 <a href="mailto:toyin.biblicalcounselor@gmail.com" className="mt-1 block text-base font-semibold text-white hover:text-[var(--peach)] transition-colors break-all">
                   toyin.biblicalcounselor@gmail.com
                 </a>
@@ -191,11 +191,11 @@ export function Footer() {
             </div>
 
             {/* Divider */}
-            <div className="h-px bg-slate-700/60" />
+            <div className="h-px bg-white/10" />
 
             {/* Social Icons */}
             <div>
-              <p className="mb-4 text-[10px] font-bold uppercase tracking-widest text-slate-500">Follow Along</p>
+              <p className="mb-4 text-[10px] font-bold uppercase tracking-widest text-black/55">Follow Along</p>
               <div className="flex gap-3">
                 {[
                   {
@@ -222,7 +222,7 @@ export function Footer() {
                   <a
                     key={social.label}
                     href={social.href}
-                    className="flex h-9 w-9 items-center justify-center rounded-xl bg-slate-800 text-slate-400 ring-1 ring-slate-700 transition hover:bg-[var(--peach)] hover:text-white hover:ring-[var(--peach)]"
+                    className="flex h-9 w-9 items-center justify-center rounded-xl bg-black text-white/65 ring-1 ring-white/15 transition hover:bg-[var(--peach)] hover:text-white hover:ring-[var(--peach)]"
                     aria-label={social.label}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -238,7 +238,7 @@ export function Footer() {
       </div>
 
       {/* Copyright Strip */}
-      <div className="border-t border-slate-800 bg-black/20 px-6 py-5 text-center text-sm text-slate-500">
+      <div className="border-t border-white/10 bg-black/20 px-6 py-5 text-center text-sm text-black/55">
         © 2026 Toyin Adefemi. All rights reserved.
       </div>
     </footer>

@@ -122,13 +122,13 @@ export default function Contact() {
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-16 lg:grid-cols-[1fr_420px] lg:items-center">
             <div>
-              <p className="mb-6 text-sm font-semibold uppercase tracking-[0.22em] text-sky-700">
+              <p className="mb-6 text-sm font-semibold uppercase tracking-[0.22em] text-[var(--peach)]">
                 Get in Touch
               </p>
-              <h1 className="text-5xl font-bold leading-[1.1] tracking-tight text-slate-900 sm:text-7xl">
+              <h1 className="text-5xl font-bold leading-[1.1] tracking-tight text-black sm:text-7xl">
                 Let&apos;s Connect
               </h1>
-              <p className="mt-8 max-w-2xl text-2xl leading-relaxed text-slate-600">
+              <p className="mt-8 max-w-2xl text-2xl leading-relaxed text-black/65">
                 I&apos;m here to support your healing journey. Reach out with questions or to book a session—I respond within 24-48 hours.
               </p>
             </div>
@@ -153,11 +153,11 @@ export default function Contact() {
           <div className="grid gap-16 lg:grid-cols-[1.5fr_1fr] lg:items-center">
             <form
               onSubmit={handleSubmit}
-              className="rounded-[2.5rem] border border-slate-100 bg-white p-10 shadow-[0_12px_40px_rgba(0,0,0,0.08)] sm:p-14"
+              className="rounded-[2.5rem] border border-black/10 bg-white p-10 shadow-[0_12px_40px_rgba(0,0,0,0.08)] sm:p-14"
             >
             <div className="grid gap-6 sm:grid-cols-2">
               <div>
-                <label htmlFor="name" className="block text-sm font-semibold text-slate-900">
+                <label htmlFor="name" className="block text-sm font-semibold text-black">
                   Full Name *
                 </label>
                 <input
@@ -168,11 +168,11 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   placeholder="Your name"
-                  className="mt-3 w-full rounded-lg border border-slate-200 bg-white px-4 py-3 text-slate-900 outline-none placeholder:text-slate-400 transition-all focus:border-sky-400 focus:ring-2 focus:ring-sky-100"
+                  className="mt-3 w-full rounded-lg border border-black/15 bg-white px-4 py-3 text-black outline-none placeholder:text-white/65 transition-all focus:border-[var(--peach)] focus:ring-2 focus:ring-[var(--teal)]/40"
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block text-sm font-semibold text-slate-900">
+                <label htmlFor="email" className="block text-sm font-semibold text-black">
                   Email Address *
                 </label>
                 <input
@@ -183,14 +183,14 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   placeholder="your@email.com"
-                  className="mt-3 w-full rounded-lg border border-slate-200 bg-white px-4 py-3 text-slate-900 outline-none placeholder:text-slate-400 transition-all focus:border-sky-400 focus:ring-2 focus:ring-sky-100"
+                  className="mt-3 w-full rounded-lg border border-black/15 bg-white px-4 py-3 text-black outline-none placeholder:text-white/65 transition-all focus:border-[var(--peach)] focus:ring-2 focus:ring-[var(--teal)]/40"
                 />
               </div>
             </div>
 
             <div className="mt-6 grid gap-6 sm:grid-cols-2">
               <div>
-                <label htmlFor="phone" className="block text-sm font-semibold text-slate-900">
+                <label htmlFor="phone" className="block text-sm font-semibold text-black">
                   Phone Number
                 </label>
                 <input
@@ -200,11 +200,11 @@ export default function Contact() {
                   value={formData.phone}
                   onChange={handleChange}
                   placeholder="(555) 123-4567"
-                  className="mt-3 w-full rounded-lg border border-slate-200 bg-white px-4 py-3 text-slate-900 outline-none placeholder:text-slate-400 transition-all focus:border-sky-400 focus:ring-2 focus:ring-sky-100"
+                  className="mt-3 w-full rounded-lg border border-black/15 bg-white px-4 py-3 text-black outline-none placeholder:text-white/65 transition-all focus:border-[var(--peach)] focus:ring-2 focus:ring-[var(--teal)]/40"
                 />
               </div>
               <div>
-                <label htmlFor="serviceType" className="block text-sm font-semibold text-slate-900">
+                <label htmlFor="serviceType" className="block text-sm font-semibold text-black">
                   What brings you here? *
                 </label>
                 <select
@@ -212,7 +212,7 @@ export default function Contact() {
                   name="serviceType"
                   value={formData.serviceType}
                   onChange={handleChange}
-                  className="mt-3 w-full rounded-lg border border-slate-200 bg-white px-4 py-3 text-slate-900 outline-none transition-all focus:border-sky-400 focus:ring-2 focus:ring-sky-100"
+                  className="mt-3 w-full rounded-lg border border-black/15 bg-white px-4 py-3 text-black outline-none transition-all focus:border-[var(--peach)] focus:ring-2 focus:ring-[var(--teal)]/40"
                 >
                   <option value="individual-counseling">Individual Counseling</option>
                   <option value="family-counseling">Family Counseling</option>
@@ -224,7 +224,7 @@ export default function Contact() {
             </div>
 
             <div className="mt-6">
-              <label htmlFor="message" className="block text-sm font-semibold text-slate-900">
+              <label htmlFor="message" className="block text-sm font-semibold text-black">
                 Message *
               </label>
               <textarea
@@ -235,7 +235,7 @@ export default function Contact() {
                 required
                 placeholder="Tell me a bit about what you're looking for..."
                 rows={6}
-                className="mt-3 w-full rounded-lg border border-slate-200 bg-white px-4 py-3 text-slate-900 outline-none placeholder:text-slate-400 transition-all focus:border-sky-400 focus:ring-2 focus:ring-sky-100"
+                className="mt-3 w-full rounded-lg border border-black/15 bg-white px-4 py-3 text-black outline-none placeholder:text-white/65 transition-all focus:border-[var(--peach)] focus:ring-2 focus:ring-[var(--teal)]/40"
               />
             </div>
 
@@ -247,7 +247,7 @@ export default function Contact() {
             </button>
 
             {submitted && (
-              <p className="mt-4 rounded-lg bg-green-50 p-4 text-sm text-green-800">
+              <p className="mt-4 rounded-lg bg-[var(--background)] p-4 text-sm text-[var(--peach)]">
                 Thank you for reaching out! I&apos;ll be in touch shortly.
               </p>
             )}
@@ -276,13 +276,13 @@ export default function Contact() {
           sizes="100vw"
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-sky-600/30" />
+        <div className="absolute inset-0 bg-[var(--peach)]/40" />
       </section>
 
       {/* Additional Info — Two-Column Grid */}
       <section className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-7xl">
-          <h2 className="mb-16 text-5xl font-bold tracking-tight text-slate-900">
+          <h2 className="mb-16 text-5xl font-bold tracking-tight text-black">
             What You Should Know
           </h2>
 
@@ -323,10 +323,10 @@ export default function Contact() {
                 <div className="mb-4">
                   <InfoIcon type={item.iconType} />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900">
+                <h3 className="text-xl font-bold text-black">
                   {item.label}
                 </h3>
-                <p className="mt-3 leading-7 text-slate-600">
+                <p className="mt-3 leading-7 text-black/65">
                   {item.description}
                 </p>
               </article>
@@ -340,10 +340,10 @@ export default function Contact() {
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-16 lg:grid-cols-[1fr_380px]">
             <div>
-              <h2 className="mb-8 text-5xl font-bold tracking-tight text-slate-900">
+              <h2 className="mb-8 text-5xl font-bold tracking-tight text-black">
                 Other Ways to Connect
               </h2>
-              <p className="mb-20 max-w-2xl text-xl text-slate-600">
+              <p className="mb-20 max-w-2xl text-xl text-black/65">
                 Whether you have questions, want to book a session, or are interested in speaking opportunities, I&apos;m here to help.
               </p>
 
@@ -373,13 +373,13 @@ export default function Contact() {
                       <InfoIcon type={item.iconType} />
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-slate-900">
+                      <h3 className="text-xl font-bold text-black">
                         {item.title}
                       </h3>
                       <p className="mt-2 text-sm font-semibold text-[var(--peach)]">
                         {item.detail}
                       </p>
-                      <p className="mt-2 text-sm text-slate-600">
+                      <p className="mt-2 text-sm text-black/65">
                         {item.description}
                       </p>
                     </div>
