@@ -129,9 +129,9 @@ export default function FamilyCounseling() {
               <div className="relative w-full max-w-[380px] overflow-hidden rounded-3xl shadow-[0_32px_64px_rgba(0,0,0,0.18)] ring-1 ring-black/5">
                 <Image
                   src="/images/family-counseling.png"
-                  alt="Family Counseling — service overview"
-                  width={1024}
-                  height={1536}
+                  alt="A peaceful family home with Isaiah 32:18 — My people will abide in a peaceful habitation"
+                  width={1600}
+                  height={912}
                   className="h-auto w-full"
                 />
               </div>
@@ -145,7 +145,7 @@ export default function FamilyCounseling() {
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto max-w-2xl text-center">
             <p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-amber-600">Common Challenges</p>
-            <h2 className="text-4xl font-bold text-slate-900 sm:text-5xl">Common Reasons Families Come</h2>
+            <h2 className="text-4xl font-bold text-slate-900">Common Reasons Families Come</h2>
             <div className="mx-auto mt-5 h-1 w-14 rounded-full bg-amber-400" />
             <p className="mt-6 text-lg text-slate-600">
               No matter the struggle, your family will be met with compassion and Christ-centered guidance.

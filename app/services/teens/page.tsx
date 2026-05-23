@@ -121,8 +121,8 @@ export default function TeenCounseling() {
             {/* Image */}
             <div className="relative h-[480px] overflow-hidden rounded-3xl shadow-[0_20px_52px_rgba(0,0,0,0.10)]">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/13-GHa5h7KBMyrB4WH5lCWI0NkTDB14OO.webp"
-                alt="Young person in a supportive session"
+                src="/images/teens-counseling.png"
+                alt="Virtual teen counseling session via video call"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"

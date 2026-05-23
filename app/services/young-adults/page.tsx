@@ -103,9 +103,9 @@ export default function YoungAdultCounseling() {
               <div className="relative w-full max-w-[380px] overflow-hidden rounded-3xl shadow-[0_32px_64px_rgba(0,0,0,0.18)] ring-1 ring-black/5">
                 <Image
                   src="/images/young-adult-counseling.png"
-                  alt="Young Adult Counseling — service overview"
-                  width={1024}
-                  height={1536}
+                  alt="Young adult in a virtual counseling session with Toyin Adefemi"
+                  width={1199}
+                  height={896}
                   className="h-auto w-full"
                 />
               </div>
