@@ -100,13 +100,13 @@ export default function YoungAdultCounseling() {
 
             {/* Service flyer */}
             <div className="flex items-center justify-center">
-              <div className="relative w-full max-w-[380px] overflow-hidden rounded-3xl shadow-[0_32px_64px_rgba(0,0,0,0.18)] ring-1 ring-black/5">
+              <div className="relative aspect-[4/5] w-full max-w-[420px] overflow-hidden rounded-3xl shadow-[0_32px_64px_rgba(0,0,0,0.18)] ring-1 ring-black/5">
                 <Image
                   src="/images/young-adult-counseling.png"
                   alt="Young adult in a virtual counseling session with Toyin Adefemi"
-                  width={1199}
-                  height={896}
-                  className="h-auto w-full"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 420px"
+                  className="object-cover"
                 />
               </div>
             </div>
