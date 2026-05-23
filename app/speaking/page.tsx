@@ -2,300 +2,285 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: "Speaking & Workshops | Biblical Trauma-Informed Messages",
+  title: "Speaking & Workshops | Toyin Adefemi",
   description:
-    "Invite Toyin Adefemi to speak at your church, conference, or youth event. Biblical, trauma-informed keynotes, breakouts, and workshops on healing, identity, and emotional wellness.",
+    "Invite Toyin Adefemi to speak at your church, conference, or youth event. Biblical, trauma-informed keynotes, breakouts, and workshops on healing, identity, parenting, and emotional wellness.",
   openGraph: {
     title: "Speaking & Workshops | Toyin Adefemi",
     description:
       "Biblical, trauma-informed speaking for churches, conferences, and youth organizations. Keynotes, breakouts, staff training, and more.",
-    images: [{ url: "/images/about-toyin.jpg", width: 4480, height: 6720, alt: "Toyin Adefemi — Speaker & Biblical Counselor" }],
+    images: [{ url: "/images/speaking-hero.jpg", width: 4032, height: 3024, alt: "Toyin Adefemi — Speaker & Biblical Counselor" }],
   },
 };
 
+const topics = [
+  { title: "Healing from Trauma",            description: "Biblical foundations for understanding and healing from trauma, with practical tools for emotional restoration." },
+  { title: "Identity in Christ",             description: "Discovering your God-given identity in the midst of confusion, comparison, and cultural pressure." },
+  { title: "Emotional Wellness",             description: "Practical strategies for emotional regulation, managing anxiety, and building resilience in Christ." },
+  { title: "Relationship & Communication",   description: "Building healthy relationships and improving family communication through biblical, trauma-informed principles." },
+  { title: "Youth Mental Health",            description: "Understanding adolescent development, mental health challenges, and how to support young people's emotional wellbeing." },
+  { title: "Purpose & Calling",              description: "Exploring purpose, gifts, and calling in a way that honors both your story and God's design for your life." },
+];
+
+const formats = [
+  { title: "Keynote Addresses",   description: "Inspiring 45–60 minute keynotes for conferences, retreats, and events." },
+  { title: "Breakout Sessions",   description: "Focused 45–90 minute workshops diving deep into specific topics with interactive elements." },
+  { title: "Multi-Day Trainings", description: "Comprehensive trainings for staff, leaders, and teams seeking deeper skill-building and transformation." },
+  { title: "Youth Events",        description: "High-energy, relatable presentations designed specifically for teen and young adult audiences." },
+  { title: "Staff Development",   description: "Professional development for educators, counselors, pastors, and organizational leaders." },
+  { title: "Church Services",     description: "Sunday morning messages or special event presentations for faith communities." },
+];
+
+const pillars = [
+  { title: "Scripture-Centered",     description: "Every message is rooted in biblical truth and Christ's redemptive example." },
+  { title: "Practical & Applicable", description: "Tangible tools and strategies your audience can implement immediately." },
+  { title: "Engaging & Interactive", description: "Discussion, activities, and genuine space for real connection and learning." },
+];
+
 export default function Speaking() {
-  const topics = [
-    {
-      title: "Healing from Trauma",
-      description: "Biblical foundations for understanding and healing from trauma, with practical tools for emotional restoration.",
-    },
-    {
-      title: "Identity in Christ",
-      description: "Discovering your God-given identity in the midst of confusion, comparison, and cultural pressure.",
-    },
-    {
-      title: "Emotional Wellness",
-      description: "Practical strategies for emotional regulation, managing anxiety, and building resilience in Christ.",
-    },
-    {
-      title: "Relationship & Communication",
-      description: "Building healthy relationships and improving family communication through biblical, trauma-informed principles.",
-    },
-    {
-      title: "Youth Mental Health",
-      description: "Understanding adolescent development, mental health challenges, and how to support young people's emotional wellbeing.",
-    },
-    {
-      title: "Purpose & Calling",
-      description: "Exploring purpose, gifts, and calling in a way that honors both your story and God's design for your life.",
-    },
-  ];
-
-  const formats = [
-    {
-      title: "Keynote Addresses",
-      description: "Inspiring 45-60 minute keynote presentations for conferences, retreats, and events.",
-    },
-    {
-      title: "Breakout Sessions",
-      description: "Focused 45-90 minute workshops diving deep into specific topics with interactive elements.",
-    },
-    {
-      title: "Multi-Day Trainings",
-      description: "Comprehensive trainings for staff, leaders, and teams seeking deeper skill-building and transformation.",
-    },
-    {
-      title: "Youth Events",
-      description: "High-energy, relatable presentations designed specifically for teen and young adult audiences.",
-    },
-    {
-      title: "Staff Development",
-      description: "Professional development for educators, counselors, pastors, and organizational leaders.",
-    },
-    {
-      title: "Church Services",
-      description: "Sunday morning messages or special event presentations for faith communities.",
-    },
-  ];
-
   return (
     <>
-      {/* Bold Stage-Like Hero with Youth Group Image Background */}
-      <section className="relative overflow-hidden px-6 py-14 lg:px-10 lg:py-24">
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/31-N424m4nO0REek7JhpPtoSuCDBhsxZZ.webp"
-            alt="Joyful youth group circle"
-            fill
-            sizes="100vw"
-            className="object-cover"
-          />
-          <div className="absolute inset-0 bg-black/50" />
-        </div>
-        <div className="relative z-10 mx-auto max-w-7xl">
-          <div className="max-w-5xl">
-            <p className="mb-6 text-sm font-semibold uppercase tracking-[0.22em] text-white/80">
-              Speaking & Workshops
-            </p>
-            <h1 className="text-5xl font-bold leading-[1.1] tracking-tight text-white sm:text-7xl lg:text-8xl">
-              A Speaker <span className="block text-[var(--peach)]">Who Inspires</span>
-            </h1>
-            <p className="mt-8 max-w-2xl text-2xl leading-relaxed text-white/90">
-              Biblical, trauma-informed messages that bring healing, identity, and transformation to your organization.
-            </p>
+      {/* ── HERO ── */}
+      <section className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
+        <div className="mx-auto max-w-7xl">
+          <div className="grid items-center gap-12 lg:grid-cols-[1fr_460px] lg:gap-16">
+            <div>
+              <div className="mb-6 flex items-center gap-3">
+                <span className="h-px w-10 bg-[var(--peach)]" />
+                <p className="text-xs font-bold uppercase tracking-[0.25em] text-[var(--peach)]">Speaking & Workshops</p>
+              </div>
+              <h1 className="text-4xl font-bold leading-[1.1] tracking-tight text-black sm:text-5xl lg:text-6xl">
+                A Speaker
+                <br />
+                <span className="text-[var(--peach)]">Who Inspires</span>
+              </h1>
+              <p className="mt-7 text-lg leading-relaxed text-black/70 sm:text-xl">
+                Biblical, trauma-informed messages that bring healing, identity, and transformation to your church, conference, or youth event.
+              </p>
+              <div className="mt-9 flex flex-col gap-4 sm:flex-row">
+                <a
+                  href="/contact"
+                  className="inline-flex items-center justify-center rounded-2xl bg-[var(--peach)] px-8 py-4 text-base font-semibold text-white shadow-[0_12px_28px_rgba(254,143,104,0.38)] transition-all hover:bg-[var(--peach-deep)] hover:-translate-y-0.5"
+                >
+                  Inquire About Speaking
+                </a>
+                <a
+                  href="#topics"
+                  className="inline-flex items-center justify-center rounded-2xl border-2 border-black/15 bg-white px-8 py-4 text-base font-semibold text-black transition-all hover:border-black/30"
+                >
+                  View Topics
+                </a>
+              </div>
+            </div>
+
+            <div className="flex items-center justify-center lg:justify-end">
+              <div className="relative aspect-[4/5] w-full max-w-[440px] overflow-hidden rounded-3xl shadow-[0_24px_60px_rgba(0,0,0,0.18)] ring-1 ring-black/10">
+                <Image
+                  src="/images/speaking-hero.jpg"
+                  alt="Toyin Adefemi speaking on stage"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 440px"
+                  className="object-cover object-top"
+                  priority
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Why Invite Me — Horizontal Feature Cards */}
-      <section className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
-        <div className="mx-auto max-w-7xl">
-          <h2 className="text-5xl font-bold tracking-tight text-black">
-            Why Invite Me to Speak?
-          </h2>
-          <div className="mt-6 h-1 w-20 bg-[var(--peach)]" />
+      {/* ── WHY INVITE ME ── */}
+      <section className="relative bg-white px-6 py-12 lg:px-10 lg:py-16">
+        <div className="mx-auto max-w-6xl">
+          <div className="text-center">
+            <p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-[var(--peach)]">Why Invite Me to Speak</p>
+            <h2 className="text-3xl font-bold tracking-tight text-black sm:text-4xl">
+              Equipping people with truth, tools &amp; hope
+            </h2>
+            <div className="mx-auto mt-5 h-1 w-14 rounded-full bg-[var(--peach)]" />
+            <p className="mx-auto mt-7 max-w-2xl text-lg leading-8 text-black/65">
+              I&apos;m a sought-after speaker and trainer who equips youth, young adults, families, churches, and leaders with biblical truth, emotional wisdom, and practical tools for healing and spiritual growth.
+            </p>
+          </div>
 
-          <p className="mt-10 max-w-3xl text-xl leading-8 text-black/65">
-            I&apos;m a sought-after speaker and trainer who equips youth, young adults, families, churches, and leaders with biblical truth, emotional wisdom, and practical tools for healing and spiritual growth.
-          </p>
-
-          <div className="mt-16 grid gap-8 md:grid-cols-3">
-            {[
-              {
-                title: "Scripture-Centered",
-                description: "Every message is rooted in biblical truth and Christ's redemptive example.",
-                icon: "✦",
-              },
-              {
-                title: "Practical & Applicable",
-                description: "Tangible tools and strategies your audience can implement immediately.",
-                icon: "✦",
-              },
-              {
-                title: "Engaging & Interactive",
-                description: "Discussion, activities, and genuine space for real connection and learning.",
-                icon: "✦",
-              },
-            ].map((feature) => (
+          <div className="mt-12 grid gap-6 md:grid-cols-3">
+            {pillars.map((p, i) => (
               <article
-                key={feature.title}
-                className="border-l-4 border-[var(--peach)] bg-white p-8 shadow-[0_4px_12px_rgba(0,0,0,0.05)]"
+                key={p.title}
+                className={`rounded-2xl border-t-4 ${i % 2 === 1 ? 'border-[var(--teal)]' : 'border-[var(--peach)]'} bg-[var(--background)] p-7 shadow-[0_4px_16px_rgba(0,0,0,0.06)] transition-all hover:-translate-y-1 hover:shadow-[0_12px_28px_rgba(0,0,0,0.10)]`}
               >
-                <div className="mb-4 text-3xl text-[var(--peach)]">{feature.icon}</div>
-                <h3 className="text-2xl font-bold text-black">
-                  {feature.title}
-                </h3>
-                <p className="mt-4 leading-7 text-black/65">
-                  {feature.description}
-                </p>
+                <h3 className="text-xl font-bold text-black">{p.title}</h3>
+                <p className="mt-3 text-base leading-7 text-black/65">{p.description}</p>
               </article>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Large Immersive Image Break - Image M */}
-      <section className="relative h-[400px] overflow-hidden md:h-[500px]">
-        <Image
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/28-AHwozixyiwPpwYmHgTtO96klIjYk8N.webp"
-          alt="Hands on Bible together, faith community"
-          fill
-          sizes="100vw"
-          className="object-cover"
-        />
+      {/* ── ATMOSPHERIC IMAGE BREAK (conference hall) ── */}
+      <section className="relative w-full overflow-hidden">
+        <div className="relative h-[240px] sm:h-[340px] lg:h-[440px]">
+          <Image
+            src="/images/speaking-hall.png"
+            alt="Toyin Adefemi speaking at a conference"
+            fill
+            sizes="100vw"
+            className="object-cover object-center"
+          />
+        </div>
       </section>
 
-      {/* Speaking Topics — Conference Card Style with Image J */}
-      <section className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
+      {/* ── SPEAKING TOPICS ── */}
+      <section id="topics" className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-7xl">
-          <h2 className="text-5xl font-bold tracking-tight text-black">
-            Speaking Topics
-          </h2>
-          <div className="mt-6 h-1 w-20 bg-[var(--peach)]" />
+          <div className="text-center">
+            <p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-[var(--peach)]">Speaking Topics</p>
+            <h2 className="text-3xl font-bold tracking-tight text-black sm:text-4xl">
+              Talks tailored to your audience
+            </h2>
+            <div className="mx-auto mt-5 h-1 w-14 rounded-full bg-[var(--peach)]" />
+            <p className="mx-auto mt-7 max-w-2xl text-lg leading-8 text-black/65">
+              I customize presentations for your specific audience and needs. Here are some of my most-requested topics:
+            </p>
+          </div>
 
-          <p className="mt-10 max-w-3xl text-xl leading-8 text-black/65">
-            I customize presentations for your specific audience and needs. Here are some of my popular topics:
-          </p>
-
-          <div className="mt-16 grid gap-8 md:grid-cols-3">
-            {topics.map((topic, index) => (
+          <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {topics.map((topic) => (
               <article
                 key={topic.title}
-                className="scroll-animate rounded-xl border-t-4 border-[var(--peach)] bg-white p-8 shadow-[0_4px_12px_rgba(0,0,0,0.05)] hover:shadow-[0_12px_24px_rgba(0,0,0,0.12)] transition-all hover:-translate-y-1"
-                style={{ animationDelay: `${index * 80}ms` }}
+                className="rounded-2xl bg-white p-7 shadow-[0_4px_16px_rgba(0,0,0,0.06)] ring-1 ring-black/5 transition-all hover:-translate-y-1 hover:shadow-[0_12px_28px_rgba(0,0,0,0.10)]"
               >
-                <h3 className="text-2xl font-bold text-black">
-                  {topic.title}
-                </h3>
-                <p className="mt-4 leading-7 text-black/65">
-                  {topic.description}
-                </p>
+                <div className="mb-4 h-1 w-10 rounded-full bg-[var(--peach)]" />
+                <h3 className="text-xl font-bold text-black">{topic.title}</h3>
+                <p className="mt-3 text-base leading-7 text-black/65">{topic.description}</p>
               </article>
             ))}
           </div>
 
-          {/* Image J - Group from behind */}
-          <div className="mt-20 relative overflow-hidden rounded-[2.5rem] h-72">
-            <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/30-n3SiOuqM9SIL7y3DrKZbc4CjNhiy5g.webp"
-              alt="Group united together, unity and hope"
-              fill
-              sizes="100vw"
-              className="object-cover"
-            />
+          {/* Featured event photo */}
+          <div className="mt-14">
+            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-3xl shadow-[0_20px_52px_rgba(0,0,0,0.15)] sm:aspect-[16/9]">
+              <Image
+                src="/images/speaking-custodians.jpg"
+                alt='Toyin Adefemi speaking at the "Custodians of God&apos;s Gift" parenting event'
+                fill
+                sizes="(max-width: 1024px) 100vw, 1024px"
+                className="object-cover"
+              />
+            </div>
+            <p className="mt-4 text-center text-sm text-black/55 italic">
+              Speaking at the <span className="font-semibold text-[var(--peach)]">Custodians of God&apos;s Gift</span> parenting event.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* Bible Hands Atmospheric Image with Scripture - Image M */}
-      <section className="relative overflow-hidden px-6 py-14 lg:px-10 lg:py-24">
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/28-AHwozixyiwPpwYmHgTtO96klIjYk8N.webp"
-            alt="Hands on Bible together, faith community"
-            fill
-            sizes="100vw"
-            className="object-cover"
-          />
-          <div className="absolute inset-0 bg-black/50" />
-        </div>
-        <div className="relative z-10 mx-auto max-w-4xl text-center">
-          <p className="italic text-3xl leading-relaxed text-white sm:text-4xl">
-            "Come to me, all you who are weary and burdened, and I will give you rest."
+      {/* ── SCRIPTURE BANNER ── */}
+      <section className="relative bg-black px-6 py-12 lg:px-10 lg:py-16">
+        <div className="mx-auto max-w-4xl text-center">
+          <span className="text-6xl leading-none text-[var(--peach)]">❝</span>
+          <p className="mt-2 text-2xl italic leading-relaxed text-white sm:text-3xl">
+            Come to me, all you who are weary and burdened, and I will give you rest.
           </p>
-          <p className="mt-6 text-sm font-semibold uppercase tracking-wider text-[var(--peach)]">
+          <p className="mt-6 text-xs font-bold uppercase tracking-[0.3em] text-[var(--peach)]">
             Matthew 11:28
           </p>
         </div>
       </section>
 
-      {/* Speaking Formats — Two-Column List Layout with Image C */}
-      <section className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
+      {/* ── SPEAKING FORMATS ── */}
+      <section className="relative bg-white px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-7xl">
-          <div className="grid gap-16 lg:grid-cols-[1fr_380px]">
+          <div className="grid gap-12 lg:grid-cols-[1fr_440px] lg:items-center lg:gap-16">
             <div>
-              <h2 className="text-5xl font-bold tracking-tight text-black">
-                Speaking Formats
+              <p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-[var(--peach)]">Speaking Formats</p>
+              <h2 className="text-3xl font-bold tracking-tight text-black sm:text-4xl">
+                Flexible formats for your event
               </h2>
-              <div className="mt-6 h-1 w-20 bg-[var(--peach)]" />
-
-              <p className="mt-10 max-w-3xl text-xl leading-8 text-black/65">
-                Flexible options designed to fit your organization's needs and audience:
+              <div className="mt-5 h-1 w-14 rounded-full bg-[var(--peach)]" />
+              <p className="mt-7 max-w-xl text-lg leading-8 text-black/65">
+                In person or virtual — designed to fit your organization&apos;s needs and audience.
               </p>
 
-              <div className="mt-16 grid gap-10 md:grid-cols-2">
-                {formats.map((format) => (
-                  <div key={format.title} className="flex gap-6">
-                    <div className="flex-shrink-0 pt-1">
-                      <div className="flex h-3 w-3 items-center justify-center rounded-full bg-[var(--peach)]" />
-                    </div>
+              <div className="mt-10 grid gap-7 sm:grid-cols-2">
+                {formats.map((f) => (
+                  <div key={f.title} className="flex items-start gap-4">
+                    <span className="mt-1.5 h-2.5 w-2.5 flex-shrink-0 rounded-full bg-[var(--peach)]" />
                     <div>
-                      <h3 className="text-2xl font-bold text-black">
-                        {format.title}
-                      </h3>
-                      <p className="mt-3 leading-7 text-black/65">
-                        {format.description}
-                      </p>
+                      <h3 className="text-base font-bold text-black">{f.title}</h3>
+                      <p className="mt-1.5 text-sm leading-6 text-black/65">{f.description}</p>
                     </div>
                   </div>
                 ))}
               </div>
             </div>
 
-            {/* Image C - Young woman on video call */}
-            <div className="relative h-[500px] overflow-hidden rounded-[2rem] lg:h-[600px]">
-              <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/4-dKD35Ht8rkT1J8nSOqv6IdMG0U8UvR.webp"
-                alt="Young woman on video call, engaged"
-                fill
-                sizes="100vw"
-                className="object-cover"
-              />
+            <div className="flex items-center justify-center lg:justify-end">
+              <div className="relative aspect-[4/5] w-full max-w-[440px] overflow-hidden rounded-3xl shadow-[0_24px_60px_rgba(0,0,0,0.18)] ring-1 ring-black/10">
+                <Image
+                  src="/images/speaking-family-talk.png"
+                  alt='Toyin Adefemi giving a "Family Talk" presentation'
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 440px"
+                  className="object-cover object-center"
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Warm Genuine Invitation CTA with Image K - Joyful Teens */}
-      <section className="relative overflow-hidden px-6 py-14 lg:px-10 lg:py-24">
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/31-N424m4nO0REek7JhpPtoSuCDBhsxZZ.webp"
-            alt="Joyful teenagers laughing"
-            fill
-            sizes="100vw"
-            className="object-cover"
-          />
-          <div className="absolute inset-0 bg-[var(--peach)]/40" />
+      {/* ── VIRTUAL SESSION HIGHLIGHT ── */}
+      <section className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
+        <div className="mx-auto max-w-6xl">
+          <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-14">
+            <div className="relative aspect-[16/9] w-full overflow-hidden rounded-3xl shadow-[0_20px_52px_rgba(0,0,0,0.15)]">
+              <Image
+                src="/images/speaking-virtual.png"
+                alt="Toyin Adefemi hosting a virtual session"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover"
+              />
+            </div>
+            <div>
+              <p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-[var(--teal)]">Online & In-Person</p>
+              <h2 className="text-3xl font-bold tracking-tight text-black sm:text-4xl">
+                Speak to your audience — wherever they are
+              </h2>
+              <div className="mt-5 h-1 w-14 rounded-full bg-[var(--teal)]" />
+              <p className="mt-7 text-lg leading-8 text-black/65">
+                From a Sunday-morning sanctuary to a private virtual session for your team, I bring the same Christ-centered, trauma-informed depth to every room — in person and online.
+              </p>
+              <a
+                href="/contact"
+                className="mt-8 inline-flex items-center justify-center rounded-2xl bg-[var(--peach)] px-8 py-4 text-base font-semibold text-white shadow-[0_12px_28px_rgba(254,143,104,0.35)] transition-all hover:bg-[var(--peach-deep)] hover:-translate-y-0.5"
+              >
+                Discuss Your Event
+              </a>
+            </div>
+          </div>
         </div>
-        <div className="relative z-10 mx-auto max-w-5xl text-center">
-          <h2 className="text-5xl font-bold leading-tight text-white sm:text-6xl lg:text-7xl">
+      </section>
+
+      {/* ── CTA ── */}
+      <section className="relative bg-[var(--peach)] px-6 py-14 lg:px-10 lg:py-20">
+        <div className="mx-auto max-w-4xl text-center">
+          <h2 className="text-4xl font-bold leading-tight text-white sm:text-5xl">
             Ready to Inspire Your Community?
           </h2>
-          <p className="mx-auto mt-8 max-w-3xl text-2xl leading-relaxed text-white/95">
-            I&apos;d love to discuss how I can support your event, organization, or community with a message of healing, hope, and transformation rooted in Scripture and emotional wisdom.
+          <p className="mx-auto mt-7 max-w-2xl text-lg leading-relaxed text-white/95 sm:text-xl">
+            I&apos;d love to discuss how I can support your event, organization, or community with a message of healing, hope, and transformation.
           </p>
-
-          <div className="mt-14 flex justify-center">
+          <div className="mt-10 flex justify-center">
             <a
               href="/contact"
-              className="inline-flex items-center justify-center rounded-2xl bg-white px-10 py-5 text-lg font-semibold text-[var(--peach)] shadow-[0_16px_30px_rgba(0,0,0,0.2)] transition-all hover:bg-[var(--background)] hover:-translate-y-1"
+              className="inline-flex items-center justify-center rounded-2xl bg-white px-10 py-5 text-lg font-bold text-[var(--peach)] shadow-[0_16px_30px_rgba(0,0,0,0.18)] transition-all hover:-translate-y-1"
             >
               Inquire About Speaking
             </a>
           </div>
-
-          <p className="mt-12 text-sm text-white/80">
+          <p className="mt-8 text-sm text-white/85">
             Let&apos;s talk about bringing healing and hope to your audience.
           </p>
         </div>
