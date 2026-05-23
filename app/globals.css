@@ -231,3 +231,29 @@ textarea {
 .scroll-animate.in-view {
   animation: fadeInUp 400ms ease-out forwards;
 }
+
+/* ── react-international-phone — brand skin ── */
+.phone-brand .react-international-phone-input-container {
+  --react-international-phone-border-color: rgba(0, 0, 0, 0.15);
+  --react-international-phone-border-radius: 0.75rem;
+  --react-international-phone-height: 46px;
+  --react-international-phone-font-size: 14px;
+  --react-international-phone-text-color: #000000;
+  --react-international-phone-background-color: #ffffff;
+  --react-international-phone-dropdown-item-background-color: #ffffff;
+  --react-international-phone-dropdown-item-text-color: #000000;
+  --react-international-phone-selected-dropdown-item-background-color: rgba(254, 158, 111, 0.15);
+  --react-international-phone-selected-dropdown-item-text-color: var(--peach);
+  --react-international-phone-country-selector-background-color-hover: var(--background);
+  --react-international-phone-dropdown-item-background-color-hover: var(--background);
+  --react-international-phone-dropdown-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+  width: 100%;
+}
+.phone-brand .react-international-phone-input {
+  width: 100%;
+}
+.phone-brand .react-international-phone-input:focus {
+  border-color: var(--peach);
+  box-shadow: 0 0 0 2px rgba(254, 158, 111, 0.2);
+  outline: none;
+}

@@ -2,402 +2,251 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-
-function InfoIcon({ type }: { type: string }) {
-  if (type === "money") {
-    return (
-      <svg viewBox="0 0 24 24" className="h-8 w-8 fill-[var(--peach)]" aria-hidden="true">
-        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z" />
-      </svg>
-    );
-  }
-
-  if (type === "target") {
-    return (
-      <svg viewBox="0 0 24 24" className="h-8 w-8 fill-[var(--peach)]" aria-hidden="true">
-        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-13c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0 8c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z" />
-      </svg>
-    );
-  }
-
-  if (type === "card") {
-    return (
-      <svg viewBox="0 0 24 24" className="h-8 w-8 fill-[var(--peach)]" aria-hidden="true">
-        <path d="M20 8H4V4h16m0 12H4c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2v-4c0-1.1-.9-2-2-2zm-6 3.5c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zM4 6h16V4H4z" />
-      </svg>
-    );
-  }
-
-  if (type === "document") {
-    return (
-      <svg viewBox="0 0 24 24" className="h-8 w-8 fill-[var(--peach)]" aria-hidden="true">
-        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-8-6z" />
-      </svg>
-    );
-  }
-
-  if (type === "lock") {
-    return (
-      <svg viewBox="0 0 24 24" className="h-8 w-8 fill-[var(--peach)]" aria-hidden="true">
-        <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z" />
-      </svg>
-    );
-  }
-
-  if (type === "clock") {
-    return (
-      <svg viewBox="0 0 24 24" className="h-8 w-8 fill-[var(--peach)]" aria-hidden="true">
-        <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.5-9c0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5.67-1.5 1.5-1.5 1.5.67 1.5 1.5zm-7 0c0 .83-.67 1.5-1.5 1.5S5 12.83 5 12s.67-1.5 1.5-1.5 1.5.67 1.5 1.5z" />
-      </svg>
-    );
-  }
-
-  if (type === "instagram") {
-    return (
-      <svg viewBox="0 0 24 24" className="h-8 w-8 fill-[var(--peach)]" aria-hidden="true">
-        <path d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.466.182-.8.398-1.15.748-.35.35-.566.684-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.398.8.748 1.15.35.35.684.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.684.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" />
-      </svg>
-    );
-  }
-
-  if (type === "email") {
-    return (
-      <svg viewBox="0 0 24 24" className="h-8 w-8 fill-[var(--peach)]" aria-hidden="true">
-        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
-      </svg>
-    );
-  }
-
-  if (type === "phone") {
-    return (
-      <svg viewBox="0 0 24 24" className="h-8 w-8 fill-[var(--peach)]" aria-hidden="true">
-        <path d="M17.92 7.02C17.45 4.18 14.97 2 12 2c-2.97 0-5.45 2.18-5.92 5.02C3.97 7.55 2 9.69 2 12s1.97 4.45 4.08 4.98C6.55 19.82 9.03 22 12 22c2.97 0 5.45-2.18 5.92-5.02C20.03 16.45 22 14.31 22 12s-1.97-4.45-4.08-4.98zM12 20c-2.33 0-4.32-1.45-5.12-3.5h10.24c-.8 2.05-2.79 3.5-5.12 3.5zm0-14c2.33 0 4.32 1.45 5.12 3.5H6.88c.8-2.05 2.79-3.5 5.12-3.5z" />
-      </svg>
-    );
-  }
-
-  return (
-    <svg viewBox="0 0 24 24" className="h-8 w-8 fill-[var(--peach)]" aria-hidden="true">
-      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z" />
-    </svg>
-  );
-}
+import { PhoneInput } from 'react-international-phone';
+import 'react-international-phone/style.css';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
-    name: '',
+    firstName: '',
+    lastName: '',
     email: '',
     phone: '',
-    serviceType: 'individual-counseling',
+    inquiryAbout: [] as string[],
     message: '',
   });
-
   const [submitted, setSubmitted] = useState(false);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const toggleInquiry = (opt: string) => {
+    setFormData((prev) => ({
+      ...prev,
+      inquiryAbout: prev.inquiryAbout.includes(opt)
+        ? prev.inquiryAbout.filter((x) => x !== opt)
+        : [...prev.inquiryAbout, opt],
+    }));
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
     setSubmitted(true);
-    setTimeout(() => {
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        serviceType: 'individual-counseling',
-        message: '',
-      });
-      setSubmitted(false);
-    }, 3000);
   };
+
+  const inputCls =
+    'w-full rounded-xl border border-black/15 bg-white px-4 py-3 text-sm text-black placeholder-black/40 transition focus:border-[var(--peach)] focus:outline-none focus:ring-2 focus:ring-[var(--peach)]/20';
+
+  const inquiryOptions = [
+    'Family Counseling Services',
+    'Teens Counseling Services',
+    'Young Adult Counseling Services',
+    'Parental Counseling Services',
+    'Speaking Engagement',
+    'Other',
+  ];
 
   return (
     <>
-      {/* Warm Editorial Hero with Image E */}
-      <section className="relative overflow-hidden bg-[var(--background)] px-6 py-14 lg:px-10 lg:py-24">
+      {/* ── HERO ── */}
+      <section className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-7xl">
-          <div className="grid gap-16 lg:grid-cols-[1fr_420px] lg:items-center">
+          <div className="grid items-center gap-12 lg:grid-cols-[1fr_440px] lg:gap-16">
             <div>
-              <p className="mb-6 text-sm font-semibold uppercase tracking-[0.22em] text-[var(--peach)]">
-                Get in Touch
-              </p>
-              <h1 className="text-5xl font-bold leading-[1.1] tracking-tight text-black sm:text-7xl">
+              <p className="mb-3 text-xs font-bold uppercase tracking-[0.25em] text-[var(--peach)]">
                 Let&apos;s Connect
+              </p>
+              <h1 className="text-4xl font-bold leading-[1.12] tracking-tight text-black sm:text-5xl lg:text-6xl">
+                Get in Touch with <span className="text-[var(--peach)]">Toyin Adefemi</span>, Biblical Counselor
               </h1>
-              <p className="mt-8 max-w-2xl text-2xl leading-relaxed text-black/65">
-                I&apos;m here to support your healing journey. Reach out with questions or to book a session—I respond within 24-48 hours.
+              <p className="mt-7 text-lg leading-relaxed text-black/70">
+                I&apos;m here to walk alongside you with biblical wisdom, prayer, and compassionate support.
+              </p>
+              <p className="mt-4 text-lg leading-relaxed text-black/70">
+                Whether you&apos;re seeking guidance, clarity, or a safe space to process life&apos;s challenges, I welcome the opportunity to connect with you.
               </p>
             </div>
 
-            {/* Image E - One-on-one counseling */}
-            <div className="relative h-[400px] overflow-hidden rounded-[2.5rem] lg:h-[500px]">
-              <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/10-PP3b2FIhmDYtGarg7jonW91ebBHnrl.webp"
-                alt="One-on-one counseling session, warm and inviting"
-                fill
-                sizes="100vw"
-                className="object-cover"
-              />
+            <div className="flex items-center justify-center lg:justify-end">
+              <div className="relative aspect-[4/5] w-full max-w-[440px] overflow-hidden rounded-3xl shadow-[0_24px_60px_rgba(0,0,0,0.18)] ring-1 ring-black/10">
+                <Image
+                  src="/images/contact-hero.png"
+                  alt="A virtual counseling session with Toyin Adefemi"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 440px"
+                  className="object-cover object-center"
+                  priority
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Contact Form — Two-Column Layout with Image */}
-      <section className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
-        <div className="mx-auto max-w-7xl">
-          <div className="grid gap-16 lg:grid-cols-[1.5fr_1fr] lg:items-center">
+      {/* ── CONTACT FORM ── */}
+      <section className="relative bg-[var(--background)] px-6 pb-16 lg:px-10 lg:pb-20">
+        <div className="mx-auto max-w-3xl">
+          {submitted ? (
+            <div className="rounded-3xl border border-[var(--teal)] bg-[var(--teal)]/20 p-10 text-center">
+              <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-[var(--teal)]/50">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-7 w-7 text-black" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                </svg>
+              </div>
+              <p className="text-xl font-bold text-black">Message received</p>
+              <p className="mt-2 text-base text-black/70">
+                Thank you for reaching out — I&apos;ll respond within 24–48 hours.
+              </p>
+            </div>
+          ) : (
             <form
               onSubmit={handleSubmit}
-              className="rounded-[2.5rem] border border-black/10 bg-white p-10 shadow-[0_12px_40px_rgba(0,0,0,0.08)] sm:p-14"
+              className="space-y-5 rounded-3xl bg-white p-8 shadow-[0_12px_40px_rgba(0,0,0,0.08)] sm:p-10"
             >
-            <div className="grid gap-6 sm:grid-cols-2">
-              <div>
-                <label htmlFor="name" className="block text-sm font-semibold text-black">
-                  Full Name *
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                  placeholder="Your name"
-                  className="mt-3 w-full rounded-lg border border-black/15 bg-white px-4 py-3 text-black outline-none placeholder:text-white/65 transition-all focus:border-[var(--peach)] focus:ring-2 focus:ring-[var(--teal)]/40"
-                />
-              </div>
-              <div>
-                <label htmlFor="email" className="block text-sm font-semibold text-black">
-                  Email Address *
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  placeholder="your@email.com"
-                  className="mt-3 w-full rounded-lg border border-black/15 bg-white px-4 py-3 text-black outline-none placeholder:text-white/65 transition-all focus:border-[var(--peach)] focus:ring-2 focus:ring-[var(--teal)]/40"
-                />
-              </div>
-            </div>
-
-            <div className="mt-6 grid gap-6 sm:grid-cols-2">
-              <div>
-                <label htmlFor="phone" className="block text-sm font-semibold text-black">
-                  Phone Number
-                </label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  placeholder="(555) 123-4567"
-                  className="mt-3 w-full rounded-lg border border-black/15 bg-white px-4 py-3 text-black outline-none placeholder:text-white/65 transition-all focus:border-[var(--peach)] focus:ring-2 focus:ring-[var(--teal)]/40"
-                />
-              </div>
-              <div>
-                <label htmlFor="serviceType" className="block text-sm font-semibold text-black">
-                  What brings you here? *
-                </label>
-                <select
-                  id="serviceType"
-                  name="serviceType"
-                  value={formData.serviceType}
-                  onChange={handleChange}
-                  className="mt-3 w-full rounded-lg border border-black/15 bg-white px-4 py-3 text-black outline-none transition-all focus:border-[var(--peach)] focus:ring-2 focus:ring-[var(--teal)]/40"
-                >
-                  <option value="individual-counseling">Individual Counseling</option>
-                  <option value="family-counseling">Family Counseling</option>
-                  <option value="youth-counseling">Youth Counseling</option>
-                  <option value="speaking-inquiry">Speaking Inquiry</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-            </div>
-
-            <div className="mt-6">
-              <label htmlFor="message" className="block text-sm font-semibold text-black">
-                Message *
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                required
-                placeholder="Tell me a bit about what you're looking for..."
-                rows={6}
-                className="mt-3 w-full rounded-lg border border-black/15 bg-white px-4 py-3 text-black outline-none placeholder:text-white/65 transition-all focus:border-[var(--peach)] focus:ring-2 focus:ring-[var(--teal)]/40"
-              />
-            </div>
-
-            <button
-              type="submit"
-              className="mt-8 w-full rounded-xl bg-[var(--peach)] px-6 py-4 text-base font-semibold text-white shadow-[0_12px_24px_rgba(254,143,104,0.3)] transition-all hover:bg-[var(--peach-deep)] hover:-translate-y-0.5"
-            >
-              {submitted ? 'Message Sent!' : 'Send Message'}
-            </button>
-
-            {submitted && (
-              <p className="mt-4 rounded-lg bg-[var(--background)] p-4 text-sm text-[var(--peach)]">
-                Thank you for reaching out! I&apos;ll be in touch shortly.
-              </p>
-            )}
-            </form>
-
-            {/* Image E - One-on-one counseling */}
-            <div className="relative h-[400px] overflow-hidden rounded-[2.5rem] lg:h-[500px]">
-              <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/10-PP3b2FIhmDYtGarg7jonW91ebBHnrl.webp"
-                alt="One-on-one counseling session, warm and inviting"
-                fill
-                sizes="100vw"
-                className="object-cover"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Atmospheric Image Break with Image H */}
-      <section className="relative h-[350px] overflow-hidden md:h-[450px]">
-        <Image
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/14-hskpGkVkXncEE10BoJcxFHbYnDRas7.webp"
-          alt="Hands held together, warmth and connection"
-          fill
-          sizes="100vw"
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-[var(--peach)]/40" />
-      </section>
-
-      {/* Additional Info — Two-Column Grid */}
-      <section className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
-        <div className="mx-auto max-w-7xl">
-          <h2 className="mb-16 text-5xl font-bold tracking-tight text-black">
-            What You Should Know
-          </h2>
-
-          <div className="grid gap-8 md:grid-cols-2">
-            {[
-              {
-                iconType: "money",
-                label: "Session Rates",
-                description: "Individual sessions start at $80-150/hour depending on location and format. Family sessions and group workshops available.",
-              },
-              {
-                iconType: "target",
-                label: "Session Format",
-                description: "Sessions are available in-person or via secure video conferencing. Initial consultations are complimentary.",
-              },
-              {
-                iconType: "card",
-                label: "Payment Methods",
-                description: "We accept all major credit cards, PayPal, and bank transfers. Insurance is not accepted. Superbills can be provided for potential reimbursement depending on your plan.",
-              },
-              {
-                iconType: "document",
-                label: "Cancellation Policy",
-                description: "Cancellations made 48 hours in advance receive a full refund. Late cancellations may incur a fee.",
-              },
-              {
-                iconType: "lock",
-                label: "Confidentiality",
-                description: "All sessions are confidential. I maintain professional standards and follow ethical guidelines.",
-              },
-              {
-                iconType: "clock",
-                label: "Response Time",
-                description: "I typically respond to inquiries within 24-48 hours. For urgent matters, please call directly.",
-              },
-            ].map((item, index) => (
-              <article key={item.label} className="scroll-animate border-l-4 border-[var(--peach)] bg-white p-8 shadow-[0_4px_12px_rgba(0,0,0,0.05)] hover:shadow-[0_12px_24px_rgba(0,0,0,0.12)] transition-all hover:-translate-y-1" style={{ animationDelay: `${index * 80}ms` }}>
-                <div className="mb-4">
-                  <InfoIcon type={item.iconType} />
+              <div className="grid gap-5 sm:grid-cols-2">
+                <div>
+                  <label className="mb-1.5 block text-sm font-semibold text-black">
+                    First name<span className="ml-0.5 text-[var(--peach)]">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    name="firstName"
+                    required
+                    value={formData.firstName}
+                    onChange={handleChange}
+                    className={inputCls}
+                  />
                 </div>
-                <h3 className="text-xl font-bold text-black">
-                  {item.label}
-                </h3>
-                <p className="mt-3 leading-7 text-black/65">
-                  {item.description}
-                </p>
-              </article>
-            ))}
-          </div>
+                <div>
+                  <label className="mb-1.5 block text-sm font-semibold text-black">
+                    Last name<span className="ml-0.5 text-[var(--peach)]">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    name="lastName"
+                    required
+                    value={formData.lastName}
+                    onChange={handleChange}
+                    className={inputCls}
+                  />
+                </div>
+              </div>
+
+              <div className="grid gap-5 sm:grid-cols-2">
+                <div>
+                  <label className="mb-1.5 block text-sm font-semibold text-black">
+                    Email<span className="ml-0.5 text-[var(--peach)]">*</span>
+                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    required
+                    value={formData.email}
+                    onChange={handleChange}
+                    className={inputCls}
+                  />
+                </div>
+                <div>
+                  <label className="mb-1.5 block text-sm font-semibold text-black">
+                    Phone<span className="ml-0.5 text-[var(--peach)]">*</span>
+                  </label>
+                  <PhoneInput
+                    defaultCountry="us"
+                    value={formData.phone}
+                    onChange={(phone) => setFormData((prev) => ({ ...prev, phone }))}
+                    inputProps={{ required: true, name: 'phone' }}
+                    className="phone-brand"
+                  />
+                </div>
+              </div>
+
+              <fieldset>
+                <legend className="mb-3 block text-sm font-semibold text-black">
+                  What are you inquiring about?
+                </legend>
+                <div className="space-y-2.5">
+                  {inquiryOptions.map((opt) => (
+                    <label key={opt} className="flex cursor-pointer items-center gap-3">
+                      <input
+                        type="checkbox"
+                        checked={formData.inquiryAbout.includes(opt)}
+                        onChange={() => toggleInquiry(opt)}
+                        className="h-4 w-4 cursor-pointer accent-[var(--peach)]"
+                      />
+                      <span className="text-sm text-black">{opt}</span>
+                    </label>
+                  ))}
+                </div>
+              </fieldset>
+
+              <div>
+                <label className="mb-1.5 block text-sm font-semibold text-black">Write a message</label>
+                <textarea
+                  name="message"
+                  rows={5}
+                  value={formData.message}
+                  onChange={handleChange}
+                  placeholder="Share a little about what's on your heart…"
+                  className={`${inputCls} resize-none`}
+                />
+              </div>
+
+              <button
+                type="submit"
+                className="w-full rounded-xl bg-[var(--peach)] py-4 text-sm font-bold uppercase tracking-widest text-white shadow-[0_12px_28px_rgba(254,143,104,0.35)] transition-all hover:bg-[var(--peach-deep)] hover:-translate-y-0.5"
+              >
+                Submit
+              </button>
+              <p className="text-center text-sm text-black/55">
+                I respond to every inquiry within 24–48 hours.
+              </p>
+            </form>
+          )}
         </div>
       </section>
 
-      {/* Other Ways to Connect with Image B */}
-      <section className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
-        <div className="mx-auto max-w-7xl">
-          <div className="grid gap-16 lg:grid-cols-[1fr_380px]">
-            <div>
-              <h2 className="mb-8 text-5xl font-bold tracking-tight text-black">
-                Other Ways to Connect
-              </h2>
-              <p className="mb-20 max-w-2xl text-xl text-black/65">
-                Whether you have questions, want to book a session, or are interested in speaking opportunities, I&apos;m here to help.
+      {/* ── CONTACT DETAILS ── */}
+      <section className="relative bg-white px-6 py-12 lg:px-10 lg:py-16">
+        <div className="mx-auto max-w-3xl text-center">
+          <p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-[var(--peach)]">
+            Prefer to reach out directly?
+          </p>
+          <h2 className="text-2xl font-bold text-black sm:text-3xl">Other ways to connect</h2>
+          <div className="mx-auto mt-5 h-1 w-14 rounded-full bg-[var(--peach)]" />
+
+          <div className="mt-10 grid gap-6 sm:grid-cols-2">
+            <a
+              href="tel:+13026599399"
+              className="group flex flex-col items-center gap-3 rounded-2xl bg-[var(--background)] p-7 transition-all hover:-translate-y-1 hover:shadow-[0_12px_28px_rgba(0,0,0,0.08)]"
+            >
+              <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-[var(--peach)]/15">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-5 w-5 text-[var(--peach)]" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                </svg>
+              </span>
+              <p className="text-[10px] font-bold uppercase tracking-widest text-black/55">Phone</p>
+              <p className="text-base font-semibold text-black group-hover:text-[var(--peach)] transition-colors">
+                302 659 9399
               </p>
+            </a>
 
-              <div className="grid gap-8 md:grid-cols-3">
-                {[
-                  {
-                    iconType: "email",
-                    title: "Email",
-                    detail: "Reach out anytime",
-                    description: "Send me a message and I'll respond within 24-48 hours",
-                  },
-                  {
-                    iconType: "phone",
-                    title: "Phone",
-                    detail: "For urgent matters",
-                    description: "Call directly to connect right away",
-                  },
-                  {
-                    iconType: "instagram",
-                    title: "Instagram",
-                    detail: "@toyinadefemi",
-                    description: "Follow for resources and updates",
-                  },
-                ].map((item) => (
-                  <div key={item.title} className="scroll-animate flex flex-col items-start gap-4 rounded-2xl bg-white p-8 shadow-[0_4px_12px_rgba(0,0,0,0.05)] hover:shadow-[0_12px_24px_rgba(0,0,0,0.12)] transition-all">
-                    <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[var(--peach)]/10">
-                      <InfoIcon type={item.iconType} />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-black">
-                        {item.title}
-                      </h3>
-                      <p className="mt-2 text-sm font-semibold text-[var(--peach)]">
-                        {item.detail}
-                      </p>
-                      <p className="mt-2 text-sm text-black/65">
-                        {item.description}
-                      </p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Image B - Young woman on sofa with phone and credit card */}
-            <div className="relative h-[500px] overflow-hidden rounded-[2rem] lg:h-[600px]">
-              <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1-nD4TQL7qg2yWE0vOnAjnpQvUwTEpHo.webp"
-                alt="Young woman on sofa, relaxed and accessible"
-                fill
-                sizes="100vw"
-                className="object-cover"
-              />
-            </div>
+            <a
+              href="mailto:toyin.biblicalcounselor@gmail.com"
+              className="group flex flex-col items-center gap-3 rounded-2xl bg-[var(--background)] p-7 transition-all hover:-translate-y-1 hover:shadow-[0_12px_28px_rgba(0,0,0,0.08)]"
+            >
+              <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-[var(--peach)]/15">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-5 w-5 text-[var(--peach)]" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                </svg>
+              </span>
+              <p className="text-[10px] font-bold uppercase tracking-widest text-black/55">Email</p>
+              <p className="text-base font-semibold text-black group-hover:text-[var(--peach)] transition-colors break-all">
+                toyin.biblicalcounselor@gmail.com
+              </p>
+            </a>
           </div>
         </div>
       </section>
