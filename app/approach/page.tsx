@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import ApproachForms from './_components/approach-forms';
 
 export default function Approach() {
   return (
@@ -181,6 +182,40 @@ export default function Approach() {
           </a>
         </div>
       </section>
+
+      {/* ── READY TO BEGIN — bridge to forms ── */}
+      <section className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
+        <div className="mx-auto max-w-3xl text-center">
+          <div className="mb-6 flex items-center justify-center gap-3">
+            <span className="h-px w-10 bg-[var(--peach)]" />
+            <p className="text-xs font-bold uppercase tracking-[0.25em] text-[var(--peach)]">Ready to Begin?</p>
+            <span className="h-px w-10 bg-[var(--peach)]" />
+          </div>
+          <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
+            I would be honored to <span className="text-[var(--peach)]">walk with you</span>.
+          </h2>
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-black/65">
+            Take the next step — schedule a session, reach out, or scroll down to complete your intake forms.
+          </p>
+          <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+            <a
+              href="/book-a-session"
+              className="inline-flex items-center justify-center rounded-2xl bg-[var(--peach)] px-10 py-4 text-base font-semibold text-white shadow-[0_12px_28px_rgba(254,143,104,0.35)] transition-all hover:bg-[var(--peach-deep)] hover:-translate-y-0.5"
+            >
+              Schedule a Session
+            </a>
+            <a
+              href="/contact"
+              className="inline-flex items-center justify-center rounded-2xl border-2 border-black/15 bg-white px-10 py-4 text-base font-semibold text-black/75 transition-all hover:border-black/25"
+            >
+              Contact Me
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* ── FORMS (Agreement / Intake / Parent Consent / Minor Intake) ── */}
+      <ApproachForms />
 
       {/* ── FINAL CTA ── */}
       <section className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
