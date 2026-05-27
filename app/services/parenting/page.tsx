@@ -69,7 +69,7 @@ export default function ParentingCounseling() {
               <span className="h-2 w-2 rounded-full bg-[var(--peach)]" />
               <span className="text-xs font-bold uppercase tracking-widest text-[var(--peach)]">Parenting Counseling</span>
             </div>
-            <h1 className="mt-4 text-5xl font-bold leading-[1.08] tracking-tight text-white sm:text-6xl lg:text-7xl">
+            <h1 className="mt-4 text-4xl font-bold leading-[1.08] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
               Support, Clarity &<br />
               <span className="text-[var(--peach)]">Christ-Centered</span><br />
               Guidance
@@ -207,7 +207,7 @@ export default function ParentingCounseling() {
               <div className="overflow-hidden rounded-3xl bg-black p-8 text-white shadow-[0_20px_52px_rgba(109,40,217,0.20)]">
                 <p className="text-xs font-bold uppercase tracking-widest text-[var(--peach)]">Investment</p>
                 <div className="mt-4 flex items-end gap-2">
-                  <span className="text-6xl font-black">$90</span>
+                  <span className="text-5xl font-black sm:text-6xl">$90</span>
                   <span className="mb-2 text-lg text-[var(--peach)]">/ session</span>
                 </div>
                 <div className="my-6 h-px bg-white/10" />

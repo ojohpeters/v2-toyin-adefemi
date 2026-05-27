@@ -67,7 +67,7 @@ export default function YoungAdultCounseling() {
               <span className="h-2 w-2 rounded-full bg-[var(--peach)]" />
               <span className="text-xs font-bold uppercase tracking-widest text-white/80">Young Adult Counseling · Ages 18–30</span>
             </div>
-            <h1 className="mt-4 text-5xl font-bold leading-[1.08] tracking-tight text-white sm:text-6xl lg:text-7xl">
+            <h1 className="mt-4 text-4xl font-bold leading-[1.08] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
               Clarity, Healing &<br />
               <span className="text-white/80">Direction</span><br />
               for This Season
@@ -205,7 +205,7 @@ export default function YoungAdultCounseling() {
               <div className="overflow-hidden rounded-3xl bg-black p-8 text-white shadow-[0_20px_52px_rgba(16,185,129,0.15)]">
                 <p className="text-xs font-bold uppercase tracking-widest text-white/80">Investment</p>
                 <div className="mt-4 flex items-end gap-2">
-                  <span className="text-6xl font-black">$90</span>
+                  <span className="text-5xl font-black sm:text-6xl">$90</span>
                   <span className="mb-2 text-lg text-white/80">/ session</span>
                 </div>
                 <div className="my-6 h-px bg-white/10" />

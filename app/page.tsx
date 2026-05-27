@@ -245,7 +245,7 @@ export default function Home() {
           <p className="mb-6 text-sm font-semibold uppercase tracking-[0.22em] text-[var(--peach)]">
             My Approach
           </p>
-          <h2 className="text-5xl font-bold tracking-tight text-black">
+          <h2 className="text-3xl font-bold tracking-tight text-black sm:text-4xl lg:text-5xl">
             Trauma-Informed. Scripture-Centered. Spirit-Led.
           </h2>
           <div className="mt-6 h-1 w-20 bg-[var(--peach)]" />
@@ -308,7 +308,7 @@ export default function Home() {
       {/* Why Choose Toyin — Six Feature Tiles */}
       <section className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-7xl">
-          <h2 className="text-5xl font-bold tracking-tight text-black">
+          <h2 className="text-3xl font-bold tracking-tight text-black sm:text-4xl lg:text-5xl">
             Why Clients Choose Toyin
           </h2>
           <div className="mt-6 h-1 w-20 bg-[var(--peach)]" />

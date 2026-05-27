@@ -327,7 +327,7 @@ export default function About() {
       <section className="relative overflow-hidden bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-4xl text-center">
           <p className="mb-4 text-xs font-bold uppercase tracking-[0.25em] text-[var(--peach)]">Ready to Start?</p>
-          <h2 className="text-5xl font-bold leading-tight text-black sm:text-6xl">
+          <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl md:text-5xl lg:text-6xl">
             Let&apos;s Begin<br />Your Journey
           </h2>
           <p className="mx-auto mt-8 max-w-2xl text-xl leading-relaxed text-black/65">

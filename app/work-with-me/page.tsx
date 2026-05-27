@@ -120,7 +120,7 @@ export default function WorkWithMe() {
               <span className="h-px w-10 bg-[var(--peach)]" />
               <p className="text-xs font-bold uppercase tracking-[0.25em] text-[var(--peach)]">Services & Support</p>
             </div>
-            <h1 className="text-5xl font-bold leading-[1.08] tracking-tight text-white sm:text-6xl lg:text-7xl">
+            <h1 className="text-4xl font-bold leading-[1.08] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
               Counseling &<br />
               Support <span className="text-[var(--peach)]">Designed</span><br />
               for You
@@ -335,7 +335,7 @@ export default function WorkWithMe() {
       <section className="relative overflow-hidden bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-4xl text-center">
           <p className="mb-4 text-xs font-bold uppercase tracking-[0.25em] text-[var(--peach)]">Ready to Start?</p>
-          <h2 className="text-5xl font-bold leading-tight text-black sm:text-6xl">
+          <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl md:text-5xl lg:text-6xl">
             Your Healing<br />Journey Starts Here
           </h2>
           <p className="mx-auto mt-7 max-w-2xl text-xl leading-8 text-black/65">
