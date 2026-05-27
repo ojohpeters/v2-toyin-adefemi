@@ -290,16 +290,36 @@ export default function About() {
               </div>
             </div>
 
-            {/* Right: image */}
-            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[2.5rem] shadow-[0_20px_52px_rgba(0,0,0,0.10)] lg:sticky lg:top-32">
-              <Image
-                src="/images/about-equipping.png"
-                alt="Toyin Adefemi — biblical counseling and equipping"
-                fill
-                sizes="(max-width: 1024px) 100vw, 480px"
-                className="object-cover object-center"
+            {/* Right: framed certificate */}
+            <div className="relative mx-auto w-full max-w-[460px] lg:sticky lg:top-32 lg:max-w-none">
+              {/* Decorative offset card for depth */}
+              <div
+                className="absolute inset-0 translate-x-3 translate-y-3 rounded-[1.75rem] bg-[var(--peach)]/15 ring-1 ring-[var(--peach)]/30"
+                aria-hidden="true"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+
+              {/* Matted photo frame */}
+              <div className="relative rounded-[1.75rem] bg-white p-3 shadow-[0_24px_60px_rgba(0,0,0,0.18)] ring-1 ring-black/10 sm:p-4">
+                <div className="relative aspect-[16/9] overflow-hidden rounded-2xl">
+                  <Image
+                    src="/images/about-equipping.png"
+                    alt="Toyin Adefemi — Counseling Certificate of Completion"
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 480px"
+                    className="object-cover object-center"
+                  />
+                </div>
+
+                {/* Caption */}
+                <div className="px-1 pb-2 pt-4 text-center">
+                  <p className="text-[10px] font-bold uppercase tracking-[0.25em] text-[var(--peach)]">
+                    Featured Credential
+                  </p>
+                  <p className="mt-1 text-sm font-semibold text-black">
+                    Counseling · Certificate of Completion
+                  </p>
+                </div>
+              </div>
             </div>
 
           </div>
