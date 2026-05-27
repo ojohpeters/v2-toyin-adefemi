@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: "My Approach | Clinically Informed Biblical Counseling",
   description:
-    "Learn how sessions work: prayer, Scripture, trauma-informed tools, and practical steps tailored to your healing. 60-minute virtual sessions starting at $90.",
+    "Learn how sessions work: prayer, Scripture, trauma-informed tools, and practical steps tailored to your healing. 60-minute virtual sessions tailored to your needs.",
   openGraph: {
     title: "My Approach | Clinically Informed Biblical Counseling",
     description:
