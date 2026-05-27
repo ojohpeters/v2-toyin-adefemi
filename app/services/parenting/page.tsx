@@ -179,7 +179,7 @@ export default function ParentingCounseling() {
               </h2>
               <div className="mt-5 h-1 w-14 rounded-full bg-[var(--peach)]" />
               <p className="mt-7 text-lg leading-8 text-black/65">
-                Each 60-minute Zoom session is designed to help you parent with peace, wisdom, and spiritual grounding. My goal is to help you build a healthier rhythm at home and strengthen your connection with your child.
+                Each 60-minute virtual session is designed to help you parent with peace, wisdom, and spiritual grounding. My goal is to help you build a healthier rhythm at home and strengthen your connection with your child.
               </p>
 
               <ul className="mt-8 space-y-4">

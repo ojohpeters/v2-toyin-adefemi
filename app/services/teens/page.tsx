@@ -15,15 +15,11 @@ export const metadata: Metadata = {
 
 const topics = [
   "Feeling anxious, stressed, or overwhelmed",
-  "Feeling sad, stuck, or unmotivated",
   "Trauma or painful experiences",
   "Not feeling close to God",
   "Family arguments or tension at home",
-  "Friendship drama or peer pressure",
-  "Feeling angry or frustrated",
   "Struggling with confidence or identity",
   "Dealing with temptation or tough choices",
-  "Feeling hurt by someone's words or actions",
 ];
 
 const sessionIncludes = [
@@ -135,16 +131,16 @@ export default function TeenCounseling() {
       {/* ── WHAT WE CAN TALK ABOUT ── */}
       <section className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-7xl">
-          <div className="mx-auto max-w-2xl text-center">
+          <div className="max-w-2xl">
             <p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-[var(--peach)]">No Topic Too Big or Small</p>
             <h2 className="text-4xl font-bold text-black sm:text-5xl">What We Can Talk About</h2>
-            <div className="mx-auto mt-5 h-1 w-14 rounded-full bg-[var(--peach)]" />
+            <div className="mt-5 h-1 w-14 rounded-full bg-[var(--peach)]" />
             <p className="mt-6 text-lg text-black/65">
               You can come to counseling for anything that&apos;s been heavy or confusing. Nothing is &ldquo;too small&rdquo; or &ldquo;too big.&rdquo; If it matters to you, it matters here.
             </p>
           </div>
 
-          <div className="mt-14 flex flex-wrap justify-center gap-3">
+          <div className="mt-14 flex flex-wrap gap-3">
             {topics.map((topic) => (
               <span
                 key={topic}
@@ -169,7 +165,7 @@ export default function TeenCounseling() {
               </h2>
               <div className="mt-5 h-1 w-14 rounded-full bg-[var(--peach)]" />
               <p className="mt-7 text-lg leading-8 text-black/65">
-                Each 60-minute Zoom session is designed to be a calm place to breathe, process, and grow. My goal is to help you feel stronger, supported, and more confident in who God made you to be.
+                Each 60-minute virtual session is designed to be a calm place to breathe, process, and grow. My goal is to help you feel stronger, supported, and more confident in who God made you to be.
               </p>
 
               <ul className="mt-8 space-y-4">

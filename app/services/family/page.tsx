@@ -177,7 +177,7 @@ export default function FamilyCounseling() {
               </h2>
               <div className="mt-5 h-1 w-14 rounded-full bg-[var(--peach)]" />
               <p className="mt-7 text-lg leading-8 text-black/65">
-                Each 60-minute Zoom session is a calm, structured space for your family to process, connect, and grow together. My goal is to help your family move toward healing, unity, and a healthier rhythm of life.
+                Each 60-minute virtual session is a calm, structured space for your family to process, connect, and grow together. My goal is to help your family move toward healing, unity, and a healthier rhythm of life.
               </p>
 
               <ul className="mt-8 space-y-4">

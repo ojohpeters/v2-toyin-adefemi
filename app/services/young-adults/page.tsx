@@ -20,7 +20,6 @@ const topics = [
   "Identity, purpose, and calling",
   "Spiritual disconnection or confusion",
   "Relationship struggles",
-  "Family tension or generational patterns",
   "Boundaries, self-worth, and confidence",
   "Temptation, habits, and decision-making",
   "Life transitions (school, work, adulthood)",
@@ -177,7 +176,7 @@ export default function YoungAdultCounseling() {
               </h2>
               <div className="mt-5 h-1 w-14 rounded-full bg-[var(--peach)]" />
               <p className="mt-7 text-lg leading-8 text-black/65">
-                Each 60-minute Zoom session includes everything you need to gain clarity, heal deeply, and walk confidently in who God created you to be.
+                Each 60-minute virtual session includes everything you need to gain clarity, heal deeply, and walk confidently in who God created you to be.
               </p>
 
               <ul className="mt-8 space-y-4">

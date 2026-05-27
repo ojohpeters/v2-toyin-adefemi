@@ -51,16 +51,18 @@ export default function Contact() {
 
   return (
     <>
-      {/* ── HERO ── */}
+      {/* ── HERO + FORM (parallel) ── */}
       <section className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-7xl">
-          <div className="grid items-center gap-12 lg:grid-cols-[1fr_440px] lg:gap-16">
+          <div className="grid gap-12 lg:grid-cols-[1fr_440px] lg:items-start lg:gap-16">
+
+            {/* Left: heading + form */}
             <div>
               <p className="mb-3 text-xs font-bold uppercase tracking-[0.25em] text-[var(--peach)]">
-                Let&apos;s Connect
+                Get in Touch
               </p>
               <h1 className="text-4xl font-bold leading-[1.12] tracking-tight text-black sm:text-5xl lg:text-6xl">
-                Get in Touch with <span className="text-[var(--peach)]">Toyin Adefemi</span>, Biblical Counselor
+                Let&apos;s <span className="text-[var(--peach)]">Connect</span>
               </h1>
               <p className="mt-7 text-lg leading-relaxed text-black/70">
                 I&apos;m here to walk alongside you with biblical wisdom, prayer, and compassionate support.
@@ -68,40 +70,21 @@ export default function Contact() {
               <p className="mt-4 text-lg leading-relaxed text-black/70">
                 Whether you&apos;re seeking guidance, clarity, or a safe space to process life&apos;s challenges, I welcome the opportunity to connect with you.
               </p>
-            </div>
 
-            <div className="flex items-center justify-center lg:justify-end">
-              <div className="relative aspect-[4/5] w-full max-w-[440px] overflow-hidden rounded-3xl shadow-[0_24px_60px_rgba(0,0,0,0.18)] ring-1 ring-black/10">
-                <Image
-                  src="/images/contact-hero.png"
-                  alt="A virtual counseling session with Toyin Adefemi"
-                  fill
-                  sizes="(max-width: 1024px) 100vw, 440px"
-                  className="object-cover object-center"
-                  priority
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── CONTACT FORM ── */}
-      <section className="relative bg-[var(--background)] px-6 pb-16 lg:px-10 lg:pb-20">
-        <div className="mx-auto max-w-3xl">
-          {submitted ? (
-            <div className="rounded-3xl border border-[var(--teal)] bg-[var(--teal)]/20 p-10 text-center">
-              <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-[var(--teal)]/50">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-7 w-7 text-black" aria-hidden="true">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                </svg>
-              </div>
-              <p className="text-xl font-bold text-black">Message received</p>
-              <p className="mt-2 text-base text-black/70">
-                Thank you for reaching out — I&apos;ll respond within 24–48 hours.
-              </p>
-            </div>
-          ) : (
+              <div className="mt-10">
+              {submitted ? (
+                <div className="rounded-3xl border border-[var(--teal)] bg-[var(--teal)]/20 p-10 text-center">
+                  <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-[var(--teal)]/50">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-7 w-7 text-black" aria-hidden="true">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>
+                  </div>
+                  <p className="text-xl font-bold text-black">Message received</p>
+                  <p className="mt-2 text-base text-black/70">
+                    Thank you for reaching out — I&apos;ll respond within 24–48 hours.
+                  </p>
+                </div>
+              ) : (
             <form
               onSubmit={handleSubmit}
               className="space-y-5 rounded-3xl bg-white p-8 shadow-[0_12px_40px_rgba(0,0,0,0.08)] sm:p-10"
@@ -204,7 +187,25 @@ export default function Contact() {
                 I respond to every inquiry within 24–48 hours.
               </p>
             </form>
-          )}
+              )}
+              </div>
+            </div>
+
+            {/* Right: image */}
+            <div className="flex items-start justify-center lg:sticky lg:top-28 lg:justify-end">
+              <div className="relative aspect-[4/5] w-full max-w-[440px] overflow-hidden rounded-3xl shadow-[0_24px_60px_rgba(0,0,0,0.18)] ring-1 ring-black/10">
+                <Image
+                  src="/images/contact-hero.png"
+                  alt="A virtual counseling session with Toyin Adefemi"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 440px"
+                  className="object-cover object-center"
+                  priority
+                />
+              </div>
+            </div>
+
+          </div>
         </div>
       </section>
 
