@@ -291,15 +291,15 @@ export default function About() {
             </div>
 
             {/* Right: image */}
-            <div className="relative h-[500px] overflow-hidden rounded-[2.5rem] shadow-[0_20px_52px_rgba(0,0,0,0.10)] lg:sticky lg:top-32 lg:h-[600px]">
+            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[2.5rem] shadow-[0_20px_52px_rgba(0,0,0,0.10)] lg:sticky lg:top-32">
               <Image
-                src="/images/meet-counselor.jpg"
-                alt="Toyin Adefemi — Biblical Counselor"
+                src="/images/about-equipping.png"
+                alt="Toyin Adefemi — biblical counseling and equipping"
                 fill
                 sizes="(max-width: 1024px) 100vw, 480px"
-                className="object-cover object-top"
+                className="object-cover object-center"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
             </div>
 
           </div>
