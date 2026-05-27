@@ -169,9 +169,8 @@ export default function Approach() {
             <p className="text-xs font-bold uppercase tracking-[0.25em] text-[var(--peach)]">My Approach</p>
             <span className="h-px w-10 bg-[var(--peach)]" />
           </div>
-          <h1 className="text-4xl font-bold leading-[1.12] tracking-tight text-black sm:text-5xl">
-            A Safe, Supportive,<br />
-            <span className="text-[var(--peach)]">Spirit-Led</span> Experience
+          <h1 className="text-3xl font-bold leading-[1.12] tracking-tight text-black sm:text-4xl lg:whitespace-nowrap">
+            A Safe, Supportive, <span className="text-[var(--peach)]">Spirit-Led</span> Experience
           </h1>
           <p className="mx-auto mt-7 max-w-2xl text-lg leading-relaxed text-black/70">
             Every session is designed to help you feel seen, heard, and supported — emotionally, spiritually, and practically.
@@ -194,13 +193,13 @@ export default function Approach() {
 
               <div className="mt-8 space-y-5">
                 <p className="text-lg leading-8 text-black/65">
-                  In our dedicated hour-long virtual sessions, I offer personalized biblical counseling tailored to your specific needs. Each session includes prayer, focused conversation around the challenges you&apos;re facing, and practical, Christ-centered homework to help you continue growing throughout the week.
+                  In each 60-minute virtual session, you&apos;ll receive personalized, biblically grounded counseling tailored to your needs. Sessions include prayer, focused conversation around what you&apos;re walking through, and practical, Christ-centered tools to help you grow throughout the week.
                 </p>
                 <p className="text-lg leading-8 text-black/65">
-                  The Word of God is our foundation — guiding, comforting, and transforming us as we walk through this journey together. Through clinically informed biblical counseling, my heart is to come alongside you with support, encouragement, and truth every step of the way.
+                  God&apos;s Word is our foundation—bringing clarity, comfort, and transformation as we walk this journey together. Through clinically informed biblical counseling, I come alongside you with support, encouragement, and truth.
                 </p>
                 <p className="text-lg leading-8 text-black/65">
-                  I provide support for adolescents, teens, pre-teens, young adults, parents, and families navigating trauma, anxiety, depression, spiritual disconnection, family issues, abuse, discipleship, relationships, temptation, lust, and more. No matter the struggle, you will be met with compassion, confidentiality, and Christ-centered care.
+                  Whatever you&apos;re facing, you will be met with compassion, confidentiality, and Christ-centered care.
                 </p>
               </div>
             </div>
@@ -210,8 +209,10 @@ export default function Approach() {
               {/* Cost card */}
               <div className="rounded-3xl bg-[var(--peach)] p-8 text-white shadow-[0_16px_40px_rgba(254,143,104,0.30)]">
                 <p className="text-xs font-bold uppercase tracking-widest text-white/70">Investment</p>
-                <p className="mt-3 text-5xl font-black">$90</p>
-                <p className="mt-1 text-base font-medium text-white/85">per session</p>
+                <p className="mt-3 text-5xl font-black">Varies</p>
+                <a href="/work-with-me" className="mt-1 inline-block text-base font-medium text-white/90 underline-offset-4 hover:underline">
+                  See services for details
+                </a>
                 <div className="my-6 h-px bg-white/20" />
                 <p className="text-sm leading-6 text-white/90">
                   Discounts are available for individuals experiencing financial hardship. Please reach out — we will find a way to make this work.
