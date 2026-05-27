@@ -308,10 +308,6 @@ export default function Approach() {
           <h2 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl">
             Are You Committed?
           </h2>
-          <p className="mx-auto mt-8 max-w-2xl text-xl leading-8 text-white/90">
-            You can experience real, steady, and lasting change when you commit to the counseling process and engage fully with your treatment plan.
-          </p>
-
           {/* Transformation pills */}
           <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
             {["Healing is possible.", "Growth is possible.", "A whole, authentic you is within reach."].map((t) => (
@@ -320,10 +316,6 @@ export default function Approach() {
               </span>
             ))}
           </div>
-
-          <p className="mx-auto mt-8 max-w-2xl text-lg leading-8 text-white/80">
-            Don&apos;t settle for another day of feeling disconnected from who God created you to be. You deserve to walk in clarity, confidence, and wholeness — and I&apos;m here to walk that journey with you.
-          </p>
 
           <a
             href="/contact"
