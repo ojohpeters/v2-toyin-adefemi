@@ -44,58 +44,16 @@ const features = [
   { title: "Culturally Responsive", description: "Honor diverse backgrounds, experiences, and perspectives in all counseling work." },
 ];
 
-const resources = [
-  { 
-    title: "Trauma-informed Worksheets", 
-    iconType: "document",
-    description: "Interactive worksheets designed to help you process emotions, identify triggers, and build resilience between sessions."
-  },
-  { 
-    title: "Faith & Healing Resources", 
-    iconType: "star",
-    description: "Scripture-based devotionals and reflective guides to deepen your spiritual connection and find comfort in God's word."
-  },
-  { 
-    title: "Stress Relief Guides", 
-    iconType: "leaf",
-    description: "Practical techniques including breathing exercises, grounding strategies, and mindfulness practices for daily emotional regulation."
-  },
-];
-
-function ResourceIcon({ type }: { type: string }) {
-  if (type === "document") {
-    return (
-      <svg viewBox="0 0 24 24" className="h-8 w-8 fill-[var(--peach)]" aria-hidden="true">
-        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z" />
-      </svg>
-    );
-  }
-
-  if (type === "star") {
-    return (
-      <svg viewBox="0 0 24 24" className="h-8 w-8 fill-[var(--peach)]" aria-hidden="true">
-        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2l-2.81 6.63L2 9.24l5.46 4.73L5.82 21z" />
-      </svg>
-    );
-  }
-
-  return (
-    <svg viewBox="0 0 24 24" className="h-8 w-8 fill-[var(--peach)]" aria-hidden="true">
-      <path d="M17.92 7.02C17.45 4.18 14.97 2 12 2c-2.97 0-5.45 2.18-5.92 5.02C3.97 7.55 2 9.69 2 12s1.97 4.45 4.08 4.98C6.55 19.82 9.03 22 12 22c2.97 0 5.45-2.18 5.92-5.02C20.03 16.45 22 14.31 22 12s-1.97-4.45-4.08-4.98zM12 20c-2.33 0-4.32-1.45-5.12-3.5h10.24c-.8 2.05-2.79 3.5-5.12 3.5zm0-14c2.33 0 4.32 1.45 5.12 3.5H6.88c.8-2.05 2.79-3.5 5.12-3.5z" />
-    </svg>
-  );
-}
-
 export default function Home() {
   return (
     <>
-      {/* Hero Banner */}
+      {/* Hero Banner — 4:1 wide banner, fits above fold at full width */}
       <section className="w-full">
         <Image
           src="/images/home-banner.png"
           alt="Virtual Counseling From Anywhere — professional, faith-based, clinically informed biblical counseling with Toyin Adefemi"
-          width={2560}
-          height={1440}
+          width={2400}
+          height={600}
           priority
           sizes="100vw"
           className="h-auto w-full"
@@ -130,6 +88,53 @@ export default function Home() {
               className="inline-flex items-center justify-center rounded-2xl border-2 border-black/15 bg-white px-8 py-4 text-base font-semibold text-black/75 transition-all hover:border-black/25 hover:bg-[var(--background)]"
             >
               Meet the Counselor
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Who I Serve — compact 4-card row + CTA to Approach */}
+      <section className="relative bg-white px-6 py-12 lg:px-10 lg:py-16">
+        <div className="mx-auto max-w-7xl">
+          <div className="text-center">
+            <p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-[var(--peach)]">Who I Serve</p>
+            <h2 className="text-3xl font-bold tracking-tight text-black sm:text-4xl">Care for every season</h2>
+            <div className="mx-auto mt-5 h-1 w-14 rounded-full bg-[var(--peach)]" />
+          </div>
+
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              { label: 'Young Adults', href: '/services/young-adults', desc: 'Clarity, healing & direction.' },
+              { label: 'Teens',        href: '/services/teens',        desc: 'A safe, judgment-free space.' },
+              { label: 'Families',     href: '/services/family',       desc: 'Restoring connection at home.' },
+              { label: 'Parents',      href: '/services/parenting',    desc: 'Wisdom for the parenting journey.' },
+            ].map((c) => (
+              <a
+                key={c.label}
+                href={c.href}
+                className="group block rounded-2xl bg-[var(--background)] p-5 ring-1 ring-black/5 transition-all hover:-translate-y-0.5 hover:shadow-[0_12px_28px_rgba(0,0,0,0.08)]"
+              >
+                <h3 className="text-base font-bold text-black">{c.label}</h3>
+                <p className="mt-1.5 text-sm leading-snug text-black/65">{c.desc}</p>
+                <span className="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-[var(--peach)] transition-all group-hover:gap-2">
+                  Learn more
+                  <svg viewBox="0 0 20 20" fill="currentColor" className="h-3 w-3" aria-hidden="true">
+                    <path fillRule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clipRule="evenodd" />
+                  </svg>
+                </span>
+              </a>
+            ))}
+          </div>
+
+          <div className="mt-10 text-center">
+            <a
+              href="/approach"
+              className="inline-flex items-center justify-center gap-2 rounded-2xl bg-[var(--peach)] px-8 py-4 text-base font-semibold text-white shadow-[0_12px_28px_rgba(254,143,104,0.35)] transition-all hover:bg-[var(--peach-deep)] hover:-translate-y-0.5"
+            >
+              Learn More About My Approach
+              <svg viewBox="0 0 20 20" fill="currentColor" className="h-4 w-4" aria-hidden="true">
+                <path fillRule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clipRule="evenodd" />
+              </svg>
             </a>
           </div>
         </div>
@@ -186,16 +191,6 @@ export default function Home() {
                     {cred}
                   </span>
                 ))}
-              </div>
-
-              {/* Consultation callout */}
-              <div className="mt-6 flex items-start gap-3 rounded-xl bg-[var(--background)] px-5 py-4 ring-1 ring-[var(--teal)]/40">
-                <svg viewBox="0 0 24 24" className="mt-0.5 h-5 w-5 flex-shrink-0 fill-[var(--peach)]" aria-hidden="true">
-                  <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2zM9 14H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2zm-8 4H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2z"/>
-                </svg>
-                <p className="text-sm leading-relaxed text-[var(--peach)]">
-                  I offer a <strong>complimentary 30-minute phone consultation</strong> to help us discern whether my services are the right fit. And if I&apos;m not the best match, I&apos;ll gladly help you find someone who is.
-                </p>
               </div>
 
               <div className="mt-8">
@@ -284,147 +279,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Who I Serve */}
-      <section className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
-        <div className="mx-auto max-w-7xl">
-          <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-end sm:justify-between">
-            <div>
-              <h2 className="text-5xl font-bold tracking-tight text-black">Who I Serve</h2>
-              <div className="mt-4 h-1 w-16 rounded-full bg-[var(--peach)]" />
-            </div>
-            <a
-              href="/work-with-me"
-              className="inline-flex items-center gap-2 text-sm font-semibold text-[var(--peach)] hover:text-[var(--peach-deep)]"
-            >
-              See all services
-              <svg viewBox="0 0 20 20" fill="currentColor" className="h-4 w-4" aria-hidden="true">
-                <path fillRule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clipRule="evenodd" />
-              </svg>
-            </a>
-          </div>
-
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-
-            {/* Young Adults Counseling */}
-            <article className="group overflow-hidden rounded-[1.75rem] bg-white shadow-[0_4px_20px_rgba(0,0,0,0.07)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(0,0,0,0.13)]">
-              <div className="relative h-56 overflow-hidden">
-                <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/13-GHa5h7KBMyrB4WH5lCWI0NkTDB14OO.webp"
-                  alt="Young adult in counseling session"
-                  fill
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-                <span className="absolute bottom-4 left-4 rounded-full bg-[var(--peach)] px-3 py-1 text-xs font-semibold text-white backdrop-blur-sm">
-                  Young Adults
-                </span>
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-black">Young Adults Counseling</h3>
-                <p className="mt-2 text-sm leading-relaxed text-black/65">
-                  Navigating purpose, identity, relationships, and spiritual growth with compassion and biblical truth.
-                </p>
-                <a href="/work-with-me" className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-[var(--peach)] hover:gap-2">
-                  Learn more
-                  <svg viewBox="0 0 20 20" fill="currentColor" className="h-3.5 w-3.5" aria-hidden="true">
-                    <path fillRule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clipRule="evenodd" />
-                  </svg>
-                </a>
-              </div>
-            </article>
-
-            {/* Teen Counseling */}
-            <article className="group overflow-hidden rounded-[1.75rem] bg-white shadow-[0_4px_20px_rgba(0,0,0,0.07)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(0,0,0,0.13)]">
-              <div className="relative h-56 overflow-hidden">
-                <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/31-N424m4nO0REek7JhpPtoSuCDBhsxZZ.webp"
-                  alt="Teenagers in a supportive group setting"
-                  fill
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-                <span className="absolute bottom-4 left-4 rounded-full bg-[var(--peach)] px-3 py-1 text-xs font-semibold text-white backdrop-blur-sm">
-                  Teens
-                </span>
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-black">Teen Counseling</h3>
-                <p className="mt-2 text-sm leading-relaxed text-black/65">
-                  Safe, trauma-informed support for teens navigating emotional wounds, identity, and life transitions.
-                </p>
-                <a href="/work-with-me" className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-[var(--peach)] hover:gap-2">
-                  Learn more
-                  <svg viewBox="0 0 20 20" fill="currentColor" className="h-3.5 w-3.5" aria-hidden="true">
-                    <path fillRule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clipRule="evenodd" />
-                  </svg>
-                </a>
-              </div>
-            </article>
-
-            {/* Family Counseling */}
-            <article className="group overflow-hidden rounded-[1.75rem] bg-white shadow-[0_4px_20px_rgba(0,0,0,0.07)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(0,0,0,0.13)]">
-              <div className="relative h-56 overflow-hidden">
-                <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/30-n3SiOuqM9SIL7y3DrKZbc4CjNhiy5g.webp"
-                  alt="Family walking together with arms around each other"
-                  fill
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-                <span className="absolute bottom-4 left-4 rounded-full bg-[var(--peach)] px-3 py-1 text-xs font-semibold text-white backdrop-blur-sm">
-                  Families
-                </span>
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-black">Family Counseling</h3>
-                <p className="mt-2 text-sm leading-relaxed text-black/65">
-                  Rebuilding connection, communication, and Christ-centered unity within your family system.
-                </p>
-                <a href="/work-with-me" className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-[var(--peach)] hover:gap-2">
-                  Learn more
-                  <svg viewBox="0 0 20 20" fill="currentColor" className="h-3.5 w-3.5" aria-hidden="true">
-                    <path fillRule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clipRule="evenodd" />
-                  </svg>
-                </a>
-              </div>
-            </article>
-
-            {/* Parental Counseling */}
-            <article className="group overflow-hidden rounded-[1.75rem] bg-white shadow-[0_4px_20px_rgba(0,0,0,0.07)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(0,0,0,0.13)]">
-              <div className="relative h-56 overflow-hidden">
-                <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/34-u4Vn0j83H1m9lwmFr666hQi5gWdBB8.webp"
-                  alt="Parents in a counseling session"
-                  fill
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-                <span className="absolute bottom-4 left-4 rounded-full bg-[var(--peach)] px-3 py-1 text-xs font-semibold text-white backdrop-blur-sm">
-                  Parents
-                </span>
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-black">Parental Counseling</h3>
-                <p className="mt-2 text-sm leading-relaxed text-black/65">
-                  Equipping parents with biblical wisdom, emotional tools, and practical strategies for raising thriving children.
-                </p>
-                <a href="/work-with-me" className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-[var(--peach)] hover:gap-2">
-                  Learn more
-                  <svg viewBox="0 0 20 20" fill="currentColor" className="h-3.5 w-3.5" aria-hidden="true">
-                    <path fillRule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clipRule="evenodd" />
-                  </svg>
-                </a>
-              </div>
-            </article>
-
-          </div>
-        </div>
-      </section>
-
       {/* Testimonial — Full-Width Atmospheric Section with Image H */}
       <section className="relative overflow-hidden px-6 py-14 lg:px-10 lg:py-24">
         <div className="absolute inset-0 z-0">
@@ -477,46 +331,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Free Tools & Guides */}
-      <section className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
-        <div className="mx-auto max-w-7xl">
-          <h2 className="text-5xl font-bold tracking-tight text-black">
-            Free Tools & Guides
-          </h2>
-          <div className="mt-6 h-1 w-20 bg-[var(--peach)]" />
-
-          <p className="mt-10 max-w-2xl text-xl text-black/65">
-            Encouraging resources designed to support your healing journey between sessions.
-          </p>
-
-          <div className="mt-16 grid gap-8 md:grid-cols-3">
-            {resources.map((resource, index) => (
-              <article
-                key={resource.title}
-                className="scroll-animate rounded-[1.5rem] border border-white/80 bg-white p-8 shadow-[0_4px_12px_rgba(0,0,0,0.05)] hover:shadow-[0_12px_24px_rgba(0,0,0,0.12)] transition-all hover:-translate-y-1"
-                style={{ animationDelay: `${index * 80}ms` }}
-              >
-                <div className="mb-4">
-                  <ResourceIcon type={resource.iconType} />
-                </div>
-                <h3 className="text-2xl font-bold text-black">
-                  {resource.title}
-                </h3>
-                <p className="mt-4 text-black/65">
-                  {resource.description}
-                </p>
-                <a
-                  href="/contact"
-                  className="mt-8 inline-flex rounded-xl bg-[var(--peach)] px-6 py-3 text-sm font-semibold text-white shadow-[0_12px_20px_rgba(254,143,104,0.26)] transition-all hover:bg-[var(--peach-deep)] hover:-translate-y-0.5"
-                >
-                  Download
-                </a>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Scripture Banner — Reverent Pause */}
       <section className="relative bg-black px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-3xl text-center">
@@ -531,8 +345,8 @@ export default function Home() {
 
       {/* Final CTA — Warm, Emotionally Resonant */}
       <section className="relative overflow-hidden bg-[var(--background)] px-6 py-14 lg:px-10 lg:py-24">
-        <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-5xl font-bold leading-tight text-black sm:text-6xl">
+        <div className="mx-auto max-w-4xl text-center lg:max-w-5xl">
+          <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl md:text-5xl lg:whitespace-nowrap">
             Ready to Begin Your Healing Journey?
           </h2>
           <p className="mx-auto mt-8 max-w-2xl text-2xl leading-relaxed text-black/65">

@@ -18,12 +18,12 @@ export default function About() {
     <>
 
       {/* ── HERO: Magazine split ── */}
-      <section className="relative min-h-screen overflow-hidden bg-[var(--background)]">
+      <section className="relative overflow-hidden bg-[var(--background)]">
         {/* Soft warm panel behind portrait */}
         <div className="absolute inset-y-0 right-0 w-full bg-[var(--peach)]/8 lg:w-[48%]" />
 
-        <div className="relative mx-auto flex min-h-screen max-w-7xl items-center px-6 lg:px-10">
-          <div className="grid w-full gap-12 pb-24 pt-36 lg:grid-cols-2 lg:gap-20 lg:pb-32 lg:pt-44">
+        <div className="relative mx-auto max-w-7xl px-6 lg:px-10">
+          <div className="grid w-full gap-12 pb-12 pt-12 lg:grid-cols-2 lg:gap-20 lg:pb-16 lg:pt-16">
 
             {/* Left: text */}
             <div className="flex flex-col justify-center">
@@ -32,14 +32,14 @@ export default function About() {
                 <p className="text-xs font-bold uppercase tracking-[0.25em] text-[var(--peach)]">Welcome</p>
               </div>
 
-              <h1 className="text-5xl font-bold leading-[1.05] tracking-tight text-black sm:text-6xl lg:text-7xl">
-                Hi, I&apos;m<br />
+              <h1 className="text-4xl font-bold leading-[1.05] tracking-tight text-black sm:text-5xl lg:text-6xl">
+                I&apos;m{' '}
                 <span className="text-[var(--peach)]">Toyin</span>{' '}
                 <span className="text-black">Adefemi.</span>
               </h1>
 
-              <p className="mt-5 text-lg font-medium text-black/55">
-                Biblical Counselor · Youth Advocate · Emotional Wellness Practitioner
+              <p className="mt-5 text-base font-medium text-black/65 sm:text-lg">
+                MA · Professional Counselor · Board Certified Youth Coach · Clinical Informed Biblical Counselor
               </p>
 
               <p className="mt-7 max-w-lg text-lg leading-8 text-black/65">
@@ -99,7 +99,7 @@ export default function About() {
       </section>
 
       {/* ── PULL QUOTE ── */}
-      <section className="relative overflow-hidden bg-[var(--peach)] px-6 py-12 lg:px-10 lg:py-16">
+      <section className="relative overflow-hidden bg-black px-6 py-12 lg:px-10 lg:py-16">
         {/* Large decorative quote mark */}
         <div className="pointer-events-none absolute -left-4 -top-6 select-none text-[18rem] font-serif leading-none text-white/10" aria-hidden="true">&ldquo;</div>
         <div className="relative mx-auto max-w-4xl text-center">
@@ -122,8 +122,8 @@ export default function About() {
             {/* Image left */}
             <div className="relative h-[480px] overflow-hidden rounded-[2.5rem] shadow-[0_20px_52px_rgba(0,0,0,0.10)]">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/9-icvWhFNHuWubzvdIxEbA6weFN6VE1D.webp"
-                alt="Emotional support and healing"
+                src="/images/about-heart.png"
+                alt="My heart for healing — counseling support"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
