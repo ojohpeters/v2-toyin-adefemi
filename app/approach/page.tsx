@@ -148,18 +148,17 @@ export default function Approach() {
   return (
     <>
 
-      {/* ── HERO BANNER ── */}
-      <section className="relative w-full overflow-hidden">
-        <div className="relative h-[200px] sm:h-[280px] lg:h-[380px]">
-          <Image
-            src="/images/approach-banner.png"
-            alt="My Approach — Toyin Adefemi Counseling"
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover object-center"
-          />
-        </div>
+      {/* ── HERO BANNER — full image, full width, no crop ── */}
+      <section className="w-full">
+        <Image
+          src="/images/approach-banner.png"
+          alt="My Approach — Toyin Adefemi Counseling"
+          width={1920}
+          height={1080}
+          priority
+          sizes="100vw"
+          className="h-auto w-full"
+        />
       </section>
 
       {/* ── HERO INTRO (under the banner) ── */}
