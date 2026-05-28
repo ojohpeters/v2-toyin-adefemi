@@ -77,7 +77,7 @@ export function Header() {
   return (
     <>
       <header className={`sticky top-0 z-50 border-b border-black/10 bg-white/90 shadow-sm backdrop-blur-xl transition-opacity duration-300 ${isMenuOpen ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-2 lg:px-10">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-1.5 sm:px-6 sm:py-2 lg:px-10">
           <Link href="/" className="flex items-center">
             <Image
               src="/images/logo.png"
@@ -85,7 +85,7 @@ export function Header() {
               width={850}
               height={410}
               priority
-              className="h-[68px] w-auto md:h-[84px]"
+              className="h-12 w-auto sm:h-14 md:h-[84px]"
             />
           </Link>
 
@@ -184,10 +184,10 @@ export function Header() {
             {/* Mobile hamburger */}
             <button
               onClick={() => setIsMenuOpen(true)}
-              className="flex h-10 w-10 items-center justify-center rounded-full border border-black/15 bg-white text-black/90 shadow-sm hover:bg-[var(--background)] md:hidden"
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-black/15 bg-white text-black/90 shadow-sm hover:bg-[var(--background)] md:hidden"
               aria-label="Open navigation menu"
             >
-              <svg viewBox="0 0 24 24" className="h-5 w-5" aria-hidden="true">
+              <svg viewBox="0 0 24 24" className="h-4 w-4" aria-hidden="true">
                 <path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
               </svg>
             </button>
