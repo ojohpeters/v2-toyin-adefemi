@@ -126,12 +126,12 @@ export default function FamilyCounseling() {
 
             {/* Service flyer */}
             <div className="flex items-center justify-center">
-              <div className="relative aspect-[4/5] w-full max-w-[420px] overflow-hidden rounded-3xl shadow-[0_32px_64px_rgba(0,0,0,0.18)] ring-1 ring-black/5">
+              <div className="relative aspect-[16/9] w-full max-w-[520px] overflow-hidden rounded-3xl shadow-[0_32px_64px_rgba(0,0,0,0.18)] ring-1 ring-black/5">
                 <Image
-                  src="/images/family-counseling.png"
-                  alt="A peaceful family home with Isaiah 32:18 — My people will abide in a peaceful habitation"
+                  src="/images/family-safe-space.png"
+                  alt="A safe space for the whole family"
                   fill
-                  sizes="(max-width: 1024px) 100vw, 420px"
+                  sizes="(max-width: 1024px) 100vw, 520px"
                   className="object-cover"
                 />
               </div>
