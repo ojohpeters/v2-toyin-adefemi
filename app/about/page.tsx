@@ -35,12 +35,24 @@ export default function About() {
               <h1 className="text-4xl font-bold leading-[1.05] tracking-tight text-black sm:text-5xl lg:text-6xl">
                 I&apos;m{' '}
                 <span className="text-[var(--peach)]">Toyin</span>{' '}
-                <span className="text-black">Adefemi.</span>
+                <span className="text-black">Adefemi, M.A.</span>
               </h1>
 
-              <p className="mt-5 text-base font-medium text-black/65 sm:text-lg">
-                MA · Professional Counselor · Board Certified Youth Coach · Clinical Informed Biblical Counselor
-              </p>
+              <div className="mt-6 flex flex-wrap gap-2">
+                {[
+                  'Professional Counselor',
+                  'Board Certified Youth Coach',
+                  'Clinically Informed Biblical Counselor',
+                ].map((cred) => (
+                  <span
+                    key={cred}
+                    className="inline-flex items-center gap-2 rounded-full bg-[var(--peach)]/10 px-4 py-2 text-sm font-bold text-[var(--peach)] ring-1 ring-[var(--peach)]/25 sm:text-base"
+                  >
+                    <span className="h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--peach)]" />
+                    {cred}
+                  </span>
+                ))}
+              </div>
 
               <p className="mt-7 max-w-lg text-lg leading-8 text-black/65">
                 I&apos;m grateful for the opportunity to walk alongside you as you begin your soul-care journey. For more than a decade I have had the privilege of walking alongside hundreds of youth, parents, and families through some of life&apos;s most challenging seasons.

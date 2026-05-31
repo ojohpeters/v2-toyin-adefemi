@@ -102,26 +102,62 @@ export default function Home() {
             <div className="mx-auto mt-4 h-1 w-12 rounded-full bg-[var(--peach)] sm:mt-5 sm:w-14" />
           </div>
 
-          <div className="mt-8 grid gap-3 sm:mt-10 sm:grid-cols-2 sm:gap-4 lg:grid-cols-4">
+          <div className="mt-8 grid gap-4 sm:mt-10 sm:grid-cols-2 sm:gap-5 lg:grid-cols-4">
             {[
-              { label: 'Young Adults', href: '/services/young-adults', desc: 'Clarity, healing & direction.' },
-              { label: 'Teens',        href: '/services/teens',        desc: 'A safe, judgment-free space.' },
-              { label: 'Families',     href: '/services/family',       desc: 'Restoring connection at home.' },
-              { label: 'Parents',      href: '/services/parenting',    desc: 'Wisdom for the parenting journey.' },
+              {
+                label: 'Young Adults',
+                href: '/services/young-adults',
+                desc: 'Clarity, healing & direction.',
+                image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/13-GHa5h7KBMyrB4WH5lCWI0NkTDB14OO.webp',
+                alt: 'Young adult in a counseling session',
+              },
+              {
+                label: 'Teens',
+                href: '/services/teens',
+                desc: 'A safe, judgment-free space.',
+                image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/31-N424m4nO0REek7JhpPtoSuCDBhsxZZ.webp',
+                alt: 'Teenagers in a supportive group',
+              },
+              {
+                label: 'Families',
+                href: '/services/family',
+                desc: 'Restoring connection at home.',
+                image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/30-n3SiOuqM9SIL7y3DrKZbc4CjNhiy5g.webp',
+                alt: 'Family walking together',
+              },
+              {
+                label: 'Parents',
+                href: '/services/parenting',
+                desc: 'Wisdom for the parenting journey.',
+                image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/34-u4Vn0j83H1m9lwmFr666hQi5gWdBB8.webp',
+                alt: 'Parents in a counseling session',
+              },
             ].map((c) => (
               <a
                 key={c.label}
                 href={c.href}
-                className="group block rounded-2xl bg-[var(--background)] p-4 ring-1 ring-black/5 transition-all hover:-translate-y-0.5 hover:shadow-[0_12px_28px_rgba(0,0,0,0.08)] sm:p-5"
+                className="group block overflow-hidden rounded-2xl bg-[var(--background)] ring-1 ring-black/5 transition-all hover:-translate-y-0.5 hover:shadow-[0_12px_28px_rgba(0,0,0,0.08)]"
               >
-                <h3 className="text-base font-bold text-black">{c.label}</h3>
-                <p className="mt-1.5 text-sm leading-snug text-black/65">{c.desc}</p>
-                <span className="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-[var(--peach)] transition-all group-hover:gap-2">
-                  Learn more
-                  <svg viewBox="0 0 20 20" fill="currentColor" className="h-3 w-3" aria-hidden="true">
-                    <path fillRule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clipRule="evenodd" />
-                  </svg>
-                </span>
+                <div className="relative aspect-[4/3] w-full overflow-hidden">
+                  <Image
+                    src={c.image}
+                    alt={c.alt}
+                    fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+                </div>
+                <div className="p-4 sm:p-5">
+                  <h3 className="text-base font-bold text-black">{c.label}</h3>
+                  <p className="mt-1.5 text-sm leading-snug text-black/65">{c.desc}</p>
+                  <span className="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-[var(--peach)] transition-all group-hover:gap-2">
+                    Learn more
+                    <svg viewBox="0 0 20 20" fill="currentColor" className="h-3 w-3" aria-hidden="true">
+                      <path fillRule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clipRule="evenodd" />
+                    </svg>
+                  </span>
+                </div>
               </a>
             ))}
           </div>
@@ -170,7 +206,7 @@ export default function Home() {
               </p>
               <h2 className="text-[28px] font-bold leading-[1.15] tracking-tight text-black sm:text-4xl md:text-5xl lg:text-[52px]">
                 Hi, I&apos;m{" "}
-                <span className="text-[var(--peach)]">Toyin Adefemi.</span>
+                <span className="text-[var(--peach)]">Toyin Adefemi, M.A.</span>
               </h2>
               <div className="mt-4 h-1 w-12 rounded-full bg-[var(--peach)] sm:mt-5 sm:w-16" />
 
@@ -272,6 +308,18 @@ export default function Home() {
                 </div>
               </article>
             ))}
+          </div>
+
+          <div className="mt-10 sm:mt-12">
+            <a
+              href="/approach"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-[var(--peach)] px-6 py-3.5 text-sm font-semibold text-white shadow-[0_12px_28px_rgba(254,143,104,0.35)] transition-all hover:bg-[var(--peach-deep)] hover:-translate-y-0.5 sm:w-auto sm:px-8 sm:py-4 sm:text-base"
+            >
+              Explore My Approach
+              <svg viewBox="0 0 20 20" fill="currentColor" className="h-4 w-4" aria-hidden="true">
+                <path fillRule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clipRule="evenodd" />
+              </svg>
+            </a>
           </div>
         </div>
       </section>
