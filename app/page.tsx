@@ -47,16 +47,16 @@ const features = [
 export default function Home() {
   return (
     <>
-      {/* Hero Banner — 4:1 wide banner, fits above fold at full width */}
-      <section className="w-full">
+      {/* Hero Banner — 3:1 wide banner image, full-bleed */}
+      <section className="relative w-full overflow-hidden">
         <Image
           src="/images/home-banner.png"
           alt="Virtual Counseling From Anywhere — professional, faith-based, clinically informed biblical counseling with Toyin Adefemi"
           width={2400}
-          height={600}
+          height={800}
           priority
           sizes="100vw"
-          className="h-auto w-full"
+          className="block h-auto w-full"
         />
       </section>
 
