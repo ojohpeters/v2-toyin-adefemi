@@ -16,7 +16,7 @@ function Section({ title, children }: { title: string; children: React.ReactNode
     <div className="space-y-4">
       <div className="flex items-center gap-3">
         <span className="h-px w-8 bg-[var(--peach)]" />
-        <h4 className="text-sm font-bold uppercase tracking-[0.18em] text-[var(--peach)]">{title}</h4>
+        <h4 className="text-base font-bold uppercase tracking-[0.2em] text-[var(--peach)] sm:text-lg">{title}</h4>
       </div>
       <div className="grid gap-4 sm:grid-cols-2">{children}</div>
     </div>
@@ -189,7 +189,7 @@ export default function ApproachForms() {
         <div className="mb-12 text-center">
           <div className="mb-6 flex items-center justify-center gap-3">
             <span className="h-px w-10 bg-[var(--peach)]" />
-            <p className="text-xs font-bold uppercase tracking-[0.25em] text-[var(--peach)]">Forms</p>
+            <p className="text-sm font-bold uppercase tracking-[0.22em] text-[var(--peach)] sm:text-base">Forms</p>
             <span className="h-px w-10 bg-[var(--peach)]" />
           </div>
           <h2 className="text-4xl font-bold leading-tight text-black sm:text-5xl">

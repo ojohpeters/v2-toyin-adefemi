@@ -62,21 +62,21 @@ export default function Home() {
 
       {/* Welcome — intro under the banner */}
       <section className="relative bg-[var(--background)] px-5 py-10 sm:px-6 sm:py-12 lg:px-10 lg:py-16">
-        <div className="mx-auto max-w-4xl text-center">
-          <div className="mb-6 flex items-center justify-center gap-2 text-[10px] font-semibold uppercase tracking-[0.18em] text-[var(--peach)] sm:text-xs sm:tracking-[0.2em]">
-            <span className="h-px w-6 bg-[var(--peach)] sm:w-8" />
+        <div className="mx-auto max-w-4xl">
+          <div className="mb-6 flex items-center gap-3 text-sm font-bold uppercase tracking-[0.2em] text-[var(--peach)] sm:text-base">
+            <span className="h-px w-8 bg-[var(--peach)] sm:w-10" />
             Online · Faith-Based · Trauma-Informed
-            <span className="h-px w-6 bg-[var(--peach)] sm:w-8" />
           </div>
           <h1 className="text-[28px] font-bold leading-[1.15] tracking-tight sm:text-4xl md:text-5xl lg:text-[54px]">
             <span className="block text-black">Christ-rooted support</span>
-            <span className="block font-normal text-black/55">for the seasons you were</span>
-            <span className="block text-black">never meant to carry <span className="text-[var(--peach)]">alone.</span></span>
+            <span className="block font-normal text-black/55">
+              for the seasons you were never meant to carry <span className="font-bold text-[var(--peach)]">alone.</span>
+            </span>
           </h1>
-          <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-black/65 sm:mt-7 sm:text-lg">
+          <p className="mt-6 max-w-2xl text-base leading-relaxed text-black/65 sm:mt-7 sm:text-lg">
             I provide faith-based, trauma-informed care and clinically informed biblical counseling to support adolescents, individuals, families, and parents as they walk through difficult seasons. My mission is to offer a safe, Christ-centered space where you can process your story with honesty and experience true emotional and spiritual renewal.
           </p>
-          <div className="mt-8 flex flex-col items-stretch justify-center gap-3 sm:mt-9 sm:flex-row sm:items-center sm:gap-4">
+          <div className="mt-8 flex flex-col items-stretch gap-3 sm:mt-9 sm:flex-row sm:items-center sm:gap-4">
             <a
               href="/book-a-session"
               className="inline-flex items-center justify-center rounded-2xl bg-[var(--peach)] px-6 py-3.5 text-sm font-semibold text-white shadow-[0_12px_28px_rgba(254,143,104,0.38)] transition-all hover:bg-[var(--peach-deep)] hover:-translate-y-0.5 sm:px-8 sm:py-4 sm:text-base"
@@ -97,7 +97,7 @@ export default function Home() {
       <section className="relative bg-white px-5 py-10 sm:px-6 sm:py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-7xl">
           <div className="text-center">
-            <p className="mb-3 text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--peach)] sm:text-xs sm:tracking-[0.22em]">Who I Serve</p>
+            <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-[var(--peach)] sm:text-base">Who I Serve</p>
             <h2 className="text-[26px] font-bold tracking-tight text-black sm:text-3xl md:text-4xl">Care for every season</h2>
             <div className="mx-auto mt-4 h-1 w-12 rounded-full bg-[var(--peach)] sm:mt-5 sm:w-14" />
           </div>
@@ -165,7 +165,7 @@ export default function Home() {
 
             {/* Content */}
             <div className="flex flex-col">
-              <p className="mb-3 text-[10px] font-semibold uppercase tracking-[0.2em] text-[var(--peach)] sm:mb-4 sm:text-sm sm:tracking-[0.22em]">
+              <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-[var(--peach)] sm:mb-4 sm:text-base">
                 Meet Your Counselor
               </p>
               <h2 className="text-[28px] font-bold leading-[1.15] tracking-tight text-black sm:text-4xl md:text-5xl lg:text-[52px]">
@@ -239,7 +239,7 @@ export default function Home() {
       {/* Approach Pillars — Horizontal Feature Blocks */}
       <section className="relative bg-[var(--background)] px-5 py-10 sm:px-6 sm:py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-7xl">
-          <p className="mb-4 text-[10px] font-semibold uppercase tracking-[0.2em] text-[var(--peach)] sm:mb-6 sm:text-sm sm:tracking-[0.22em]">
+          <p className="mb-4 text-sm font-bold uppercase tracking-[0.2em] text-[var(--peach)] sm:mb-6 sm:text-base">
             My Approach
           </p>
           <h2 className="text-[26px] font-bold leading-[1.15] tracking-tight text-black sm:text-3xl md:text-4xl lg:text-5xl">

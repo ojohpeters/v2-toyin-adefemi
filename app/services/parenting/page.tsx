@@ -112,7 +112,7 @@ export default function ParentingCounseling() {
             </div>
 
             <div>
-              <p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-[var(--peach)]">For Parents</p>
+              <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-[var(--peach)] sm:text-base">For Parents</p>
               <h2 className="text-4xl font-bold leading-tight text-black sm:text-5xl">
                 A Safe Space<br />for Parents
               </h2>
@@ -146,7 +146,7 @@ export default function ParentingCounseling() {
         <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:48px_48px]" />
         <div className="relative mx-auto max-w-7xl">
           <div className="mx-auto max-w-2xl text-center">
-            <p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-[var(--peach)]">You&apos;re Not Alone</p>
+            <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-[var(--peach)] sm:text-base">You&apos;re Not Alone</p>
             <h2 className="text-4xl font-bold text-white sm:text-5xl">Common Parenting Challenges</h2>
             <div className="mx-auto mt-5 h-1 w-14 rounded-full bg-[var(--peach)]" />
             <p className="mt-6 text-lg text-white/70">
@@ -173,7 +173,7 @@ export default function ParentingCounseling() {
           <div className="grid gap-16 lg:grid-cols-[1fr_380px] lg:items-start lg:gap-20">
 
             <div>
-              <p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-[var(--peach)]">Each Session</p>
+              <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-[var(--peach)] sm:text-base">Each Session</p>
               <h2 className="text-4xl font-bold leading-tight text-black sm:text-5xl">
                 What Sessions<br />Look Like
               </h2>

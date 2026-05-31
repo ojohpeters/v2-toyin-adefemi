@@ -29,7 +29,7 @@ export default function About() {
             <div className="flex flex-col justify-center">
               <div className="mb-5 flex items-center gap-3">
                 <span className="h-px w-10 bg-[var(--peach)]" />
-                <p className="text-xs font-bold uppercase tracking-[0.25em] text-[var(--peach)]">Welcome</p>
+                <p className="text-sm font-bold uppercase tracking-[0.22em] text-[var(--peach)] sm:text-base">Welcome</p>
               </div>
 
               <h1 className="text-4xl font-bold leading-[1.05] tracking-tight text-black sm:text-5xl lg:text-6xl">
@@ -137,7 +137,7 @@ export default function About() {
 
             {/* Text right */}
             <div>
-              <p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-[var(--peach)]">My Story</p>
+              <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-[var(--peach)] sm:text-base">My Story</p>
               <h2 className="text-4xl font-bold leading-tight text-black sm:text-5xl">
                 My Heart<br />for Healing
               </h2>
@@ -164,7 +164,7 @@ export default function About() {
 
         <div className="relative mx-auto max-w-7xl">
           <div className="text-center">
-            <p className="mb-3 text-xs font-bold uppercase tracking-[0.25em] text-[var(--peach)]">A God-Directed Journey</p>
+            <p className="mb-3 text-sm font-bold uppercase tracking-[0.22em] text-[var(--peach)] sm:text-base">A God-Directed Journey</p>
             <h2 className="text-4xl font-bold text-black sm:text-5xl lg:text-6xl">My Calling</h2>
             <div className="mx-auto mt-5 h-1 w-14 rounded-full bg-[var(--peach)]" />
           </div>
@@ -244,7 +244,7 @@ export default function About() {
 
             {/* Left: text + credentials */}
             <div>
-              <p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-[var(--peach)]">Training &amp; Formation</p>
+              <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-[var(--peach)] sm:text-base">Training &amp; Formation</p>
               <h2 className="text-4xl font-bold leading-tight text-black sm:text-5xl">
                 The Equipping
               </h2>
@@ -346,7 +346,7 @@ export default function About() {
       {/* ── CTA ── */}
       <section className="relative overflow-hidden bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-4xl text-center">
-          <p className="mb-4 text-xs font-bold uppercase tracking-[0.25em] text-[var(--peach)]">Ready to Start?</p>
+          <p className="mb-4 text-sm font-bold uppercase tracking-[0.22em] text-[var(--peach)] sm:text-base">Ready to Start?</p>
           <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl md:text-5xl lg:text-6xl">
             Let&apos;s Begin<br />Your Journey
           </h2>

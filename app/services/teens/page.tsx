@@ -87,7 +87,7 @@ export default function TeenCounseling() {
           <div className="grid gap-16 lg:grid-cols-2 lg:items-center lg:gap-24">
 
             <div>
-              <p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-[var(--peach)]">Your Space</p>
+              <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-[var(--peach)] sm:text-base">Your Space</p>
               <h2 className="text-4xl font-bold leading-tight text-black sm:text-5xl">
                 A Space Just<br />for You
               </h2>
@@ -132,7 +132,7 @@ export default function TeenCounseling() {
       <section className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-7xl">
           <div className="max-w-2xl">
-            <p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-[var(--peach)]">No Topic Too Big or Small</p>
+            <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-[var(--peach)] sm:text-base">No Topic Too Big or Small</p>
             <h2 className="text-4xl font-bold text-black sm:text-5xl">What We Can Talk About</h2>
             <div className="mt-5 h-1 w-14 rounded-full bg-[var(--peach)]" />
             <p className="mt-6 text-lg text-black/65">
@@ -159,7 +159,7 @@ export default function TeenCounseling() {
           <div className="grid gap-16 lg:grid-cols-[1fr_420px] lg:items-center lg:gap-24">
 
             <div>
-              <p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-[var(--peach)]">Every Session</p>
+              <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-[var(--peach)] sm:text-base">Every Session</p>
               <h2 className="text-4xl font-bold leading-tight text-black sm:text-5xl">
                 What Sessions<br />Are Like
               </h2>

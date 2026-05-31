@@ -23,7 +23,7 @@ export default function Approach() {
         <div className="mx-auto max-w-4xl text-center">
           <div className="mb-6 flex items-center justify-center gap-3">
             <span className="h-px w-10 bg-[var(--peach)]" />
-            <p className="text-xs font-bold uppercase tracking-[0.25em] text-[var(--peach)]">My Approach</p>
+            <p className="text-sm font-bold uppercase tracking-[0.22em] text-[var(--peach)] sm:text-base">My Approach</p>
             <span className="h-px w-10 bg-[var(--peach)]" />
           </div>
           <h1 className="text-3xl font-bold leading-[1.12] tracking-tight text-black sm:text-4xl lg:whitespace-nowrap">
@@ -42,7 +42,7 @@ export default function Approach() {
 
             {/* Left: text */}
             <div>
-              <p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-[var(--peach)]">Sessions</p>
+              <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-[var(--peach)] sm:text-base">Sessions</p>
               <h2 className="text-4xl font-bold leading-tight text-black sm:text-5xl">
                 What You Can Expect
               </h2>
@@ -122,7 +122,7 @@ export default function Approach() {
 
             {/* Right: text */}
             <div>
-              <p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-[var(--peach)]">The Foundation</p>
+              <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-[var(--peach)] sm:text-base">The Foundation</p>
               <h2 className="text-4xl font-bold leading-tight text-white sm:text-5xl">
                 Why Clinically Informed Biblical Counseling?
               </h2>
@@ -161,7 +161,7 @@ export default function Approach() {
         <div className="pointer-events-none absolute -bottom-20 left-0 h-80 w-80 rounded-full bg-white/10 blur-3xl" />
 
         <div className="relative mx-auto max-w-4xl text-center">
-          <p className="mb-4 text-xs font-bold uppercase tracking-[0.25em] text-white/70">Your Commitment</p>
+          <p className="mb-4 text-sm font-bold uppercase tracking-[0.22em] text-white/70 sm:text-base">Your Commitment</p>
           <h2 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl">
             Are You Committed?
           </h2>
@@ -188,7 +188,7 @@ export default function Approach() {
         <div className="mx-auto max-w-3xl text-center">
           <div className="mb-6 flex items-center justify-center gap-3">
             <span className="h-px w-10 bg-[var(--peach)]" />
-            <p className="text-xs font-bold uppercase tracking-[0.25em] text-[var(--peach)]">Ready to Begin?</p>
+            <p className="text-sm font-bold uppercase tracking-[0.22em] text-[var(--peach)] sm:text-base">Ready to Begin?</p>
             <span className="h-px w-10 bg-[var(--peach)]" />
           </div>
           <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
