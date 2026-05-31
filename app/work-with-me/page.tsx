@@ -86,7 +86,7 @@ const steps = [
   {
     num: "03",
     title: "Attend Your First Session",
-    description: "Each 60-minute Zoom session includes prayer, focused conversation, and Christ-centered homework to help you keep growing throughout the week.",
+    description: "Each 60-minute virtual session includes prayer, focused conversation, and Christ-centered homework to help you keep growing throughout the week.",
   },
   {
     num: "04",
@@ -118,12 +118,11 @@ export default function WorkWithMe() {
           <div className="max-w-3xl">
             <div className="mb-6 flex items-center gap-3">
               <span className="h-px w-10 bg-[var(--peach)]" />
-              <p className="text-sm font-bold uppercase tracking-[0.22em] text-[var(--peach)] sm:text-base">Services & Support</p>
+              <p className="text-2xl font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-3xl md:text-4xl">Services & Support</p>
             </div>
-            <h1 className="text-4xl font-bold leading-[1.08] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
-              Counseling &<br />
-              Support <span className="text-[var(--peach)]">Designed</span><br />
-              for You
+            <h1 className="text-xl font-bold leading-[1.15] tracking-tight text-white sm:text-2xl md:text-3xl lg:text-4xl">
+              Counseling & Support<br />
+              <span className="text-[var(--peach)]">Designed</span> for You
             </h1>
             <p className="mt-8 max-w-2xl text-xl leading-8 text-white/80">
               Faith-based, trauma-informed care to help you heal, grow, and step boldly into your identity in Christ. Find the service that fits your season.
@@ -150,8 +149,8 @@ export default function WorkWithMe() {
       <section className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-7xl">
           <div className="mb-14">
-            <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-[var(--peach)] sm:text-base">All Services</p>
-            <h2 className="text-4xl font-bold text-black sm:text-5xl">Find Your Path to Healing</h2>
+            <p className="mb-3 text-2xl font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-3xl md:text-4xl">All Services</p>
+            <h2 className="text-xl font-bold text-black sm:text-2xl md:text-3xl">Find Your Path to Healing</h2>
             <div className="mt-5 h-1 w-14 rounded-full bg-[var(--peach)]" />
             <p className="mt-6 max-w-2xl text-lg leading-8 text-black/65">
               Each service is tailored to meet you exactly where you are. Select the one that best fits your season.
@@ -236,7 +235,7 @@ export default function WorkWithMe() {
               { stat: "$90", label: "Per individual session" },
               { stat: "60 min", label: "Session duration" },
               { stat: "Free", label: "30-min consultation" },
-              { stat: "Virtual", label: "Secure Zoom sessions" },
+              { stat: "Virtual", label: "Secure video sessions" },
             ].map((item) => (
               <div key={item.label} className="text-center">
                 <p className="text-4xl font-black text-white">{item.stat}</p>
@@ -255,8 +254,8 @@ export default function WorkWithMe() {
 
             {/* Steps */}
             <div>
-              <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-[var(--peach)] sm:text-base">The Process</p>
-              <h2 className="text-4xl font-bold text-white sm:text-5xl">How We Work Together</h2>
+              <p className="mb-3 text-2xl font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-3xl md:text-4xl">The Process</p>
+              <h2 className="text-xl font-bold text-white sm:text-2xl md:text-3xl">How We Work Together</h2>
               <div className="mt-5 h-1 w-14 rounded-full bg-[var(--peach)]" />
 
               <div className="mt-14 space-y-0">
@@ -334,7 +333,7 @@ export default function WorkWithMe() {
       {/* ── CTA ── */}
       <section className="relative overflow-hidden bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-4xl text-center">
-          <p className="mb-4 text-sm font-bold uppercase tracking-[0.22em] text-[var(--peach)] sm:text-base">Ready to Start?</p>
+          <p className="mb-4 text-2xl font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-3xl md:text-4xl">Ready to Start?</p>
           <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl md:text-5xl lg:text-6xl">
             Your Healing<br />Journey Starts Here
           </h2>

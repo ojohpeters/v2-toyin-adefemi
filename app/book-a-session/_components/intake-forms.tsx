@@ -158,7 +158,7 @@ function FormShell({
   );
 }
 
-export default function ApproachForms() {
+export default function IntakeForms() {
   const [active, setActive] = useState<FormKey>('agreement');
   const [submitted, setSubmitted] = useState<Record<FormKey, boolean>>({
     agreement: false,
@@ -177,22 +177,22 @@ export default function ApproachForms() {
       });
       console.log(`[${key}] submission`, payload);
       setSubmitted((s) => ({ ...s, [key]: true }));
-      window.scrollTo({ top: document.getElementById('approach-forms')?.offsetTop ?? 0, behavior: 'smooth' });
+      window.scrollTo({ top: document.getElementById('intake-forms')?.offsetTop ?? 0, behavior: 'smooth' });
     };
   }
 
   return (
-    <section id="approach-forms" className="relative bg-[var(--background)] px-6 py-16 lg:px-10 lg:py-24">
+    <section id="intake-forms" className="relative bg-[var(--background)] px-6 py-16 lg:px-10 lg:py-24">
       <div className="mx-auto max-w-5xl">
 
         {/* Header */}
         <div className="mb-12 text-center">
           <div className="mb-6 flex items-center justify-center gap-3">
             <span className="h-px w-10 bg-[var(--peach)]" />
-            <p className="text-sm font-bold uppercase tracking-[0.22em] text-[var(--peach)] sm:text-base">Forms</p>
+            <p className="text-2xl font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-3xl md:text-4xl">Forms</p>
             <span className="h-px w-10 bg-[var(--peach)]" />
           </div>
-          <h2 className="text-4xl font-bold leading-tight text-black sm:text-5xl">
+          <h2 className="text-xl font-bold leading-tight text-black sm:text-2xl md:text-3xl">
             Begin Your <span className="text-[var(--peach)]">Healing Journey</span>
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-black/65">

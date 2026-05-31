@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import ApproachForms from './_components/approach-forms';
 
 export default function Approach() {
   return (
@@ -23,7 +22,7 @@ export default function Approach() {
         <div className="mx-auto max-w-4xl text-center">
           <div className="mb-6 flex items-center justify-center gap-3">
             <span className="h-px w-10 bg-[var(--peach)]" />
-            <p className="text-sm font-bold uppercase tracking-[0.22em] text-[var(--peach)] sm:text-base">My Approach</p>
+            <p className="text-2xl font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-3xl md:text-4xl">My Approach</p>
             <span className="h-px w-10 bg-[var(--peach)]" />
           </div>
           <h1 className="text-3xl font-bold leading-[1.12] tracking-tight text-black sm:text-4xl lg:whitespace-nowrap">
@@ -42,8 +41,8 @@ export default function Approach() {
 
             {/* Left: text */}
             <div>
-              <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-[var(--peach)] sm:text-base">Sessions</p>
-              <h2 className="text-4xl font-bold leading-tight text-black sm:text-5xl">
+              <p className="mb-3 text-2xl font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-3xl md:text-4xl">Sessions</p>
+              <h2 className="text-xl font-bold leading-tight text-black sm:text-2xl md:text-3xl">
                 What You Can Expect
               </h2>
               <div className="mt-5 h-1 w-14 rounded-full bg-[var(--peach)]" />
@@ -106,24 +105,23 @@ export default function Approach() {
       <section className="relative bg-black px-6 py-12 lg:px-10 lg:py-16">
         <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:48px_48px]" />
         <div className="relative mx-auto max-w-7xl">
-          <div className="grid gap-16 lg:grid-cols-2 lg:items-center lg:gap-24">
+          <div className="grid gap-16 lg:grid-cols-2 lg:items-stretch lg:gap-24">
 
-            {/* Left: image */}
-            <div className="relative w-full overflow-hidden rounded-3xl">
+            {/* Left: image — stretches to match column height */}
+            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-3xl sm:aspect-[3/4] lg:aspect-auto lg:min-h-full">
               <Image
                 src="/images/why-clinically-informed.png"
                 alt="Why Clinically Informed Biblical Counseling"
-                width={1561}
-                height={665}
+                fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
-                className="h-auto w-full"
+                className="object-cover"
               />
             </div>
 
             {/* Right: text */}
             <div>
-              <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-[var(--peach)] sm:text-base">The Foundation</p>
-              <h2 className="text-4xl font-bold leading-tight text-white sm:text-5xl">
+              <p className="mb-3 text-2xl font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-3xl md:text-4xl">The Foundation</p>
+              <h2 className="text-xl font-bold leading-tight text-white sm:text-2xl md:text-3xl">
                 Why Clinically Informed Biblical Counseling?
               </h2>
               <div className="mt-5 h-1 w-14 rounded-full bg-[var(--peach)]" />
@@ -161,8 +159,8 @@ export default function Approach() {
         <div className="pointer-events-none absolute -bottom-20 left-0 h-80 w-80 rounded-full bg-white/10 blur-3xl" />
 
         <div className="relative mx-auto max-w-4xl text-center">
-          <p className="mb-4 text-sm font-bold uppercase tracking-[0.22em] text-white/70 sm:text-base">Your Commitment</p>
-          <h2 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl">
+          <p className="mb-4 text-2xl font-bold uppercase tracking-[0.12em] text-white/70 sm:text-3xl md:text-4xl">Your Commitment</p>
+          <h2 className="text-xl font-bold leading-tight text-white sm:text-2xl md:text-3xl lg:text-4xl">
             Are You Committed?
           </h2>
           {/* Transformation pills */}
@@ -188,14 +186,14 @@ export default function Approach() {
         <div className="mx-auto max-w-3xl text-center">
           <div className="mb-6 flex items-center justify-center gap-3">
             <span className="h-px w-10 bg-[var(--peach)]" />
-            <p className="text-sm font-bold uppercase tracking-[0.22em] text-[var(--peach)] sm:text-base">Ready to Begin?</p>
+            <p className="text-2xl font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-3xl md:text-4xl">Ready to Begin?</p>
             <span className="h-px w-10 bg-[var(--peach)]" />
           </div>
-          <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
+          <h2 className="text-xl font-bold leading-tight text-black sm:text-2xl md:text-3xl lg:text-4xl whitespace-nowrap">
             I would be honored to <span className="text-[var(--peach)]">walk with you</span>.
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-black/65">
-            Take the next step — schedule a session, reach out, or scroll down to complete your intake forms.
+            Take the next step — schedule a session or reach out.
           </p>
           <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <a
@@ -214,13 +212,10 @@ export default function Approach() {
         </div>
       </section>
 
-      {/* ── FORMS (Agreement / Intake / Parent Consent / Minor Intake) ── */}
-      <ApproachForms />
-
       {/* ── FINAL CTA ── */}
       <section className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-4xl font-bold text-black sm:text-5xl">
+          <h2 className="text-xl font-bold text-black sm:text-2xl md:text-3xl">
             Ready to Take the First Step?
           </h2>
           <p className="mx-auto mt-6 text-lg leading-8 text-black/65">

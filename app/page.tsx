@@ -62,14 +62,16 @@ export default function Home() {
 
       {/* Welcome — intro under the banner */}
       <section className="relative bg-[var(--background)] px-5 py-10 sm:px-6 sm:py-12 lg:px-10 lg:py-16">
-        <div className="mx-auto max-w-4xl">
-          <div className="mb-6 flex items-center gap-3 text-sm font-bold uppercase tracking-[0.2em] text-[var(--peach)] sm:text-base">
+        <div className="max-w-6xl">
+          <div className="mb-6 flex items-center gap-3 text-2xl font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-3xl md:text-4xl">
             <span className="h-px w-8 bg-[var(--peach)] sm:w-10" />
             Online · Faith-Based · Trauma-Informed
           </div>
-          <h1 className="text-[28px] font-bold leading-[1.15] tracking-tight sm:text-4xl md:text-5xl lg:text-[54px]">
-            <span className="block text-black">Christ-rooted support</span>
-            <span className="block font-normal text-black/55">
+          <h1 className="font-bold leading-[1.15] tracking-tight">
+            <span className="block text-[32px] text-black sm:text-4xl md:text-5xl lg:text-[60px]">
+              Christ-rooted support
+            </span>
+            <span className="mt-2 block text-lg font-normal text-black/55 sm:text-xl md:text-2xl lg:text-[28px] lg:whitespace-nowrap">
               for the seasons you were never meant to carry <span className="font-bold text-[var(--peach)]">alone.</span>
             </span>
           </h1>
@@ -97,7 +99,7 @@ export default function Home() {
       <section className="relative bg-white px-5 py-10 sm:px-6 sm:py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-7xl">
           <div className="text-center">
-            <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-[var(--peach)] sm:text-base">Who I Serve</p>
+            <p className="mb-3 text-2xl font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-3xl md:text-4xl">Who I Serve</p>
             <h2 className="text-[26px] font-bold tracking-tight text-black sm:text-3xl md:text-4xl">Care for every season</h2>
             <div className="mx-auto mt-4 h-1 w-12 rounded-full bg-[var(--peach)] sm:mt-5 sm:w-14" />
           </div>
@@ -183,6 +185,18 @@ export default function Home() {
         <div className="pointer-events-none absolute -bottom-20 left-0 h-[400px] w-[400px] rounded-full bg-[var(--teal)]/25 blur-3xl" />
 
         <div className="relative mx-auto max-w-7xl">
+          {/* Section heading — spans full width so the name fits one line */}
+          <div className="mb-10 sm:mb-12 lg:mb-14">
+            <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-[var(--peach)] sm:mb-4 sm:text-base">
+              Meet Your Counselor
+            </p>
+            <h2 className="text-[26px] font-bold leading-[1.15] tracking-tight text-black sm:text-4xl md:text-5xl lg:text-[52px] whitespace-nowrap">
+              Hi, I&apos;m{" "}
+              <span className="text-[var(--peach)]">Toyin Adefemi, M.A.</span>
+            </h2>
+            <div className="mt-4 h-1 w-12 rounded-full bg-[var(--peach)] sm:mt-5 sm:w-16" />
+          </div>
+
           <div className="grid gap-10 sm:gap-12 lg:grid-cols-[1fr_440px] lg:items-start lg:gap-20">
 
             {/* Portrait — first on mobile so it anchors the section */}
@@ -201,16 +215,7 @@ export default function Home() {
 
             {/* Content */}
             <div className="flex flex-col">
-              <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-[var(--peach)] sm:mb-4 sm:text-base">
-                Meet Your Counselor
-              </p>
-              <h2 className="text-[28px] font-bold leading-[1.15] tracking-tight text-black sm:text-4xl md:text-5xl lg:text-[52px]">
-                Hi, I&apos;m{" "}
-                <span className="text-[var(--peach)]">Toyin Adefemi, M.A.</span>
-              </h2>
-              <div className="mt-4 h-1 w-12 rounded-full bg-[var(--peach)] sm:mt-5 sm:w-16" />
-
-              <p className="mt-6 text-base leading-relaxed text-black/65 sm:mt-7 sm:text-lg">
+              <p className="text-base leading-relaxed text-black/65 sm:text-lg">
                 God has given me a deep heart for those who are suffering. With His Word as the foundation and primary tool for healing, I walk alongside teens, young adults, parents, and families as they navigate challenging seasons.
               </p>
               <p className="mt-4 text-base leading-relaxed text-black/65 sm:text-lg">

@@ -98,8 +98,8 @@ export default function FamilyCounseling() {
           <div className="grid gap-16 lg:grid-cols-2 lg:items-center lg:gap-24">
 
             <div>
-              <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-[var(--peach)] sm:text-base">Together</p>
-              <h2 className="text-4xl font-bold leading-tight text-black sm:text-5xl">
+              <p className="mb-3 text-2xl font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-3xl md:text-4xl">Together</p>
+              <h2 className="text-xl font-bold leading-tight text-black sm:text-2xl md:text-3xl">
                 A Safe Space for<br />the Whole Family
               </h2>
               <div className="mt-5 h-1 w-14 rounded-full bg-[var(--peach)]" />
@@ -144,7 +144,7 @@ export default function FamilyCounseling() {
       <section className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto max-w-2xl text-center">
-            <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-[var(--peach)] sm:text-base">Common Challenges</p>
+            <p className="mb-3 text-2xl font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-3xl md:text-4xl">Common Challenges</p>
             <h2 className="text-4xl font-bold text-black">Common Reasons Families Come</h2>
             <div className="mx-auto mt-5 h-1 w-14 rounded-full bg-[var(--peach)]" />
             <p className="mt-6 text-lg text-black/65">
@@ -171,8 +171,8 @@ export default function FamilyCounseling() {
           <div className="grid gap-16 lg:grid-cols-[1fr_380px] lg:items-start lg:gap-20">
 
             <div>
-              <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-[var(--peach)] sm:text-base">Each Session</p>
-              <h2 className="text-4xl font-bold leading-tight text-black sm:text-5xl">
+              <p className="mb-3 text-2xl font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-3xl md:text-4xl">Each Session</p>
+              <h2 className="text-xl font-bold leading-tight text-black sm:text-2xl md:text-3xl">
                 What Sessions<br />Look Like
               </h2>
               <div className="mt-5 h-1 w-14 rounded-full bg-[var(--peach)]" />
@@ -228,7 +228,7 @@ export default function FamilyCounseling() {
       <section className="relative overflow-hidden bg-black px-6 py-12 lg:px-10 lg:py-16">
         <div className="pointer-events-none absolute -left-20 -bottom-20 h-80 w-80 rounded-full bg-[var(--peach)]/15 blur-3xl" />
         <div className="relative mx-auto max-w-3xl text-center">
-          <h2 className="text-4xl font-bold text-white sm:text-5xl">Your Family Doesn&apos;t Have to Stay Stuck</h2>
+          <h2 className="text-xl font-bold text-white sm:text-2xl md:text-3xl whitespace-nowrap">Your Family Doesn&apos;t Have to Stay Stuck</h2>
           <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-white/75">
             I&apos;m here to walk with your family — one step at a time — toward healing, connection, and peace.
           </p>
