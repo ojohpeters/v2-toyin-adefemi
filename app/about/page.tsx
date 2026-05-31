@@ -32,7 +32,7 @@ export default function About() {
                 <p className="text-2xl font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-3xl md:text-4xl">Welcome</p>
               </div>
 
-              <h1 className="text-4xl font-bold leading-[1.05] tracking-tight text-black sm:text-5xl lg:text-6xl">
+              <h1 className="text-3xl font-bold leading-[1.05] tracking-tight text-black sm:text-4xl md:text-5xl lg:text-[40px] xl:text-5xl 2xl:text-6xl whitespace-nowrap">
                 I&apos;m{' '}
                 <span className="text-[var(--peach)]">Toyin</span>{' '}
                 <span className="text-black">Adefemi, M.A.</span>

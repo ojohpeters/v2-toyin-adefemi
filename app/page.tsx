@@ -187,7 +187,7 @@ export default function Home() {
         <div className="relative mx-auto max-w-7xl">
           {/* Section heading — spans full width so the name fits one line */}
           <div className="mb-10 sm:mb-12 lg:mb-14">
-            <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-[var(--peach)] sm:mb-4 sm:text-base">
+            <p className="mb-3 text-2xl font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:mb-4 sm:text-3xl md:text-4xl">
               Meet Your Counselor
             </p>
             <h2 className="text-[26px] font-bold leading-[1.15] tracking-tight text-black sm:text-4xl md:text-5xl lg:text-[52px] whitespace-nowrap">
@@ -280,7 +280,7 @@ export default function Home() {
       {/* Approach Pillars — Horizontal Feature Blocks */}
       <section className="relative bg-[var(--background)] px-5 py-10 sm:px-6 sm:py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-7xl">
-          <p className="mb-4 text-sm font-bold uppercase tracking-[0.2em] text-[var(--peach)] sm:mb-6 sm:text-base">
+          <p className="mb-4 text-2xl font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:mb-6 sm:text-3xl md:text-4xl">
             My Approach
           </p>
           <h2 className="text-[26px] font-bold leading-[1.15] tracking-tight text-black sm:text-3xl md:text-4xl lg:text-5xl">
