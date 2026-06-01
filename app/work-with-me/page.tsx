@@ -354,9 +354,6 @@ export default function WorkWithMe() {
               Get in Touch
             </a>
           </div>
-          <p className="mt-8 text-sm text-white/65">
-            Free 30-minute consultation · Responds within 24–48 hours · Always confidential
-          </p>
         </div>
       </section>
 
