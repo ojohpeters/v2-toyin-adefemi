@@ -60,7 +60,7 @@ export default function Contact() {
 
             {/* Left: heading + form */}
             <div>
-              <p className="mb-3 text-2xl font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-3xl md:text-4xl">
+              <p className="mb-3 text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">
                 Get in Touch
               </p>
               <h1 className="text-4xl font-bold leading-[1.12] tracking-tight text-black sm:text-5xl lg:text-6xl">
@@ -214,7 +214,7 @@ export default function Contact() {
       {/* ── CONTACT DETAILS ── */}
       <section className="relative bg-white px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="mb-3 text-2xl font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-3xl md:text-4xl">
+          <p className="mb-3 text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">
             Prefer to reach out directly?
           </p>
           <h2 className="text-2xl font-bold text-black sm:text-3xl">Other ways to connect</h2>

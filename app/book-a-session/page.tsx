@@ -62,7 +62,7 @@ export default function BookASession() {
         <div className="mx-auto max-w-7xl">
           <div className="grid items-center gap-12 lg:grid-cols-[1fr_440px] lg:gap-16">
             <div>
-              <p className="mb-3 text-2xl font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-3xl md:text-4xl">
+              <p className="mb-3 text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">
                 Book a Session
               </p>
               <h1 className="text-4xl font-bold leading-[1.12] tracking-tight text-black sm:text-5xl">
@@ -94,7 +94,7 @@ export default function BookASession() {
       <section className="relative bg-white px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-6xl">
           <div className="text-center">
-            <p className="mb-3 text-2xl font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-3xl md:text-4xl">
+            <p className="mb-3 text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">
               How to Schedule
             </p>
             <h2 className="text-3xl font-bold text-black sm:text-4xl">
@@ -124,7 +124,7 @@ export default function BookASession() {
       <section className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-3xl">
           <div className="text-center">
-            <p className="mb-3 text-2xl font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-3xl md:text-4xl">
+            <p className="mb-3 text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">
               Request an Appointment
             </p>
             <h2 className="text-3xl font-bold text-black sm:text-4xl">Tell me about your session</h2>
@@ -253,7 +253,7 @@ export default function BookASession() {
       <section className="relative bg-white px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-4xl">
           <div className="text-center">
-            <p className="mb-3 text-2xl font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-3xl md:text-4xl">
+            <p className="mb-3 text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">
               Before Your Session
             </p>
             <h2 className="text-3xl font-bold text-black sm:text-4xl">To help you prepare</h2>
@@ -305,7 +305,7 @@ export default function BookASession() {
       {/* ── LOOKING FORWARD ── */}
       <section className="relative bg-black px-6 py-14 lg:px-10 lg:py-24">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="mb-3 text-2xl font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-3xl md:text-4xl">
+          <p className="mb-3 text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">
             Looking Forward to Connecting
           </p>
           <h2 className="text-3xl font-bold text-white sm:text-4xl">Thank you for taking this step</h2>

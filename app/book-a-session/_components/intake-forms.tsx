@@ -189,7 +189,7 @@ export default function IntakeForms() {
         <div className="mb-12 text-center">
           <div className="mb-6 flex items-center justify-center gap-3">
             <span className="h-px w-10 bg-[var(--peach)]" />
-            <p className="text-2xl font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-3xl md:text-4xl">Forms</p>
+            <p className="text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">Forms</p>
             <span className="h-px w-10 bg-[var(--peach)]" />
           </div>
           <h2 className="text-xl font-bold leading-tight text-black sm:text-2xl md:text-3xl">
