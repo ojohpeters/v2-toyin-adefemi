@@ -56,8 +56,7 @@ export default function TeenCounseling() {
               <span className="text-xs font-bold uppercase tracking-widest text-white/75">Teen Counseling · Ages 13–17</span>
             </div>
             <h1 className="mt-4 text-4xl font-bold leading-[1.08] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
-              A Safe Place to<br />
-              <span className="text-white/75">Talk, Grow &</span><br />
+              A Safe Place to <span className="text-white/75">Talk, Grow &</span><br />
               Feel Understood
             </h1>
             <p className="mt-7 max-w-xl text-xl leading-8 text-white/80">

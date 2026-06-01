@@ -70,8 +70,7 @@ export default function ParentingCounseling() {
               <span className="text-xs font-bold uppercase tracking-widest text-[var(--peach)]">Parenting Counseling</span>
             </div>
             <h1 className="mt-4 text-4xl font-bold leading-[1.08] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
-              Support, Clarity &<br />
-              <span className="text-[var(--peach)]">Christ-Centered</span><br />
+              Support, Clarity & <span className="text-[var(--peach)]">Christ-Centered</span><br />
               Guidance
             </h1>
             <p className="mt-7 max-w-xl text-xl leading-8 text-white/80">

@@ -68,8 +68,7 @@ export default function FamilyCounseling() {
             </div>
             <h1 className="mt-4 text-4xl font-bold leading-[1.08] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
               Healing Relationships,<br />
-              <span className="text-[var(--peach)]">Restoring Peace</span><br />
-              at Home
+              <span className="text-[var(--peach)]">Restoring Peace</span> at Home
             </h1>
             <p className="mt-7 max-w-xl text-xl leading-8 text-white/80">
               Every family faces seasons of stress, conflict, or emotional strain. Family counseling provides a safe place to process and grow together.

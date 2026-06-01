@@ -67,8 +67,7 @@ export default function YoungAdultCounseling() {
               <span className="text-xs font-bold uppercase tracking-widest text-white/80">Young Adult Counseling · Ages 18–30</span>
             </div>
             <h1 className="mt-4 text-4xl font-bold leading-[1.08] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
-              Clarity, Healing &<br />
-              <span className="text-white/80">Direction</span><br />
+              Clarity, Healing & <span className="text-white/80">Direction</span><br />
               for This Season
             </h1>
             <p className="mt-7 max-w-xl text-xl leading-8 text-white/80">
