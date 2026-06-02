@@ -61,34 +61,45 @@ export default function Home() {
       </section>
 
       {/* Welcome — intro under the banner */}
-      <section className="relative bg-[var(--background)] px-5 py-10 sm:px-6 sm:py-12 lg:px-10 lg:py-16">
-        <div className="mx-auto max-w-5xl text-center">
-          <div className="mb-6 flex items-center justify-center gap-3 text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">
-            <span className="h-px w-8 bg-[var(--peach)] sm:w-10" />
-            Online · Faith-Based · Trauma-Informed
-            <span className="h-px w-8 bg-[var(--peach)] sm:w-10" />
+      <section className="relative bg-[var(--background)] px-5 py-12 sm:px-6 sm:py-16 lg:px-10 lg:py-20">
+        <div className="mx-auto max-w-4xl text-center">
+          {/* Refined pill badge */}
+          <div className="mb-8 inline-flex items-center gap-2.5 rounded-full border border-[var(--peach)]/25 bg-[var(--peach)]/10 px-4 py-2 sm:px-5 sm:py-2.5">
+            <span className="relative flex h-2 w-2">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[var(--peach)]/60 opacity-75" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-[var(--peach)]" />
+            </span>
+            <span className="text-[11px] font-bold uppercase tracking-[0.18em] text-[var(--peach)] sm:text-xs sm:tracking-[0.22em]">
+              Online · Faith-Based · Trauma-Informed
+            </span>
           </div>
-          <h1 className="font-bold leading-[1.15] tracking-tight">
-            <span className="block text-[32px] text-black sm:text-4xl md:text-5xl lg:text-[60px]">
+
+          {/* Headline */}
+          <h1 className="font-bold leading-[1.05] tracking-tight">
+            <span className="block text-4xl text-black sm:text-5xl md:text-6xl lg:text-[72px]">
               Christ-rooted support
             </span>
-            <span className="mt-2 block text-lg font-normal text-black/55 sm:text-xl md:text-2xl lg:text-[28px] lg:whitespace-nowrap">
-              for the seasons you were never meant to carry <span className="font-bold text-[var(--peach)]">alone.</span>
+            <span className="mx-auto mt-4 block max-w-3xl text-lg font-normal leading-[1.4] text-black/60 sm:mt-5 sm:text-xl md:text-2xl lg:text-[28px]">
+              for the seasons you were never meant to carry <span className="font-semibold text-[var(--peach)]">alone.</span>
             </span>
           </h1>
-          <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-black/65 sm:mt-7 sm:text-lg">
+
+          {/* Body */}
+          <p className="mx-auto mt-8 max-w-2xl text-base leading-relaxed text-black/65 sm:mt-10 sm:text-lg">
             I provide faith-based, trauma-informed care and clinically informed biblical counseling to support adolescents, individuals, families, and parents as they walk through difficult seasons. My mission is to offer a safe, Christ-centered space where you can process your story with honesty and experience true emotional and spiritual renewal.
           </p>
-          <div className="mt-8 flex flex-col items-stretch justify-center gap-3 sm:mt-9 sm:flex-row sm:items-center sm:gap-4">
+
+          {/* CTAs */}
+          <div className="mt-10 flex flex-col items-stretch justify-center gap-3 sm:mt-12 sm:flex-row sm:items-center sm:gap-4">
             <a
               href="/book-a-session"
-              className="inline-flex items-center justify-center rounded-2xl bg-[var(--peach)] px-6 py-3.5 text-sm font-semibold text-white shadow-[0_12px_28px_rgba(254,143,104,0.38)] transition-all hover:bg-[var(--peach-deep)] hover:-translate-y-0.5 sm:px-8 sm:py-4 sm:text-base"
+              className="inline-flex items-center justify-center rounded-2xl bg-[var(--peach)] px-8 py-4 text-base font-semibold text-white shadow-[0_12px_28px_rgba(254,143,104,0.38)] transition-all hover:bg-[var(--peach-deep)] hover:-translate-y-0.5"
             >
               Book a Session
             </a>
             <a
               href="/about"
-              className="inline-flex items-center justify-center rounded-2xl border-2 border-black/15 bg-white px-6 py-3.5 text-sm font-semibold text-black/75 transition-all hover:border-black/25 hover:bg-[var(--background)] sm:px-8 sm:py-4 sm:text-base"
+              className="inline-flex items-center justify-center rounded-2xl border-2 border-black/15 bg-white px-8 py-4 text-base font-semibold text-black/75 transition-all hover:border-black/25 hover:bg-white"
             >
               Meet the Counselor
             </a>
