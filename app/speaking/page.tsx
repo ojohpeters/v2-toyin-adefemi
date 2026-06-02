@@ -46,7 +46,7 @@ export default function Speaking() {
           <div className="grid items-center gap-12 lg:grid-cols-[1fr_460px] lg:gap-16">
             <div>
               <div className="mb-6 flex items-center gap-3">
-                <span className="h-px w-10 bg-[var(--peach)]" />
+                <span className="h-px w-8 bg-[var(--peach)] sm:w-10" />
                 <p className="text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">Speaking & Workshops</p>
               </div>
               <h1 className="text-4xl font-bold leading-[1.1] tracking-tight text-black sm:text-5xl lg:text-6xl">
@@ -93,7 +93,7 @@ export default function Speaking() {
       <section className="relative bg-white px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-6xl">
           <div className="text-center">
-            <p className="mb-3 text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">Why Invite Me to Speak</p>
+            <div className="mb-3 inline-flex items-center gap-3"><span className="h-px w-8 bg-[var(--peach)] sm:w-10" /><p className="text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">Why Invite Me to Speak</p></div>
             <h2 className="text-lg font-bold tracking-tight text-black sm:text-xl md:text-2xl">
               Equipping people with truth, tools &amp; hope
             </h2>
@@ -134,7 +134,7 @@ export default function Speaking() {
       <section id="topics" className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-7xl">
           <div className="text-center">
-            <p className="mb-3 text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">Speaking Topics</p>
+            <div className="mb-3 inline-flex items-center gap-3"><span className="h-px w-8 bg-[var(--peach)] sm:w-10" /><p className="text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">Speaking Topics</p></div>
             <h2 className="text-lg font-bold tracking-tight text-black sm:text-xl md:text-2xl">
               Talks tailored to your audience
             </h2>
@@ -179,9 +179,12 @@ export default function Speaking() {
           <p className="mt-2 text-2xl italic leading-relaxed text-white sm:text-3xl">
             Come to me, all you who are weary and burdened, and I will give you rest.
           </p>
-          <p className="mt-6 text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">
-            Matthew 11:28
-          </p>
+          <div className="mt-6 inline-flex items-center gap-3">
+            <span className="h-px w-8 bg-[var(--peach)] sm:w-10" />
+            <p className="text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">
+              Matthew 11:28
+            </p>
+          </div>
         </div>
       </section>
 
@@ -190,7 +193,7 @@ export default function Speaking() {
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-12 lg:grid-cols-[1fr_440px] lg:items-center lg:gap-16">
             <div>
-              <p className="mb-3 text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">Speaking Formats</p>
+              <div className="mb-3 inline-flex items-center gap-3"><span className="h-px w-8 bg-[var(--peach)] sm:w-10" /><p className="text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">Speaking Formats</p></div>
               <h2 className="text-lg font-bold tracking-tight text-black sm:text-xl md:text-2xl">
                 Flexible formats for your event
               </h2>
@@ -241,7 +244,7 @@ export default function Speaking() {
               />
             </div>
             <div>
-              <p className="mb-3 text-lg font-bold uppercase tracking-[0.12em] text-[var(--teal)] sm:text-2xl md:text-3xl lg:text-4xl">Online & In-Person</p>
+              <div className="mb-3 inline-flex items-center gap-3"><span className="h-px w-8 bg-[var(--teal)] sm:w-10" /><p className="text-lg font-bold uppercase tracking-[0.12em] text-[var(--teal)] sm:text-2xl md:text-3xl lg:text-4xl">Online & In-Person</p></div>
               <h2 className="text-lg font-bold tracking-tight text-black sm:text-xl md:text-2xl">
                 Speak to your audience — wherever they are
               </h2>

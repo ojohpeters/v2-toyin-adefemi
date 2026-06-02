@@ -86,7 +86,7 @@ export default function TeenCounseling() {
           <div className="grid gap-16 lg:grid-cols-2 lg:items-center lg:gap-24">
 
             <div>
-              <p className="mb-3 text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">Your Space</p>
+              <div className="mb-3 inline-flex items-center gap-3"><span className="h-px w-8 bg-[var(--peach)] sm:w-10" /><p className="text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">Your Space</p></div>
               <h2 className="text-xl font-bold leading-tight text-black sm:text-2xl md:text-3xl">
                 A Space Just<br />for You
               </h2>
@@ -131,7 +131,7 @@ export default function TeenCounseling() {
       <section className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-7xl">
           <div className="max-w-2xl">
-            <p className="mb-3 text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">No Topic Too Big or Small</p>
+            <div className="mb-3 inline-flex items-center gap-3"><span className="h-px w-8 bg-[var(--peach)] sm:w-10" /><p className="text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">No Topic Too Big or Small</p></div>
             <h2 className="text-xl font-bold text-black sm:text-2xl md:text-3xl">What We Can Talk About</h2>
             <div className="mt-5 h-1 w-14 rounded-full bg-[var(--peach)]" />
             <p className="mt-6 text-lg text-black/65">
@@ -158,7 +158,7 @@ export default function TeenCounseling() {
           <div className="grid gap-16 lg:grid-cols-[1fr_420px] lg:items-center lg:gap-24">
 
             <div>
-              <p className="mb-3 text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">Every Session</p>
+              <div className="mb-3 inline-flex items-center gap-3"><span className="h-px w-8 bg-[var(--peach)] sm:w-10" /><p className="text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">Every Session</p></div>
               <h2 className="text-xl font-bold leading-tight text-black sm:text-2xl md:text-3xl">
                 What Sessions<br />Are Like
               </h2>

@@ -60,9 +60,12 @@ export default function Contact() {
 
             {/* Left: heading + form */}
             <div>
-              <p className="mb-3 text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">
-                Get in Touch
-              </p>
+              <div className="mb-3 inline-flex items-center gap-3">
+                <span className="h-px w-8 bg-[var(--peach)] sm:w-10" />
+                <p className="text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">
+                  Get in Touch
+                </p>
+              </div>
               <h1 className="text-4xl font-bold leading-[1.12] tracking-tight text-black sm:text-5xl lg:text-6xl">
                 Let&apos;s <span className="text-[var(--peach)]">Connect</span>
               </h1>
@@ -214,9 +217,12 @@ export default function Contact() {
       {/* ── CONTACT DETAILS ── */}
       <section className="relative bg-white px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="mb-3 text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">
-            Prefer to reach out directly?
-          </p>
+          <div className="mb-3 inline-flex items-center gap-3">
+            <span className="h-px w-8 bg-[var(--peach)] sm:w-10" />
+            <p className="text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">
+              Prefer to reach out directly?
+            </p>
+          </div>
           <h2 className="text-2xl font-bold text-black sm:text-3xl">Other ways to connect</h2>
           <div className="mx-auto mt-5 h-1 w-14 rounded-full bg-[var(--peach)]" />
 

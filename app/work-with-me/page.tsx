@@ -117,7 +117,7 @@ export default function WorkWithMe() {
         <div className="relative z-10 mx-auto max-w-7xl">
           <div className="max-w-3xl">
             <div className="mb-6 flex items-center gap-3">
-              <span className="h-px w-10 bg-[var(--peach)]" />
+              <span className="h-px w-8 bg-[var(--peach)] sm:w-10" />
               <p className="text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">Services & Support</p>
             </div>
             <h1 className="text-xl font-bold leading-[1.15] tracking-tight text-white sm:text-2xl md:text-3xl lg:text-4xl">
@@ -149,7 +149,7 @@ export default function WorkWithMe() {
       <section className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-7xl">
           <div className="mb-14">
-            <p className="mb-3 text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">All Services</p>
+            <div className="mb-3 inline-flex items-center gap-3"><span className="h-px w-8 bg-[var(--peach)] sm:w-10" /><p className="text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">All Services</p></div>
             <h2 className="text-xl font-bold text-black sm:text-2xl md:text-3xl">Find Your Path to Healing</h2>
             <div className="mt-5 h-1 w-14 rounded-full bg-[var(--peach)]" />
             <p className="mt-6 max-w-2xl text-lg leading-8 text-black/65">
@@ -254,7 +254,7 @@ export default function WorkWithMe() {
 
             {/* Steps */}
             <div>
-              <p className="mb-3 text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">The Process</p>
+              <div className="mb-3 inline-flex items-center gap-3"><span className="h-px w-8 bg-[var(--peach)] sm:w-10" /><p className="text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">The Process</p></div>
               <h2 className="text-xl font-bold text-white sm:text-2xl md:text-3xl">How We Work Together</h2>
               <div className="mt-5 h-1 w-14 rounded-full bg-[var(--peach)]" />
 
@@ -333,7 +333,7 @@ export default function WorkWithMe() {
       {/* ── CTA ── */}
       <section className="relative overflow-hidden bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-4xl text-center">
-          <p className="mb-4 text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">Ready to Start?</p>
+          <div className="mb-4 inline-flex items-center gap-3"><span className="h-px w-8 bg-[var(--peach)] sm:w-10" /><p className="text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">Ready to Start?</p></div>
           <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl md:text-5xl lg:text-6xl">
             Your Healing<br />Journey Starts Here
           </h2>

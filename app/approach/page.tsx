@@ -21,9 +21,9 @@ export default function Approach() {
       <section className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-4xl text-center">
           <div className="mb-6 flex items-center justify-center gap-3">
-            <span className="h-px w-10 bg-[var(--peach)]" />
+            <span className="h-px w-8 bg-[var(--peach)] sm:w-10" />
             <p className="text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">My Approach</p>
-            <span className="h-px w-10 bg-[var(--peach)]" />
+            <span className="h-px w-8 bg-[var(--peach)] sm:w-10" />
           </div>
           <h1 className="text-3xl font-bold leading-[1.12] tracking-tight text-black sm:text-4xl lg:whitespace-nowrap">
             A Safe, Supportive, <span className="text-[var(--peach)]">Spirit-Led</span> Experience
@@ -41,7 +41,7 @@ export default function Approach() {
 
             {/* Left: text */}
             <div>
-              <p className="mb-3 text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">Sessions</p>
+              <div className="mb-3 inline-flex items-center gap-3"><span className="h-px w-8 bg-[var(--peach)] sm:w-10" /><p className="text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">Sessions</p></div>
               <h2 className="text-xl font-bold leading-tight text-black sm:text-2xl md:text-3xl">
                 What You Can Expect
               </h2>
@@ -120,7 +120,7 @@ export default function Approach() {
 
             {/* Right: text */}
             <div>
-              <p className="mb-3 text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">The Foundation</p>
+              <div className="mb-3 inline-flex items-center gap-3"><span className="h-px w-8 bg-[var(--peach)] sm:w-10" /><p className="text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">The Foundation</p></div>
               <h2 className="text-xl font-bold leading-tight text-white sm:text-2xl md:text-3xl">
                 Why Clinically Informed Biblical Counseling?
               </h2>
@@ -159,7 +159,7 @@ export default function Approach() {
         <div className="pointer-events-none absolute -bottom-20 left-0 h-80 w-80 rounded-full bg-white/10 blur-3xl" />
 
         <div className="relative mx-auto max-w-4xl text-center">
-          <p className="mb-4 text-lg font-bold uppercase tracking-[0.12em] text-white/70 sm:text-2xl md:text-3xl lg:text-4xl">Your Commitment</p>
+          <div className="mb-4 inline-flex items-center gap-3"><span className="h-px w-8 bg-white/70 sm:w-10" /><p className="text-lg font-bold uppercase tracking-[0.12em] text-white/70 sm:text-2xl md:text-3xl lg:text-4xl">Your Commitment</p></div>
           <h2 className="text-xl font-bold leading-tight text-white sm:text-2xl md:text-3xl lg:text-4xl">
             Are You Committed?
           </h2>
@@ -185,9 +185,9 @@ export default function Approach() {
       <section className="relative bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-3xl text-center">
           <div className="mb-6 flex items-center justify-center gap-3">
-            <span className="h-px w-10 bg-[var(--peach)]" />
+            <span className="h-px w-8 bg-[var(--peach)] sm:w-10" />
             <p className="text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">Ready to Begin?</p>
-            <span className="h-px w-10 bg-[var(--peach)]" />
+            <span className="h-px w-8 bg-[var(--peach)] sm:w-10" />
           </div>
           <h2 className="text-xl font-bold leading-tight text-black sm:whitespace-nowrap sm:text-2xl md:text-3xl lg:text-4xl">
             I would be honored to <span className="text-[var(--peach)]">walk with you</span>.

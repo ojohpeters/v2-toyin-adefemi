@@ -28,7 +28,7 @@ export default function About() {
             {/* Left: text */}
             <div className="flex flex-col justify-center">
               <div className="mb-5 flex items-center gap-3">
-                <span className="h-px w-10 bg-[var(--peach)]" />
+                <span className="h-px w-8 bg-[var(--peach)] sm:w-10" />
                 <p className="text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">Welcome</p>
               </div>
 
@@ -149,7 +149,7 @@ export default function About() {
 
             {/* Text right */}
             <div>
-              <p className="mb-3 text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">My Story</p>
+              <div className="mb-3 inline-flex items-center gap-3"><span className="h-px w-8 bg-[var(--peach)] sm:w-10" /><p className="text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">My Story</p></div>
               <h2 className="text-xl font-bold leading-tight text-black sm:text-2xl md:text-3xl">
                 My Heart<br />for Healing
               </h2>
@@ -176,7 +176,7 @@ export default function About() {
 
         <div className="relative mx-auto max-w-7xl">
           <div className="text-center">
-            <p className="mb-3 text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">A God-Directed Journey</p>
+            <div className="mb-3 inline-flex items-center gap-3"><span className="h-px w-8 bg-[var(--peach)] sm:w-10" /><p className="text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">A God-Directed Journey</p></div>
             <h2 className="text-xl font-bold text-black sm:text-2xl md:text-3xl lg:text-4xl">My Calling</h2>
             <div className="mx-auto mt-5 h-1 w-14 rounded-full bg-[var(--peach)]" />
           </div>
@@ -256,7 +256,7 @@ export default function About() {
 
             {/* Left: text + credentials */}
             <div>
-              <p className="mb-3 text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">Training &amp; Formation</p>
+              <div className="mb-3 inline-flex items-center gap-3"><span className="h-px w-8 bg-[var(--peach)] sm:w-10" /><p className="text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">Training &amp; Formation</p></div>
               <h2 className="text-xl font-bold leading-tight text-black sm:text-2xl md:text-3xl">
                 The Equipping
               </h2>
@@ -358,7 +358,7 @@ export default function About() {
       {/* ── CTA ── */}
       <section className="relative overflow-hidden bg-[var(--background)] px-6 py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-4xl text-center">
-          <p className="mb-4 text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">Ready to Start?</p>
+          <div className="mb-4 inline-flex items-center gap-3"><span className="h-px w-8 bg-[var(--peach)] sm:w-10" /><p className="text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">Ready to Start?</p></div>
           <h2 className="text-xl font-bold leading-tight text-black sm:text-2xl md:text-3xl lg:text-4xl whitespace-nowrap">
             Let&apos;s Begin Your Journey
           </h2>

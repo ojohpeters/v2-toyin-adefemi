@@ -15,7 +15,7 @@ function Section({ title, children }: { title: string; children: React.ReactNode
   return (
     <div className="space-y-4">
       <div className="flex items-center gap-3">
-        <span className="h-px w-8 bg-[var(--peach)]" />
+        <span className="h-px w-8 bg-[var(--peach)] sm:w-10" />
         <h4 className="text-base font-bold uppercase tracking-[0.2em] text-[var(--peach)] sm:text-lg">{title}</h4>
       </div>
       <div className="grid gap-4 sm:grid-cols-2">{children}</div>
@@ -188,9 +188,9 @@ export default function IntakeForms() {
         {/* Header */}
         <div className="mb-12 text-center">
           <div className="mb-6 flex items-center justify-center gap-3">
-            <span className="h-px w-10 bg-[var(--peach)]" />
+            <span className="h-px w-8 bg-[var(--peach)] sm:w-10" />
             <p className="text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">Forms</p>
-            <span className="h-px w-10 bg-[var(--peach)]" />
+            <span className="h-px w-8 bg-[var(--peach)] sm:w-10" />
           </div>
           <h2 className="text-xl font-bold leading-tight text-black sm:text-2xl md:text-3xl">
             Begin Your <span className="text-[var(--peach)]">Healing Journey</span>

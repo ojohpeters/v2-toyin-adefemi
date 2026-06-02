@@ -111,7 +111,7 @@ export default function ParentingCounseling() {
             </div>
 
             <div>
-              <p className="mb-3 text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">For Parents</p>
+              <div className="mb-3 inline-flex items-center gap-3"><span className="h-px w-8 bg-[var(--peach)] sm:w-10" /><p className="text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">For Parents</p></div>
               <h2 className="text-xl font-bold leading-tight text-black sm:text-2xl md:text-3xl">
                 A Safe Space<br />for Parents
               </h2>
@@ -145,7 +145,7 @@ export default function ParentingCounseling() {
         <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:48px_48px]" />
         <div className="relative mx-auto max-w-7xl">
           <div className="mx-auto max-w-2xl text-center">
-            <p className="mb-3 text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">You&apos;re Not Alone</p>
+            <div className="mb-3 inline-flex items-center gap-3"><span className="h-px w-8 bg-[var(--peach)] sm:w-10" /><p className="text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">You&apos;re Not Alone</p></div>
             <h2 className="text-xl font-bold text-white sm:text-2xl md:text-3xl">Common Parenting Challenges</h2>
             <div className="mx-auto mt-5 h-1 w-14 rounded-full bg-[var(--peach)]" />
             <p className="mt-6 text-lg text-white/70">
@@ -172,7 +172,7 @@ export default function ParentingCounseling() {
           <div className="grid gap-16 lg:grid-cols-[1fr_380px] lg:items-start lg:gap-20">
 
             <div>
-              <p className="mb-3 text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">Each Session</p>
+              <div className="mb-3 inline-flex items-center gap-3"><span className="h-px w-8 bg-[var(--peach)] sm:w-10" /><p className="text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">Each Session</p></div>
               <h2 className="text-xl font-bold leading-tight text-black sm:text-2xl md:text-3xl">
                 What Sessions<br />Look Like
               </h2>

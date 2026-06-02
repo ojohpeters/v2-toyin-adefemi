@@ -100,7 +100,7 @@ export default function Home() {
       <section className="relative bg-white px-5 py-10 sm:px-6 sm:py-12 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-7xl">
           <div className="text-center">
-            <p className="mb-3 text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">Who I Serve</p>
+            <div className="mb-3 inline-flex items-center gap-3"><span className="h-px w-8 bg-[var(--peach)] sm:w-10" /><p className="text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">Who I Serve</p></div>
             <h2 className="text-[26px] font-bold tracking-tight text-black sm:text-3xl md:text-4xl">Care for every season</h2>
             <div className="mx-auto mt-4 h-1 w-12 rounded-full bg-[var(--peach)] sm:mt-5 sm:w-14" />
           </div>
