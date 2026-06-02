@@ -32,7 +32,7 @@ export default function About() {
                 <p className="text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">Welcome</p>
               </div>
 
-              <h1 className="text-3xl font-bold leading-[1.05] tracking-tight text-black sm:whitespace-nowrap sm:text-4xl md:text-5xl lg:text-[40px] xl:text-5xl 2xl:text-6xl">
+              <h1 className="text-3xl font-bold leading-[1.05] tracking-tight text-black sm:text-4xl md:text-5xl lg:text-[38px] lg:whitespace-nowrap xl:text-5xl 2xl:text-6xl">
                 I&apos;m{' '}
                 <span className="text-[var(--peach)]">Toyin</span>{' '}
                 <span className="text-black">Adefemi, M.A.</span>
@@ -90,10 +90,10 @@ export default function About() {
 
             {/* Right: portrait */}
             <div className="relative flex items-center justify-center lg:justify-end">
-              <div className="relative h-[480px] w-full max-w-[400px] lg:h-[580px] lg:max-w-none">
+              <div className="relative w-full max-w-[400px] lg:max-w-none">
                 {/* Decorative ring */}
                 <div className="absolute -inset-3 rounded-[3rem] bg-gradient-to-br from-[var(--peach)]/20 to-[var(--teal)]/30" />
-                <div className="relative h-full overflow-hidden rounded-[2.5rem] shadow-[0_32px_64px_rgba(0,0,0,0.15)]">
+                <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[2.5rem] shadow-[0_32px_64px_rgba(0,0,0,0.15)] lg:aspect-[5/6]">
                   <Image
                     src="/images/meet-counselor.jpg"
                     alt="Portrait of Toyin Adefemi"
@@ -132,7 +132,7 @@ export default function About() {
           <div className="grid gap-16 lg:grid-cols-2 lg:items-center lg:gap-24">
 
             {/* Image left */}
-            <div className="relative h-[480px] overflow-hidden rounded-[2.5rem] shadow-[0_20px_52px_rgba(0,0,0,0.10)]">
+            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[2.5rem] shadow-[0_20px_52px_rgba(0,0,0,0.10)] sm:aspect-[16/10] lg:aspect-[4/5]">
               <Image
                 src="/images/credentials-2.png"
                 alt="Toyin Adefemi credentials"
