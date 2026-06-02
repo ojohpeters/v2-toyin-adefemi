@@ -131,14 +131,15 @@ export default function About() {
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-16 lg:grid-cols-2 lg:items-center lg:gap-24">
 
-            {/* Image left */}
-            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[2.5rem] shadow-[0_20px_52px_rgba(0,0,0,0.10)] sm:aspect-[16/10] lg:aspect-[4/5]">
+            {/* Image left — full natural aspect, no crop */}
+            <div className="relative w-full overflow-hidden rounded-[2.5rem] shadow-[0_20px_52px_rgba(0,0,0,0.10)]">
               <Image
                 src="/images/credentials-2.png"
                 alt="Toyin Adefemi credentials"
-                fill
+                width={1920}
+                height={1080}
                 sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover"
+                className="block h-auto w-full"
               />
               {/* Overlay label */}
               <div className="absolute bottom-6 left-6 right-6 rounded-xl bg-white/90 backdrop-blur-sm px-5 py-4 shadow-lg">
