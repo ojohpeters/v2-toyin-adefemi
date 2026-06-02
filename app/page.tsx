@@ -203,9 +203,9 @@ export default function Home() {
             {/* Portrait — first on mobile so it anchors the section */}
             <div className="relative order-first mx-auto w-full max-w-[420px] lg:order-last lg:mx-0 lg:max-w-none">
               <div className="absolute -inset-2 rounded-[2.25rem] bg-gradient-to-br from-[var(--peach)]/15 to-[var(--teal)]/30 sm:-inset-3 sm:rounded-[3rem]" />
-              <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] shadow-[0_24px_60px_rgba(0,0,0,0.14)] sm:rounded-[2.5rem] lg:aspect-auto lg:h-[620px]">
+              <div className="relative aspect-square overflow-hidden rounded-[2rem] shadow-[0_24px_60px_rgba(0,0,0,0.14)] sm:aspect-[4/5] sm:rounded-[2.5rem] lg:aspect-[5/6] lg:h-auto">
                 <Image
-                  src="/images/meet-counselor.jpg"
+                  src="/images/about-hero.jpg"
                   alt="Toyin Adefemi — Biblical Counselor"
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 420px, 440px"
