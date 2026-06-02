@@ -8,12 +8,12 @@ export default function Approach() {
       <section className="w-full">
         <Image
           src="/images/approach-banner.png"
-          alt="My Approach — Toyin Adefemi Counseling"
-          width={1920}
-          height={1080}
+          alt="My Approach — Toyin Adefemi Counseling: Scriptures, Care, and Family Systems"
+          width={2400}
+          height={1200}
           priority
           sizes="100vw"
-          className="h-auto w-full"
+          className="block h-auto w-full"
         />
       </section>
 
