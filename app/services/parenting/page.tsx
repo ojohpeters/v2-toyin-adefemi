@@ -99,14 +99,15 @@ export default function ParentingCounseling() {
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-16 lg:grid-cols-2 lg:items-center lg:gap-24">
 
-            {/* Image */}
-            <div className="relative h-[500px] overflow-hidden rounded-3xl shadow-[0_20px_52px_rgba(0,0,0,0.10)]">
+            {/* Image — full width, natural aspect of the source */}
+            <div className="w-full overflow-hidden rounded-3xl shadow-[0_20px_52px_rgba(0,0,0,0.10)]">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/10-PP3b2FIhmDYtGarg7jonW91ebBHnrl.webp"
-                alt="Parent in a counseling session"
-                fill
+                src="/images/parenting-safe-space.png"
+                alt="A safe space for parents"
+                width={1600}
+                height={912}
                 sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover"
+                className="block h-auto w-full"
               />
             </div>
 
