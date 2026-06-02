@@ -79,17 +79,14 @@ export function Header() {
       <header className={`sticky top-0 z-50 border-b border-black/10 bg-white/90 shadow-sm backdrop-blur-xl transition-opacity duration-300 ${isMenuOpen ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-1.5 sm:px-6 sm:py-2 lg:px-10">
           <Link href="/" className="flex items-center">
-            <picture>
-              <source srcSet="/images/logo-dark.png" media="(prefers-color-scheme: dark)" />
-              <Image
-                src="/images/logo.png"
-                alt="Toyin Adefemi Counsels"
-                width={850}
-                height={410}
-                priority
-                className="h-12 w-auto sm:h-14 md:h-[84px]"
-              />
-            </picture>
+            <Image
+              src="/images/logo.png"
+              alt="Toyin Adefemi Counsels"
+              width={850}
+              height={410}
+              priority
+              className="h-12 w-auto sm:h-14 md:h-[84px]"
+            />
           </Link>
 
           {/* Desktop Nav */}
