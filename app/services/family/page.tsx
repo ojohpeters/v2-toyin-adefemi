@@ -62,11 +62,7 @@ export default function FamilyCounseling() {
 
         <div className="relative z-10 mx-auto max-w-7xl">
           <div className="max-w-3xl">
-            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[var(--peach)]/40 bg-[var(--peach)]/15 px-4 py-2 backdrop-blur-sm">
-              <span className="h-2 w-2 rounded-full bg-[var(--peach)]" />
-              <span className="text-xs font-bold uppercase tracking-widest text-[var(--peach)]">Family Counseling</span>
-            </div>
-            <h1 className="mt-4 text-4xl font-bold leading-[1.08] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
+            <h1 className="text-4xl font-bold leading-[1.08] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
               Healing Relationships,<br />
               <span className="text-[var(--peach)]">Restoring Peace</span> at Home
             </h1>
@@ -123,17 +119,16 @@ export default function FamilyCounseling() {
               </ul>
             </div>
 
-            {/* Service flyer */}
-            <div className="flex items-center justify-center">
-              <div className="relative aspect-[16/9] w-full max-w-[520px] overflow-hidden rounded-3xl shadow-[0_32px_64px_rgba(0,0,0,0.18)] ring-1 ring-black/5">
-                <Image
-                  src="/images/family-safe-space.png"
-                  alt="A safe space for the whole family"
-                  fill
-                  sizes="(max-width: 1024px) 100vw, 520px"
-                  className="object-cover"
-                />
-              </div>
+            {/* Service flyer — full width, natural aspect of the source image */}
+            <div className="w-full overflow-hidden rounded-3xl shadow-[0_32px_64px_rgba(0,0,0,0.18)] ring-1 ring-black/5">
+              <Image
+                src="/images/family-safe-space.png"
+                alt="A family video-counseling session at the kitchen table"
+                width={1199}
+                height={896}
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="block h-auto w-full"
+              />
             </div>
           </div>
         </div>
