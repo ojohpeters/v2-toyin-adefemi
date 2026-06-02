@@ -61,8 +61,8 @@ export default function FamilyCounseling() {
         <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:48px_48px]" />
 
         <div className="relative z-10 mx-auto max-w-7xl">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl font-bold leading-[1.08] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
+          <div className="max-w-4xl">
+            <h1 className="text-3xl font-bold leading-[1.08] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-[64px]">
               Healing Relationships,<br />
               <span className="text-[var(--peach)]">Restoring Peace</span> at Home
             </h1>

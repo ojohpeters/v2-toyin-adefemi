@@ -64,12 +64,8 @@ export default function ParentingCounseling() {
         <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:48px_48px]" />
 
         <div className="relative z-10 mx-auto max-w-7xl">
-          <div className="max-w-3xl">
-            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[var(--peach)]/40 bg-[var(--peach)]/15 px-4 py-2 backdrop-blur-sm">
-              <span className="h-2 w-2 rounded-full bg-[var(--peach)]" />
-              <span className="text-xs font-bold uppercase tracking-widest text-[var(--peach)]">Parenting Counseling</span>
-            </div>
-            <h1 className="mt-4 text-4xl font-bold leading-[1.08] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
+          <div className="max-w-4xl">
+            <h1 className="text-[26px] font-bold leading-[1.08] tracking-tight text-white sm:text-4xl md:text-5xl lg:text-[60px]">
               Support, Clarity & <span className="text-[var(--peach)]">Christ-Centered</span><br />
               Guidance
             </h1>
