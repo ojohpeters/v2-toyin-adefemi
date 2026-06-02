@@ -77,7 +77,7 @@ export default function Home() {
           {/* Headline */}
           <h1 className="font-bold leading-[1.05] tracking-tight">
             <span className="block text-4xl text-black sm:text-5xl md:text-6xl lg:text-[72px]">
-              Christ-rooted support
+              Christ-Rooted Support
             </span>
             <span className="mx-auto mt-4 block max-w-3xl text-lg font-normal leading-[1.4] text-black/60 sm:mt-5 sm:text-xl md:text-2xl lg:text-[28px]">
               for the seasons you were never meant to carry <span className="font-semibold text-[var(--peach)]">alone.</span>
