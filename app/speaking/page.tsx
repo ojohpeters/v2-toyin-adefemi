@@ -157,15 +157,16 @@ export default function Speaking() {
             ))}
           </div>
 
-          {/* Featured event photo */}
+          {/* Featured event photo — full natural width */}
           <div className="mt-14">
-            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-3xl shadow-[0_20px_52px_rgba(0,0,0,0.15)] sm:aspect-[16/9]">
+            <div className="w-full overflow-hidden rounded-3xl shadow-[0_20px_52px_rgba(0,0,0,0.15)]">
               <Image
-                src="/images/speaking-custodians.jpg"
-                alt='Toyin Adefemi speaking at the "Custodians of God&apos;s Gift" parenting event'
-                fill
+                src="/images/speaking-stage.jpg"
+                alt="Toyin Adefemi speaking on stage"
+                width={1600}
+                height={489}
                 sizes="(max-width: 1024px) 100vw, 1024px"
-                className="object-cover"
+                className="block h-auto w-full"
               />
             </div>
           </div>
