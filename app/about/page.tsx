@@ -93,13 +93,13 @@ export default function About() {
               <div className="relative w-full max-w-[400px] lg:max-w-none">
                 {/* Decorative ring */}
                 <div className="absolute -inset-3 rounded-[3rem] bg-gradient-to-br from-[var(--peach)]/20 to-[var(--teal)]/30" />
-                <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[2.5rem] shadow-[0_32px_64px_rgba(0,0,0,0.15)] lg:aspect-[5/6]">
+                <div className="relative aspect-square w-full overflow-hidden rounded-[2.5rem] shadow-[0_32px_64px_rgba(0,0,0,0.15)] sm:aspect-[4/5] lg:aspect-[5/6]">
                   <Image
-                    src="/images/meet-counselor.jpg"
+                    src="/images/about-hero.jpg"
                     alt="Portrait of Toyin Adefemi"
                     fill
                     sizes="(max-width: 1024px) 100vw, 480px"
-                    className="object-cover object-top"
+                    className="object-cover object-center"
                     priority
                   />
                 </div>
