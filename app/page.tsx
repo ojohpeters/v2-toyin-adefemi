@@ -62,10 +62,11 @@ export default function Home() {
 
       {/* Welcome — intro under the banner */}
       <section className="relative bg-[var(--background)] px-5 py-10 sm:px-6 sm:py-12 lg:px-10 lg:py-16">
-        <div className="max-w-6xl">
-          <div className="mb-6 flex items-center gap-3 text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">
+        <div className="mx-auto max-w-5xl text-center">
+          <div className="mb-6 flex items-center justify-center gap-3 text-lg font-bold uppercase tracking-[0.12em] text-[var(--peach)] sm:text-2xl md:text-3xl lg:text-4xl">
             <span className="h-px w-8 bg-[var(--peach)] sm:w-10" />
             Online · Faith-Based · Trauma-Informed
+            <span className="h-px w-8 bg-[var(--peach)] sm:w-10" />
           </div>
           <h1 className="font-bold leading-[1.15] tracking-tight">
             <span className="block text-[32px] text-black sm:text-4xl md:text-5xl lg:text-[60px]">
@@ -75,10 +76,10 @@ export default function Home() {
               for the seasons you were never meant to carry <span className="font-bold text-[var(--peach)]">alone.</span>
             </span>
           </h1>
-          <p className="mt-6 max-w-2xl text-base leading-relaxed text-black/65 sm:mt-7 sm:text-lg">
+          <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-black/65 sm:mt-7 sm:text-lg">
             I provide faith-based, trauma-informed care and clinically informed biblical counseling to support adolescents, individuals, families, and parents as they walk through difficult seasons. My mission is to offer a safe, Christ-centered space where you can process your story with honesty and experience true emotional and spiritual renewal.
           </p>
-          <div className="mt-8 flex flex-col items-stretch gap-3 sm:mt-9 sm:flex-row sm:items-center sm:gap-4">
+          <div className="mt-8 flex flex-col items-stretch justify-center gap-3 sm:mt-9 sm:flex-row sm:items-center sm:gap-4">
             <a
               href="/book-a-session"
               className="inline-flex items-center justify-center rounded-2xl bg-[var(--peach)] px-6 py-3.5 text-sm font-semibold text-white shadow-[0_12px_28px_rgba(254,143,104,0.38)] transition-all hover:bg-[var(--peach-deep)] hover:-translate-y-0.5 sm:px-8 sm:py-4 sm:text-base"
