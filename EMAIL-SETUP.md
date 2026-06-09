@@ -79,6 +79,12 @@ confirm it addresses the email you typed in the form.
   DKIM valid). If it's still a problem, the developer can upgrade `contact.php`
   to send via authenticated SMTP using PHPMailer (more reliable delivery) — the
   form side needs no changes.
+- **Form says "Something went wrong" with a `409` in the browser console
+  (`humans_… cookie` challenge):** that's Bluehost's bot protection intercepting
+  the POST. The form already detects this challenge, sets the cookie it asks for,
+  and retries automatically (see `lib/submit-form.ts`). If it ever persists, ask
+  Bluehost support to disable the JS/bot challenge for `POST /contact.php`, or
+  turn off "Bot Protection" / the relevant ModSecurity rule in cPanel.
 - **Sending limits:** Bluehost shared hosting caps outgoing mail (hundreds/day),
   which is far more than this site will ever use.
 - **Spam bots:** `contact.php` includes a hidden "honeypot" check. If spam picks

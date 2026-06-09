@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import IntakeForms from './_components/intake-forms';
+import { submitForm } from '@/lib/submit-form';
 
 export default function BookASession() {
   const [formData, setFormData] = useState({
@@ -29,12 +30,7 @@ export default function BookASession() {
     setSubmitting(true);
     setError('');
     try {
-      const res = await fetch('/contact.php', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ formType: 'book-a-session', fields: formData }),
-      });
-      if (!res.ok) throw new Error('Request failed');
+      await submitForm('book-a-session', formData);
       setSubmitted(true);
     } catch {
       setError('Something went wrong. Please try again or email me directly.');

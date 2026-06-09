@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { submitForm } from '@/lib/submit-form';
 
 type FormKey = 'agreement' | 'intake' | 'parent' | 'minor';
 
@@ -198,12 +199,7 @@ export default function IntakeForms() {
       setSubmitting((s) => ({ ...s, [key]: true }));
       setErrors((s) => ({ ...s, [key]: '' }));
       try {
-        const res = await fetch('/contact.php', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ formType: key, fields: payload }),
-        });
-        if (!res.ok) throw new Error('Request failed');
+        await submitForm(key, payload);
         setSubmitted((s) => ({ ...s, [key]: true }));
         window.scrollTo({ top: document.getElementById('intake-forms')?.offsetTop ?? 0, behavior: 'smooth' });
       } catch {

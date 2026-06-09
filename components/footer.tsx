@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
+import { submitForm } from '@/lib/submit-form';
 
 export function Footer() {
   const [formData, setFormData] = useState({
@@ -37,19 +38,7 @@ export function Footer() {
     setError('');
     try {
       const { name, email, phone, message } = formData;
-      const res = await fetch('/contact.php', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          formType: 'footer',
-          fields: { name, email, phone, message },
-        }),
-      });
-      if (!res.ok) {
-        const detail = await res.text().catch(() => '');
-        console.error('contact.php failed', res.status, detail);
-        throw new Error('Request failed');
-      }
+      await submitForm('footer', { name, email, phone, message });
       setSubmitted(true);
     } catch {
       setError('Something went wrong. Please try again or email me directly.');

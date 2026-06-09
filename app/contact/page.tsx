@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import { PhoneInput } from 'react-international-phone';
 import 'react-international-phone/style.css';
+import { submitForm } from '@/lib/submit-form';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -39,12 +40,7 @@ export default function Contact() {
     setSubmitting(true);
     setError('');
     try {
-      const res = await fetch('/contact.php', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ formType: 'contact', fields: formData }),
-      });
-      if (!res.ok) throw new Error('Request failed');
+      await submitForm('contact', formData);
       setSubmitted(true);
     } catch {
       setError('Something went wrong. Please try again or email me directly.');
