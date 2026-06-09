@@ -79,12 +79,25 @@ confirm it addresses the email you typed in the form.
   DKIM valid). If it's still a problem, the developer can upgrade `contact.php`
   to send via authenticated SMTP using PHPMailer (more reliable delivery) — the
   form side needs no changes.
-- **Form says "Something went wrong" with a `409` in the browser console
-  (`humans_… cookie` challenge):** that's Bluehost's bot protection intercepting
-  the POST. The form already detects this challenge, sets the cookie it asks for,
-  and retries automatically (see `lib/submit-form.ts`). If it ever persists, ask
-  Bluehost support to disable the JS/bot challenge for `POST /contact.php`, or
-  turn off "Bot Protection" / the relevant ModSecurity rule in cPanel.
+- **Form fails with a `403` "Just a moment…" / `challenges.cloudflare.com` in
+  the console:** the domain is proxied through **Cloudflare**, and Cloudflare's
+  bot challenge is blocking the POST to `/contact.php`. A background request
+  can't pass a managed challenge, so this MUST be fixed in the Cloudflare
+  dashboard for `toyinadefemi.com`:
+    1. **Easiest:** Security → **Bots** → turn **Bot Fight Mode** OFF (it
+       challenges legitimate form/API POSTs).
+    2. **Targeted (recommended, leaves bot protection on elsewhere):**
+       Security → **WAF** → **Custom rules** → Create rule:
+       `URI Path equals /contact.php` → Action **Skip** → tick **Managed
+       Challenge** / **Bot Fight Mode** (and set Security Level to "Essentially
+       Off" for that rule). Deploy.
+    3. If Cloudflare is managed through Bluehost's cPanel "Cloudflare" plugin,
+       you may need to log into the Cloudflare account directly to add the rule.
+  After saving, re-test the form — no site changes needed.
+- **Form fails with a `409` (`humans_… cookie` challenge):** that's Bluehost's
+  own bot protection. The form already detects this one, sets the cookie it asks
+  for, and retries automatically (see `lib/submit-form.ts`). If it persists, ask
+  Bluehost support to disable the JS/bot challenge for `POST /contact.php`.
 - **Sending limits:** Bluehost shared hosting caps outgoing mail (hundreds/day),
   which is far more than this site will ever use.
 - **Spam bots:** `contact.php` includes a hidden "honeypot" check. If spam picks
