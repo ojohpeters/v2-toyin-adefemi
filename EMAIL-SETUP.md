@@ -6,7 +6,7 @@ forms) all send their submissions by email to a Bluehost mailbox. The site is a
 
 This is a one-time setup. After it's done, every form just works.
 
-Submissions are currently set to be delivered to **gideonfajemilusi08@gmail.com**.
+Submissions are currently set to be delivered to **toyin.biblicalcounselor@gmail.com**.
 
 ---
 
@@ -16,7 +16,7 @@ Open `contact.php` (it sits in `public_html` next to `index.html` after deploy â
 see step 2) and check the two lines at the top:
 
 ```php
-$TO   = 'gideonfajemilusi08@gmail.com';   // where submissions are delivered
+$TO   = 'toyin.biblicalcounselor@gmail.com';   // where submissions are delivered
 $FROM = 'no-reply@toyinadefemi.com';      // on the site's own domain
 ```
 

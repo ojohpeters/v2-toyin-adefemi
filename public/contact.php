@@ -14,7 +14,7 @@
  *          (The visitor's address is set as Reply-To automatically, so replies
  *          from your inbox go straight back to them.)
  */
-$TO   = 'gideonfajemilusi08@gmail.com';
+$TO   = 'toyin.biblicalcounselor@gmail.com';
 $FROM = 'no-reply@toyinadefemi.com'; // on the site's own domain — NOT a @gmail.com address.
 /** ──────────────────────────────────────────────────────────────────────── */
 
