@@ -12,6 +12,8 @@ export function Footer() {
     captcha: '',
   });
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState('');
   const [captchaError, setCaptchaError] = useState(false);
   const [captchaNums, setCaptchaNums] = useState<[number, number]>([0, 0]);
 
@@ -24,14 +26,32 @@ export function Footer() {
 
   const captchaAnswer = captchaNums[0] + captchaNums[1];
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     if (parseInt(formData.captcha) !== captchaAnswer) {
       setCaptchaError(true);
       return;
     }
     setCaptchaError(false);
-    setSubmitted(true);
+    setSubmitting(true);
+    setError('');
+    try {
+      const { name, email, phone, message } = formData;
+      const res = await fetch('/contact.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          formType: 'footer',
+          fields: { name, email, phone, message },
+        }),
+      });
+      if (!res.ok) throw new Error('Request failed');
+      setSubmitted(true);
+    } catch {
+      setError('Something went wrong. Please try again or email me directly.');
+    } finally {
+      setSubmitting(false);
+    }
   }
 
   const inputClass =
@@ -141,11 +161,15 @@ export function Footer() {
                   )}
                 </div>
 
+                {error && (
+                  <p className="text-sm font-medium text-[var(--peach)]">{error}</p>
+                )}
                 <button
                   type="submit"
-                  className="w-full rounded-xl bg-[var(--peach)] py-4 text-sm font-bold uppercase tracking-widest text-white shadow-[0_8px_20px_rgba(254,143,104,0.35)] transition hover:bg-[var(--peach-deep)] hover:-translate-y-0.5"
+                  disabled={submitting}
+                  className="w-full rounded-xl bg-[var(--peach)] py-4 text-sm font-bold uppercase tracking-widest text-white shadow-[0_8px_20px_rgba(254,143,104,0.35)] transition hover:bg-[var(--peach-deep)] hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-60"
                 >
-                  Send Message
+                  {submitting ? 'Sending…' : 'Send Message'}
                 </button>
               </form>
             )}

@@ -14,6 +14,8 @@ export default function BookASession() {
     message: '',
   });
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState('');
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -22,9 +24,23 @@ export default function BookASession() {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setSubmitting(true);
+    setError('');
+    try {
+      const res = await fetch('/contact.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ formType: 'book-a-session', fields: formData }),
+      });
+      if (!res.ok) throw new Error('Request failed');
+      setSubmitted(true);
+    } catch {
+      setError('Something went wrong. Please try again or email me directly.');
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const inputCls =
@@ -243,11 +259,15 @@ export default function BookASession() {
                 />
               </div>
 
+              {error && (
+                <p className="text-center text-sm font-medium text-[var(--peach)]">{error}</p>
+              )}
               <button
                 type="submit"
-                className="w-full rounded-xl bg-[var(--peach)] py-4 text-sm font-bold uppercase tracking-widest text-white shadow-[0_12px_28px_rgba(254,143,104,0.35)] transition-all hover:bg-[var(--peach-deep)] hover:-translate-y-0.5"
+                disabled={submitting}
+                className="w-full rounded-xl bg-[var(--peach)] py-4 text-sm font-bold uppercase tracking-widest text-white shadow-[0_12px_28px_rgba(254,143,104,0.35)] transition-all hover:bg-[var(--peach-deep)] hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-60"
               >
-                Request Session
+                {submitting ? 'Sending…' : 'Request Session'}
               </button>
 
               <p className="text-center text-sm text-black/55">

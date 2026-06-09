@@ -129,12 +129,16 @@ function FormShell({
   active,
   onSubmit,
   submitted,
+  submitting,
+  error,
   successTitle,
   children,
 }: {
   active: boolean;
   onSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
   submitted: boolean;
+  submitting: boolean;
+  error: string;
   successTitle: string;
   children: React.ReactNode;
 }) {
@@ -149,11 +153,15 @@ function FormShell({
         </p>
         <button
           type="submit"
-          className="inline-flex items-center justify-center rounded-2xl bg-[var(--peach)] px-10 py-4 text-base font-semibold text-white shadow-[0_12px_28px_rgba(254,143,104,0.35)] transition-all hover:bg-[var(--peach-deep)] hover:-translate-y-0.5"
+          disabled={submitting}
+          className="inline-flex items-center justify-center rounded-2xl bg-[var(--peach)] px-10 py-4 text-base font-semibold text-white shadow-[0_12px_28px_rgba(254,143,104,0.35)] transition-all hover:bg-[var(--peach-deep)] hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-60"
         >
-          Submit Form
+          {submitting ? 'Submitting…' : 'Submit Form'}
         </button>
       </div>
+      {error && (
+        <p className="text-right text-sm font-medium text-[var(--peach)]">{error}</p>
+      )}
     </form>
   );
 }
@@ -166,18 +174,46 @@ export default function IntakeForms() {
     parent: false,
     minor: false,
   });
+  const [submitting, setSubmitting] = useState<Record<FormKey, boolean>>({
+    agreement: false,
+    intake: false,
+    parent: false,
+    minor: false,
+  });
+  const [errors, setErrors] = useState<Record<FormKey, string>>({
+    agreement: '',
+    intake: '',
+    parent: '',
+    minor: '',
+  });
 
   function handleSubmit(key: FormKey) {
-    return (e: React.FormEvent<HTMLFormElement>) => {
+    return async (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
       const data = new FormData(e.currentTarget);
       const payload: Record<string, FormDataEntryValue> = {};
       data.forEach((v, k) => {
         payload[k] = v;
       });
-      console.log(`[${key}] submission`, payload);
-      setSubmitted((s) => ({ ...s, [key]: true }));
-      window.scrollTo({ top: document.getElementById('intake-forms')?.offsetTop ?? 0, behavior: 'smooth' });
+      setSubmitting((s) => ({ ...s, [key]: true }));
+      setErrors((s) => ({ ...s, [key]: '' }));
+      try {
+        const res = await fetch('/contact.php', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ formType: key, fields: payload }),
+        });
+        if (!res.ok) throw new Error('Request failed');
+        setSubmitted((s) => ({ ...s, [key]: true }));
+        window.scrollTo({ top: document.getElementById('intake-forms')?.offsetTop ?? 0, behavior: 'smooth' });
+      } catch {
+        setErrors((s) => ({
+          ...s,
+          [key]: 'Something went wrong. Please try again or email Toyin directly.',
+        }));
+      } finally {
+        setSubmitting((s) => ({ ...s, [key]: false }));
+      }
     };
   }
 
@@ -231,6 +267,8 @@ export default function IntakeForms() {
             active={active === 'agreement'}
             onSubmit={handleSubmit('agreement')}
             submitted={submitted.agreement}
+            submitting={submitting.agreement}
+            error={errors.agreement}
             successTitle="Agreement Received"
           >
             <Section title="1. Client Information">
@@ -306,6 +344,8 @@ export default function IntakeForms() {
             active={active === 'intake'}
             onSubmit={handleSubmit('intake')}
             submitted={submitted.intake}
+            submitting={submitting.intake}
+            error={errors.intake}
             successTitle="Intake Form Received"
           >
             <Section title="1. Personal Information">
@@ -379,6 +419,8 @@ export default function IntakeForms() {
             active={active === 'parent'}
             onSubmit={handleSubmit('parent')}
             submitted={submitted.parent}
+            submitting={submitting.parent}
+            error={errors.parent}
             successTitle="Parent / Guardian Consent Received"
           >
             <Section title="1. Parent / Guardian Information">
@@ -442,6 +484,8 @@ export default function IntakeForms() {
             active={active === 'minor'}
             onSubmit={handleSubmit('minor')}
             submitted={submitted.minor}
+            submitting={submitting.minor}
+            error={errors.minor}
             successTitle="Intake Received"
           >
             <Section title="1. About You">
