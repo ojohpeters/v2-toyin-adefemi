@@ -45,7 +45,11 @@ export function Footer() {
           fields: { name, email, phone, message },
         }),
       });
-      if (!res.ok) throw new Error('Request failed');
+      if (!res.ok) {
+        const detail = await res.text().catch(() => '');
+        console.error('contact.php failed', res.status, detail);
+        throw new Error('Request failed');
+      }
       setSubmitted(true);
     } catch {
       setError('Something went wrong. Please try again or email me directly.');

@@ -153,7 +153,9 @@ if ($replyTo !== null) {
     $headers[] = 'Reply-To: ' . $replyTo;
 }
 
-$ok = mail($TO, $subject . ' — ' . $host, $html, implode("\r\n", $headers));
+// The 5th arg sets the envelope sender (Return-Path) to an on-domain address —
+// Bluehost's mail() often needs this to actually send and to pass SPF.
+$ok = mail($TO, $subject . ' — ' . $host, $html, implode("\r\n", $headers), '-f' . $FROM);
 
 if (!$ok) {
     http_response_code(502);

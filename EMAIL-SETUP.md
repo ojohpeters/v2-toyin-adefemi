@@ -39,10 +39,21 @@ npm install        # node_modules isn't committed
 npm run build      # produces the static site in the `out/` folder
 ```
 
-Then upload **everything inside `out/`** to Bluehost `public_html`
-(cPanel → File Manager, or FTP). Make sure `contact.php` ends up in
-`public_html` too — it's included in `out/` automatically because it lives in
-the project's `public/` folder.
+This produces a ready-to-upload zip at the project root:
+`toyinadefemi-public_html.zip` (re-create it any time with
+`cd out && zip -r ../toyinadefemi-public_html.zip . -x '.*'`).
+
+To deploy in **cPanel → File Manager**:
+
+1. Open `public_html` (delete its current contents first if redeploying).
+2. **Upload** `toyinadefemi-public_html.zip`.
+3. Right-click it → **Extract** into `public_html`.
+4. Delete the zip afterward.
+
+The files sit at the **root** of the zip (`index.html`, `contact.php`,
+`contact/`, `book-a-session/`, …), so everything lands directly in
+`public_html` — no nested folder. `contact.php` is included automatically
+because it lives in the project's `public/` folder.
 
 ## 3. Test it
 
